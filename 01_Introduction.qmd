@@ -1,0 +1,26 @@
+---
+title: "Introduction"
+format: html
+---
+
+## Hello!
+
+My name is Dionne (she/her; pronounciation: Dee-own) and I am a current **PhD student** in the [Day Lab](https://biomedicalsciences.unimelb.edu.au/sbs-research-groups/microbiology-and-immunology-research-groups/day-laboratory-malaria-genomics,-epidemiology-and-control) at the University of Melbourne. 
+
+- 🇦🇺 From Melbourne, AU
+- 🎓 Education: 
+  - Bachelor of Science (major in Genetics), 
+  - Master of Science (BioSciences), and 
+  - Doctor of Philosophy - Medicine, Dentistry and Health Sciences at [The University of Melbourne](https://www.unimelb.edu.au/). 
+- 💻 Current President of [R-Ladies Melbourne Inc](https://twitter.com/rladiesmelb). 
+- 💬 Ask me about: 🧬 **Population Genetics** and 🔎 **Molecular Epidemiology** of *Plasmodium falciparum* malaria. 
+- 📫 You can reach me on [X](https://twitter.com/DionneArgy), [LinkedIn](https://www.linkedin.com/in/dionne-argyropoulos-47749b14b/), [GitHub](https://github.com/dionnecargy) or at my current email address: dargyropoulo@student.unimelb.edu.au. 
+
+## About Me
+
+I have always had a keen interest in **science**. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in **biology** - specifically **evolution** and **genetics** - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed [here](). 
+
+I have recently submitted my PhD thesis and am now in the final phase of my doctoral research on the molecular epidemiology and population genetics of *Plasmodium falciparum* malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of *Plasmodium falciparum* malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations. 
+
+Throughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that's developing a [bookdown](https://r-ladiesmelbourne.github.io/17-11-23-ItTakesASpark/) workshop, keeping up to date with functions in the [tidyverse](https://www.tidyverse.org/), creating new maps using packages such as [MalariaAtlas](https://malariaatlas.org/) and [ggmap](https://journal.r-project.org/archive/2013-1/kahle-wickham.pdf), or learning all the amazing ways [quarto](https://quarto.org/docs/guide/) can be used to elevate documents, websites etc. 
+

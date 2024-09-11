@@ -1,0 +1,313 @@
+[
+  {
+    "objectID": "01_Introduction.html",
+    "href": "01_Introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I am a current PhD student in the Day Lab at the University of Melbourne.\n\n🇦🇺 From Melbourne, AU\n🎓 Education:\n\nBachelor of Science (major in Genetics),\nMaster of Science (BioSciences), and\nDoctor of Philosophy - Medicine, Dentistry and Health Sciences at The University of Melbourne.\n\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum malaria.\n📫 You can reach me on X, LinkedIn, GitHub or at my current email address: dargyropoulo@student.unimelb.edu.au.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "01_Introduction.html#quarto",
+    "href": "01_Introduction.html#quarto",
+    "title": "Introduction",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "01_Introduction.html#running-code",
+    "href": "01_Introduction.html#running-code",
+    "title": "Introduction",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "05_Conferences.html",
+    "href": "05_Conferences.html",
+    "title": "05_Conferences",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "05_Conferences"
+    ]
+  },
+  {
+    "objectID": "05_Conferences.html#quarto",
+    "href": "05_Conferences.html#quarto",
+    "title": "05_Conferences",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "05_Conferences"
+    ]
+  },
+  {
+    "objectID": "05_Conferences.html#running-code",
+    "href": "05_Conferences.html#running-code",
+    "title": "05_Conferences",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "Research",
+      "05_Conferences"
+    ]
+  },
+  {
+    "objectID": "04_PublishedPapers.html",
+    "href": "04_PublishedPapers.html",
+    "title": "04_PublishedPapers",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "04_PublishedPapers"
+    ]
+  },
+  {
+    "objectID": "04_PublishedPapers.html#quarto",
+    "href": "04_PublishedPapers.html#quarto",
+    "title": "04_PublishedPapers",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "04_PublishedPapers"
+    ]
+  },
+  {
+    "objectID": "04_PublishedPapers.html#running-code",
+    "href": "04_PublishedPapers.html#running-code",
+    "title": "04_PublishedPapers",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "Research",
+      "04_PublishedPapers"
+    ]
+  },
+  {
+    "objectID": "08_Work.html",
+    "href": "08_Work.html",
+    "title": "08_Work",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "08_Work"
+    ]
+  },
+  {
+    "objectID": "08_Work.html#quarto",
+    "href": "08_Work.html#quarto",
+    "title": "08_Work",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "08_Work"
+    ]
+  },
+  {
+    "objectID": "08_Work.html#running-code",
+    "href": "08_Work.html#running-code",
+    "title": "08_Work",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "08_Work"
+    ]
+  },
+  {
+    "objectID": "03_ResearchInterests.html",
+    "href": "03_ResearchInterests.html",
+    "title": "Research Interests",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Research Interests"
+    ]
+  },
+  {
+    "objectID": "03_ResearchInterests.html#quarto",
+    "href": "03_ResearchInterests.html#quarto",
+    "title": "Research Interests",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Research Interests"
+    ]
+  },
+  {
+    "objectID": "03_ResearchInterests.html#running-code",
+    "href": "03_ResearchInterests.html#running-code",
+    "title": "Research Interests",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "Research",
+      "Research Interests"
+    ]
+  },
+  {
+    "objectID": "02_About.html",
+    "href": "02_About.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "02_About.html#quarto",
+    "href": "02_About.html#quarto",
+    "title": "About Me",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "About Me"
+    ]
+  },
+  {
+    "objectID": "02_About.html#running-code",
+    "href": "02_About.html#running-code",
+    "title": "About Me",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "About Me"
+    ]
+  },
+  {
+    "objectID": "07_Awards.html",
+    "href": "07_Awards.html",
+    "title": "07_Awards",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "07_Awards"
+    ]
+  },
+  {
+    "objectID": "07_Awards.html#quarto",
+    "href": "07_Awards.html#quarto",
+    "title": "07_Awards",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "07_Awards"
+    ]
+  },
+  {
+    "objectID": "07_Awards.html#running-code",
+    "href": "07_Awards.html#running-code",
+    "title": "07_Awards",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "07_Awards"
+    ]
+  },
+  {
+    "objectID": "06_Volunteering.html",
+    "href": "06_Volunteering.html",
+    "title": "06_Volunteering",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "06_Volunteering"
+    ]
+  },
+  {
+    "objectID": "06_Volunteering.html#quarto",
+    "href": "06_Volunteering.html#quarto",
+    "title": "06_Volunteering",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "06_Volunteering"
+    ]
+  },
+  {
+    "objectID": "06_Volunteering.html#running-code",
+    "href": "06_Volunteering.html#running-code",
+    "title": "06_Volunteering",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Home",
+      "Leadership, Community and Engagement",
+      "06_Volunteering"
+    ]
+  },
+  {
+    "objectID": "01_Introduction.html#hi-im-dionne",
+    "href": "01_Introduction.html#hi-im-dionne",
+    "title": "Introduction",
+    "section": "",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I am a current PhD student in the Day Lab at the University of Melbourne 🇦🇺🦘\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc\n💬 Ask me about: 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum\n📫 You can reach me on X, LinkedIn or at my current email address: dargyropoulo@student.unimelb.edu.au",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "01_Introduction.html#hello",
+    "href": "01_Introduction.html#hello",
+    "title": "Introduction",
+    "section": "",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I am a current PhD student in the Day Lab at the University of Melbourne.\n\n🇦🇺 From Melbourne, AU\n🎓 Education:\n\nBachelor of Science (major in Genetics),\nMaster of Science (BioSciences), and\nDoctor of Philosophy - Medicine, Dentistry and Health Sciences at The University of Melbourne.\n\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum malaria.\n📫 You can reach me on X, LinkedIn, GitHub or at my current email address: dargyropoulo@student.unimelb.edu.au.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "01_Introduction.html#about-me",
+    "href": "01_Introduction.html#about-me",
+    "title": "Introduction",
+    "section": "About Me",
+    "text": "About Me\nI have always had a keen interest in science. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in biology - specifically evolution and genetics - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed here.\nI have recently submitted my PhD thesis and am now in the final phase of my doctoral research on the molecular epidemiology and population genetics of Plasmodium falciparum malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of Plasmodium falciparum malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations.\nThroughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that’s developing a bookdown workshop, keeping up to date with functions in the tidyverse, creating new maps using packages such as MalariaAtlas and ggmap, or learning all the amazing ways quarto can be used to elevate documents, websites etc.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  }
+]

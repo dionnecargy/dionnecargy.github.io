@@ -1,0 +1,75 @@
+---
+title: "Welcome"
+author: "Dionne Argyropoulos"
+date: 2025-07-29
+---
+
+This collection was inspired by [Chrissy Roberts' Code Book](https://chrissyhroberts.github.io/Code_Book/), which I was introduced to by [Caitlin Bourke](https://github.com/BourkeCaitlin). It brings together the most useful pieces of code I’ve accumulated over the years—scripts I often return to or have developed for specific analyses. My hope is that future me (and anyone else who happens to come across this) finds it a helpful and practical resource.
+
+Here are a list of my favourite R packages that will be leveraged throughout this section. 
+
+## Data Wrangling
+
+```{r}
+library(tidyverse)
+```
+
+## Epidemiology / Statistical Analysis
+
+```{r}
+library(tidyverse)
+library(gtsummary)
+```
+
+## Population Genetics Analysis
+
+```{r}
+library(poppr)
+library(adegenet)
+```
+
+## R Shiny 
+
+```{r}
+library(shiny)
+library(shiny.fluent)
+library(waiter)
+```
+
+## R Package Development 
+
+```{r}
+library(devtools)
+library(usethis)
+```
+
+## General Git things
+
+### Making changes {#git-changes}
+
+```{r}
+# git add .
+# git commit -m "Add a personalised and detailed message"
+# git push
+```
+
+### Clone a repository from GitHub
+
+### Push a repository to GitHub
+
+### How to remove a repository on Github
+
+1. Go to the repository’s main page on GitHub (e.g., https://github.com/yourusername/pvsero)
+2. Click Settings (right-hand tab)
+3. Scroll all the way to the Danger Zone at the bottom
+4. Click Delete this repository
+5. GitHub will ask you to:
+    - Confirm the name of the repo (e.g., yourusername/pvsero)
+    - Type it in to confirm
+6. Click the red I understand the consequences, delete this repository button
+
+The repository will be permanently deleted — this action cannot be undone.
+
+This does not delete your local R project or files — only the copy on GitHub. If you want to disconnect GitHub but keep the local Git repo, you can just remove the remote link using:
+git remote remove origin
+

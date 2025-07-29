@@ -43,6 +43,12 @@ website:
           - "06_Volunteering.qmd"
           - "07_Awards.qmd"
           - "08_Work.qmd"
+      - section: "Code: The Basics"
+        contents: 
+          - "Code_Book/01_Code_Log_Intro.qmd"
+          - "Code_Book/02_R_Package.qmd"
+          - "Code_Book/03_R_Hexagon.qmd"
+          - "Code_Book/04_Quarto.qmd"
 
 format:
   html:

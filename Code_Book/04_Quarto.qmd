@@ -39,3 +39,10 @@ author: "Dionne Argyropoulos"
 #   
 # :::  
 ```
+
+
+## Render Quarto Pakcges from random document
+
+quarto publish tutorials/tutorials-main.qmd
+will sort it out 
+

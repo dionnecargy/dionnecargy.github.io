@@ -476,6 +476,7 @@ Once you are ready for the vignette to be updated to the manual, run the followi
 
 ```{r}
 # devtools::build_vignettes()
+# devtools::document()
 ```
 
 This will:

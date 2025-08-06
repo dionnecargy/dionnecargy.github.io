@@ -1,73 +1,10 @@
 [
   {
-    "objectID": "Pages_CV/05_Conferences.html",
-    "href": "Pages_CV/05_Conferences.html",
-    "title": "Conferences",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/05_Conferences.html#quarto",
-    "href": "Pages_CV/05_Conferences.html#quarto",
-    "title": "Conferences",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/05_Conferences.html#running-code",
-    "href": "Pages_CV/05_Conferences.html#running-code",
-    "title": "Conferences",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "Pages_CV/04_PublishedPapers.html",
-    "href": "Pages_CV/04_PublishedPapers.html",
-    "title": "Published Papers",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/04_PublishedPapers.html#quarto",
-    "href": "Pages_CV/04_PublishedPapers.html#quarto",
-    "title": "Published Papers",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/04_PublishedPapers.html#running-code",
-    "href": "Pages_CV/04_PublishedPapers.html#running-code",
-    "title": "Published Papers",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "Pages_CV/08_Work.html",
-    "href": "Pages_CV/08_Work.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/08_Work.html#quarto",
-    "href": "Pages_CV/08_Work.html#quarto",
-    "title": "Teaching",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/08_Work.html#running-code",
-    "href": "Pages_CV/08_Work.html#running-code",
-    "title": "Teaching",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
     "objectID": "01_Introduction.html",
     "href": "01_Introduction.html",
     "title": "Introduction",
     "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I am a current PhD student in the Day Lab at the University of Melbourne.\n\n🇦🇺 From Melbourne, AU\n🎓 Education:\n\nBachelor of Science (major in Genetics),\nMaster of Science (BioSciences), and\nDoctor of Philosophy - Medicine, Dentistry and Health Sciences at The University of Melbourne.\n\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum malaria.\n📫 You can reach me on X, LinkedIn, GitHub or at my current email address: dargyropoulo@student.unimelb.edu.au.",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
     "crumbs": [
       "Home",
       "Introduction"
@@ -78,7 +15,7 @@
     "href": "01_Introduction.html#hello",
     "title": "Introduction",
     "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I am a current PhD student in the Day Lab at the University of Melbourne.\n\n🇦🇺 From Melbourne, AU\n🎓 Education:\n\nBachelor of Science (major in Genetics),\nMaster of Science (BioSciences), and\nDoctor of Philosophy - Medicine, Dentistry and Health Sciences at The University of Melbourne.\n\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum malaria.\n📫 You can reach me on X, LinkedIn, GitHub or at my current email address: dargyropoulo@student.unimelb.edu.au.",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
     "crumbs": [
       "Home",
       "Introduction"
@@ -365,68 +302,5 @@
       "Code: The Basics",
       "Welcome"
     ]
-  },
-  {
-    "objectID": "Pages_CV/03_ResearchInterests.html",
-    "href": "Pages_CV/03_ResearchInterests.html",
-    "title": "Research Interests",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/03_ResearchInterests.html#quarto",
-    "href": "Pages_CV/03_ResearchInterests.html#quarto",
-    "title": "Research Interests",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/03_ResearchInterests.html#running-code",
-    "href": "Pages_CV/03_ResearchInterests.html#running-code",
-    "title": "Research Interests",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "Pages_CV/07_Awards.html",
-    "href": "Pages_CV/07_Awards.html",
-    "title": "Awards",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/07_Awards.html#quarto",
-    "href": "Pages_CV/07_Awards.html#quarto",
-    "title": "Awards",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/07_Awards.html#running-code",
-    "href": "Pages_CV/07_Awards.html#running-code",
-    "title": "Awards",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
-  },
-  {
-    "objectID": "Pages_CV/06_Volunteering.html",
-    "href": "Pages_CV/06_Volunteering.html",
-    "title": "Volunteering",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/06_Volunteering.html#quarto",
-    "href": "Pages_CV/06_Volunteering.html#quarto",
-    "title": "Volunteering",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Pages_CV/06_Volunteering.html#running-code",
-    "href": "Pages_CV/06_Volunteering.html#running-code",
-    "title": "Volunteering",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
   }
 ]

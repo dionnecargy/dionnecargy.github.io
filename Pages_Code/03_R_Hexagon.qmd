@@ -4,9 +4,9 @@ author: "Dionne Argyropoulos"
 date: 2025-07-29
 ---
 
-## Create an R Hexagon 
+## Create an R Hexagon
 
-See more about how to make an R Hexagon with the [R Sticker documentation](https://github.com/GuangchuangYu/hexSticker). 
+See more about how to make an R Hexagon with the [R Sticker documentation](https://github.com/GuangchuangYu/hexSticker).
 
 ```{r}
 # install.packages("hexSticker")
@@ -67,4 +67,3 @@ library(hexSticker)
 #   filename="inst/figures/imgfile.png"  # filename to save sticker
 # )
 ```
-

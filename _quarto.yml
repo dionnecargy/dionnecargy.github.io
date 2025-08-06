@@ -33,22 +33,22 @@ website:
     logo: "Images/dionne_cartoon.png"
     contents:
       - 01_Introduction.qmd
-      - section: "Research"
-        contents: 
-          - "03_ResearchInterests.qmd"
-          - "04_PublishedPapers.qmd"
-          - "05_Conferences.qmd"
-      - section: "Leadership, Community and Engagement"
-        contents: 
-          - "06_Volunteering.qmd"
-          - "07_Awards.qmd"
-          - "08_Work.qmd"
+      # - section: "Research"
+      #   contents: 
+      #     - "Pages_CV/03_ResearchInterests.qmd"
+      #     - "Pages_CV/04_PublishedPapers.qmd"
+      #     - "Pages_CV/05_Conferences.qmd"
+      # - section: "Leadership, Community and Engagement"
+      #   contents: 
+      #     - "Pages_CV/06_Volunteering.qmd"
+      #     - "Pages_CV/07_Awards.qmd"
+      #     - "Pages_CV/08_Work.qmd"
       - section: "Code: The Basics"
         contents: 
-          - "Code_Book/01_Code_Log_Intro.qmd"
-          - "Code_Book/02_R_Package.qmd"
-          - "Code_Book/03_R_Hexagon.qmd"
-          - "Code_Book/04_Quarto.qmd"
+          - "Pages_Code/01_Code_Log_Intro.qmd"
+          - "Pages_Code/02_R_Package.qmd"
+          - "Pages_Code/03_R_Hexagon.qmd"
+          - "Pages_Code/04_Quarto.qmd"
 
 format:
   html:

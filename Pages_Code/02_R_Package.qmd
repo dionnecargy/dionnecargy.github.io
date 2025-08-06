@@ -19,28 +19,22 @@ antigen_output <- readAntigens(readSeroData(your_raw_data, "magpix"))
 ```
 
 ## Creating an R Package
-  
-::: {.grid}
 
-::: {.g-col-6}
+:::::: grid
+:::: g-col-6
+First, open a new project in R and select: `File` \> `New Project` \> `New Directory` \> `R Package`.
 
-First, open a new project in R and select: `File` > `New Project` > `New Directory` > `R Package`.
+Here you will enter your R package name e.g.,`{my_package}` as shown in the image to the right.
 
-Here you will enter your R package name e.g.,`{my_package}` as shown in the image to the right. 
-
-:::{.callout-tip}
-R-emember: A catchy name sticks! Make it short, smart, and a clever play on “R” can make your package name memorable! 
+::: callout-tip
+R-emember: A catchy name sticks! Make it short, smart, and a clever play on “R” can make your package name memorable!
 :::
+::::
 
+::: g-col-6
+![](images/02_r_package.png){width="500"}
 :::
-  
-::: {.g-col-6}
-
-![](images/02_r_package.png){width=500}
-
-:::
-  
-:::  
+::::::
 
 ### Build your functions
 
@@ -66,9 +60,9 @@ processCounts <- function(antigen_output){
 }
 ```
 
-Then click inside the function and either use the shortcut command (Mac): `Shift + Option + Command + R` OR you can go into `Code > Insert Roxygen Skeleton`. 
+Then click inside the function and either use the shortcut command (Mac): `Shift + Option + Command + R` OR you can go into `Code > Insert Roxygen Skeleton`.
 
-This will load something that looks like this: 
+This will load something that looks like this:
 
 ```{r}
 #' Process Counts from Raw Serological Data file
@@ -86,19 +80,19 @@ There are many other possibilities to add! See more in the [documentation](https
 
 ### NAMESPACE file
 
-Once you have built one or multiple .R files, they need to be added to the manual! Here, you run the following line in your console! 
+Once you have built one or multiple .R files, they need to be added to the manual! Here, you run the following line in your console!
 
 ```{r}
 # devtools::document()                          # updates NAMESPACE
 ```
 
-It is useful to run this command every time you write or update an .R file. This will create and update .Rd files for the manual. It will also update the [NAMESPACE](https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-NAMESPACE-file) file. 
+It is useful to run this command every time you write or update an .R file. This will create and update .Rd files for the manual. It will also update the [NAMESPACE](https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-NAMESPACE-file) file.
 
 ### Add dependencies {#dependencies}
 
 You will also need to add "imports" for each package in the roxygen file. This includes all of the packages and/or functions that are used. To save memory, it is best practice to load only the functions that you require in each function.
 
-For example, in the `processCounts()` function, the `dplyr::mutate()`, `dplyr::case_when()` and `tidyr::pivot_longer()` functions are used. We can write them in the roxygen documentation by adding the `@importFrom {package} {argument}` function, where multiple arguments can be added by just listing them side-by-side (as shown for `dplyr` below). 
+For example, in the `processCounts()` function, the `dplyr::mutate()`, `dplyr::case_when()` and `tidyr::pivot_longer()` functions are used. We can write them in the roxygen documentation by adding the `@importFrom {package} {argument}` function, where multiple arguments can be added by just listing them side-by-side (as shown for `dplyr` below).
 
 ```{r}
 #' Process Counts from Raw Serological Data file
@@ -132,7 +126,7 @@ processCounts <- function(antigen_output){
 }
 ```
 
-If you used more functions from a package, for example in the `plotCounts()` function below where `ggplot2::` is called often for many different functions, then we just load the ggplot2 package by `@import {package}`. 
+If you used more functions from a package, for example in the `plotCounts()` function below where `ggplot2::` is called often for many different functions, then we just load the ggplot2 package by `@import {package}`.
 
 ```{r}
 #' Plot Bead Count Data
@@ -164,7 +158,7 @@ plotCounts <- function(counts_output, experiment_name){
 
 ### DESCRIPTION file
 
-Lastly, we need to update the default empty [DESCRIPTION](https://r-pkgs.org/description.html) file which looks like below: 
+Lastly, we need to update the default empty [DESCRIPTION](https://r-pkgs.org/description.html) file which looks like below:
 
 ```{r}
 # Package: mypackage
@@ -189,7 +183,7 @@ Which you can update as intended for your purposes. In order to add any [package
 
 ### Check that the package works
 
-THEN you can check that all your functions and packages are loaded properly to build your package: 
+THEN you can check that all your functions and packages are loaded properly to build your package:
 
 ```{r}
 # devtools::check()
@@ -197,17 +191,17 @@ THEN you can check that all your functions and packages are loaded properly to b
 
 It will tell you if your package:
 
-- Uses functions from a package not listed in DESCRIPTION
-- Lists packages you don’t actually use
+-   Uses functions from a package not listed in DESCRIPTION
+-   Lists packages you don’t actually use
 
 ### Overall Workflow
 
-1. Create .R file
-2. Add your function to the .R file 
-3. Add roxygen comments in .R file, including `@import` or `@importFrom` for package dependencies 
-4. Run `devtools::document()` to update NAMESPACE
-5. Use `usethis::use_package("package")` to add to DESCRIPTION
-6. Run `devtools::check()` to verify consistency
+1.  Create .R file
+2.  Add your function to the .R file
+3.  Add roxygen comments in .R file, including `@import` or `@importFrom` for package dependencies
+4.  Run `devtools::document()` to update NAMESPACE
+5.  Use `usethis::use_package("package")` to add to DESCRIPTION
+6.  Run `devtools::check()` to verify consistency
 
 For more detail about the R package development process, see the [manual](https://r-pkgs.org/).
 
@@ -225,7 +219,7 @@ To create a package-level documentation file in R, you create a special .R file 
 
 This file generates the help page users see when they run `?my_package` and is the right place to include global `@importFrom` directives like for `%>%`.
 
-First create `R/my_package-package.R` and add the following roxygen block, for example: 
+First create `R/my_package-package.R` and add the following roxygen block, for example:
 
 ```{r}
 #| eval: false
@@ -244,15 +238,14 @@ NULL
 
 Replace the title and description with your own.
 
-- `@docType package` tells roxygen this is the main package doc
-- `@name pvsero` links the doc to the package name
-- `@importFrom` ... adds functions to NAMESPACE
-- `NULL` at the end is required — the doc has no function attached
+-   `@docType package` tells roxygen this is the main package doc
+-   `@name pvsero` links the doc to the package name
+-   `@importFrom` ... adds functions to NAMESPACE
+-   `NULL` at the end is required — the doc has no function attached
 
-Then rebuild the documentation: `devtools::document()`
-to update the NAMESPACE and creates `"man/my_package.Rd"`, which is the file for `?my_package`
+Then rebuild the documentation: `devtools::document()` to update the NAMESPACE and creates `"man/my_package.Rd"`, which is the file for `?my_package`
 
-If specific packages and/or functions are not added. 
+If specific packages and/or functions are not added.
 
 You can handle variable column names that are defined in R in a file called `R/globals.R`
 
@@ -279,7 +272,7 @@ Then re-check and iterate
 # devtools::check()
 ```
 
-If you want to upload global R packages that apply to multiple functions: 
+If you want to upload global R packages that apply to multiple functions:
 
 ```{r}
 #| eval: false
@@ -293,15 +286,11 @@ If you want to upload global R packages that apply to multiple functions:
 NULL
 ```
 
-This:
-- Documents the package as a whole (`@docType package`)
-- Imports `%>%` once globally
-- Keeps your `NAMESPACE` tidy
-Then run: `devtools::document()`
+This: - Documents the package as a whole (`@docType package`) - Imports `%>%` once globally - Keeps your `NAMESPACE` tidy Then run: `devtools::document()`
 
 ## Adding files to the package
 
-Create `inst/extdata` folder path and add all of the files to add. 
+Create `inst/extdata` folder path and add all of the files to add.
 
 Then you can run the files here:
 
@@ -312,7 +301,7 @@ Then you can run the files here:
 
 This also works for `.rda`, `.csv`, `.xlsx` or other files.
 
-You can also add a template.Rmd file to create PDFs or HTML outputs from rmarkdown files: 
+You can also add a template.Rmd file to create PDFs or HTML outputs from rmarkdown files:
 
 ```{r}
 # template <- system.file("rmd", "template.Rmd", package = "pvsero")
@@ -343,18 +332,18 @@ You can also add a template.Rmd file to create PDFs or HTML outputs from rmarkdo
   #   )
 ```
 
+### Add documentation to a dataset
 
-### Add documentation to a dataset 
 To create .Rd documentation files for datasets included in your R package, you document them with roxygen2-style comments above the dataset definition or in a dedicated .R file. These get converted into .Rd files when you run devtools::document().
 
 ### 1. Decide where to store the dataset
 
 You have two options:
 
-| Type           | Location     | Format        | Access      |
-|----------------|--------------|---------------|-------------|
-| Lazy-loaded   | data/         | .rda          | data_name   |
-| File-based    | inst/extdata/ | .csv/.txt     | system.file() | 
+| Type        | Location      | Format    | Access        |
+|-------------|---------------|-----------|---------------|
+| Lazy-loaded | data/         | .rda      | data_name     |
+| File-based  | inst/extdata/ | .csv/.txt | system.file() |
 
 Let’s assume you're using the `data/` folder and loading the data with `data()` or `library(my_package)`.
 
@@ -369,6 +358,7 @@ In your package root:
 This creates `data/my_data.rda`.
 
 ### 3. Create documentation in R/ folder
+
 Create a new R script, e.g. R/data-documentation.R, and add:
 
 ```{r}
@@ -407,9 +397,8 @@ This creates man/my_data.Rd, which users can now view via:
 # ?my_data
 ```
 
-:::{.callout-tip}
-Tip: Document each dataset in a separate roxygen block. 
-Also, if you're using CSV files in inst/extdata/, you don't need .Rd docs unless you're loading them as data objects inside the package.
+::: callout-tip
+Tip: Document each dataset in a separate roxygen block. Also, if you're using CSV files in inst/extdata/, you don't need .Rd docs unless you're loading them as data objects inside the package.
 :::
 
 ### Example for multiple datasets:
@@ -435,12 +424,12 @@ Also, if you're using CSV files in inst/extdata/, you don't need .Rd docs unless
 
 ## Creating a Vignette
 
-Run the following command once, to: 
+Run the following command once, to:
 
-- Creates a `vignettes/` directory (if it doesn’t exist)
-- Creates an `.Rmd` file at e.g., `vignettes/getting-started.Rmd`
-- Adds knitr and rmarkdown to `Suggests`: in `DESCRIPTION`
-- Configures `DESCRIPTION` to build vignettes
+-   Creates a `vignettes/` directory (if it doesn’t exist)
+-   Creates an `.Rmd` file at e.g., `vignettes/getting-started.Rmd`
+-   Adds knitr and rmarkdown to `Suggests`: in `DESCRIPTION`
+-   Configures `DESCRIPTION` to build vignettes
 
 ```{r}
 # usethis::use_vignette("getting-started")
@@ -450,7 +439,7 @@ This will be added to the DESCRIPTION: `VignetteBuilder: knitr`
 
 ### Add content to the vignette
 
-Simply open the .Rmd file and edit as per a normal R Markdown. 
+Simply open the .Rmd file and edit as per a normal R Markdown.
 
 ```{r}
 # ---
@@ -472,7 +461,7 @@ Simply open the .Rmd file and edit as per a normal R Markdown.
 
 ### Upload the vignette
 
-Once you are ready for the vignette to be updated to the manual, run the following command: 
+Once you are ready for the vignette to be updated to the manual, run the following command:
 
 ```{r}
 # devtools::build_vignettes()
@@ -481,17 +470,17 @@ Once you are ready for the vignette to be updated to the manual, run the followi
 
 This will:
 
-- Knit the .Rmd file into .html and .R files
-- Place them into inst/doc/ so they’re included when your package is installed
+-   Knit the .Rmd file into .html and .R files
+-   Place them into inst/doc/ so they’re included when your package is installed
 
-Now you can view the vignette by: 
+Now you can view the vignette by:
 
 ```{r}
 # browseVignettes("my_package") # OR 
 # vignette("my_package") 
 ```
 
-:::{.callout-tip}
+::: callout-tip
 Use `devtools::check()` to confirm your vignette builds cleanly.
 
 Keep vignettes short, succinct and low data space.
@@ -499,7 +488,7 @@ Keep vignettes short, succinct and low data space.
 
 ## Exporting the Package
 
-### Option 1: Local Only: Build a .tar.gz file distributable package file 
+### Option 1: Local Only: Build a .tar.gz file distributable package file
 
 ```{r}
 # Step 1: 
@@ -511,21 +500,21 @@ Keep vignettes short, succinct and low data space.
 
 The `my_package_0.1.0.tar.gz` file file be shared to others and they can load the package by: `devtools::install("/path/to/my_package")`
 
-### Option 2: Local or Global: Export to GitHub 
+### Option 2: Local or Global: Export to GitHub
 
 To make this work:
 
-1. Push your package directory to a GitHub repo
-2. Ensure the structure is valid (`DESCRIPTION`, `NAMESPACE`, `R/`, etc.)
+1.  Push your package directory to a GitHub repo
+2.  Ensure the structure is valid (`DESCRIPTION`, `NAMESPACE`, `R/`, etc.)
 
-This can be done in the R console, as shown below, or in the [terminal](01_Code_Log_Intro.html#git-changes). 
+This can be done in the R console, as shown below, or in the [terminal](01_Code_Log_Intro.html#git-changes).
 
 ```{r}
 # usethis::use_git()       # if your package isn't using Git yet
 # usethis::use_github()    # this pushes it to GitHub
 ```
 
-After uploading: 
+After uploading:
 
 ```{r}
 # devtools::install_github("yourusername/my_package") # OR 
@@ -534,7 +523,7 @@ After uploading:
 
 #### Creating Personal Access Token
 
-if you haven't created a personal access token for GitHub to interact with your R studio: 
+if you haven't created a personal access token for GitHub to interact with your R studio:
 
 ```{r}
 # usethis::create_github_token()
@@ -542,14 +531,14 @@ if you haven't created a personal access token for GitHub to interact with your 
 
 This will:
 
-- Open GitHub in your browser to the personal access token creation page
-- Suggest the correct scopes (you can usually just accept the defaults: repo, user, etc.)
+-   Open GitHub in your browser to the personal access token creation page
+-   Suggest the correct scopes (you can usually just accept the defaults: repo, user, etc.)
 
-:::{.callout-important}
+::: callout-important
 Copy the token when it’s generated — this is your only chance to see it!
 :::
 
-Then, in R: 
+Then, in R:
 
 ```{r}
 # gitcreds::gitcreds_set()
@@ -557,21 +546,21 @@ Then, in R:
 
 And paste the token when it is prompted. This securely stores your token so Git can authenticate with GitHub from R (using HTTPS).
 
-Then verify you're signed in: 
+Then verify you're signed in:
 
 ```{r}
 # gh::gh_whoami()
 ```
 
-Set your git name and email: 
+Set your git name and email:
 
 ```{r}
 # usethis::use_git_config(user.name = "Your Name", user.email = "your@email.com")
 ```
 
-### Folder Organisation 
+### Folder Organisation
 
-The overall package folder looks like this: 
+The overall package folder looks like this:
 
 ```{r}
 # my_package/
@@ -592,12 +581,12 @@ The overall package folder looks like this:
 
 ## Updating the Package
 
-### 1. Make the Update 
+### 1. Make the Update
 
-- Add new functions, modify existing ones or remove functions sin the R/ folder.
-- Add new data to data/ or inst/extdata/ and document it.
-- Update vignettes or README files if needed.
-- Add or update roxygen2 documentation in .R files.
+-   Add new functions, modify existing ones or remove functions sin the R/ folder.
+-   Add new data to data/ or inst/extdata/ and document it.
+-   Update vignettes or README files if needed.
+-   Add or update roxygen2 documentation in .R files.
 
 ### 2. Update Package Documentation
 
@@ -607,17 +596,17 @@ After editing any .R file or adding roxygen tags:
 # devtools::document()
 ```
 
-Updates your NAMESPACE (for `@export`, `@importFrom`, etc.). Regenerates .Rd files in `man/`. 
+Updates your NAMESPACE (for `@export`, `@importFrom`, etc.). Regenerates .Rd files in `man/`.
 
-### 3. Update Version Number (Optional) 
+### 3. Update Version Number (Optional)
 
 In your DESCRIPTION file, the version might be written as `Version: 0.1.0`. If you're making a user-visible change, bump the version. Use semantic versioning:
 
 | Type           | Example Version Bump |
 |----------------|----------------------|
-| Bug fix        | 0.1.0 → 0.1.1         |
-| New feature    | 0.1.1 → 0.2.0         |
-| Major redesign | 0.2.1 → 1.0.0         |
+| Bug fix        | 0.1.0 → 0.1.1        |
+| New feature    | 0.1.1 → 0.2.0        |
+| Major redesign | 0.2.1 → 1.0.0        |
 
 Or use:
 
@@ -636,6 +625,7 @@ Run a full check:
 Look for errors, warnings, or notes — especially related to new functions, dependencies, or documentation.
 
 ### 5. Reinstall Locally
+
 If you want to use the updated version in your own R session:
 
 ```{r}
@@ -650,7 +640,8 @@ Or with cleaning to remove old build artifacts:
 
 ### 6. Commit and Push
 
-### 7. Rebuild Vignettes (Optional) 
+### 7. Rebuild Vignettes (Optional)
+
 If your changes affect a vignette:
 
 ```{r}
@@ -658,6 +649,7 @@ If your changes affect a vignette:
 ```
 
 ### Bonus: Keep a NEWS file
+
 To track your changes over time, add a NEWS.md file:
 
 ```{r}
@@ -679,14 +671,13 @@ Then update it with each change, e.g.:
 
 ## Troubleshooting FAQs
 
-### Warning: Package or Functions not defined 
+### Warning: Package or Functions not defined
 
-To account for many "notes" from the `devtools::check()`, you can: 
+To account for many "notes" from the `devtools::check()`, you can:
 
-Add `@importFrom {package} {function} {function} {function}` to those that have not been added. 
-Add `@import {package}` to those that have not been added. 
+Add `@importFrom {package} {function} {function} {function}` to those that have not been added. Add `@import {package}` to those that have not been added.
 
-### Warning: Meta/ file corrupted or errors 
+### Warning: Meta/ file corrupted or errors
 
 ```{r}
 # Common error: Warning message:
@@ -694,14 +685,14 @@ Add `@import {package}` to those that have not been added.
 #   package ‘my_package’ has no 'package.rds' in Meta/
 ```
 
-1. Restart R 
-2. Clean the build cache: `devtools::clean_dll()`
-3. Remove previously installed/broken version: `remove.packages("my_package")`
-4. Check where it's installed: `find.package("my_package")`: if it is still installed then delete it manually from the folder
-5. Reinstall the package cleanly: `devtools::install(clean = TRUE)`: 
+1.  Restart R
+2.  Clean the build cache: `devtools::clean_dll()`
+3.  Remove previously installed/broken version: `remove.packages("my_package")`
+4.  Check where it's installed: `find.package("my_package")`: if it is still installed then delete it manually from the folder
+5.  Reinstall the package cleanly: `devtools::install(clean = TRUE)`:
 
-  - This will clean previous build artifacts
-  - Rebuild the package from source
-  - Regenerate the Meta/ and pacakge.rd correctly
-  
-6. Run `devtools::load_all()` and the warning should disappear
+-   This will clean previous build artifacts
+-   Rebuild the package from source
+-   Regenerate the Meta/ and pacakge.rd correctly
+
+6.  Run `devtools::load_all()` and the warning should disappear

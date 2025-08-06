@@ -6,7 +6,7 @@ website:
   favicon: "Images/dionne_cartoon.png"
   navbar:
     left:
-      - href: 01_Introduction.qmd
+      - href: index.qmd
         text: Home
     tools:
       - icon: twitter
@@ -32,7 +32,7 @@ website:
     search: true
     logo: "Images/dionne_cartoon.png"
     contents:
-      - 01_Introduction.qmd
+      - index.qmd
       # - section: "Research"
       #   contents: 
       #     - "Pages_CV/03_ResearchInterests.qmd"

@@ -1,59 +1,165 @@
 [
   {
-    "objectID": "01_Introduction.html",
-    "href": "01_Introduction.html",
-    "title": "Introduction",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
     "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
+    "text": "Back to top"
   },
   {
-    "objectID": "01_Introduction.html#hello",
-    "href": "01_Introduction.html#hello",
-    "title": "Introduction",
+    "objectID": "Pages_Code/01_Code_Log_Intro.html",
+    "href": "Pages_Code/01_Code_Log_Intro.html",
+    "title": "Welcome",
     "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "01_Introduction.html#about-me",
-    "href": "01_Introduction.html#about-me",
-    "title": "Introduction",
-    "section": "About Me",
-    "text": "About Me\nI have always had a keen interest in science. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in biology - specifically evolution and genetics - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed here.\nI have recently submitted my PhD thesis and am now in the final phase of my doctoral research on the molecular epidemiology and population genetics of Plasmodium falciparum malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of Plasmodium falciparum malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations.\nThroughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that’s developing a bookdown workshop, keeping up to date with functions in the tidyverse, creating new maps using packages such as MalariaAtlas and ggmap, or learning all the amazing ways quarto can be used to elevate documents, websites etc.",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/03_R_Hexagon.html",
-    "href": "Pages_Code/03_R_Hexagon.html",
-    "title": "Create R Hexagon",
-    "section": "",
-    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\n# install.packages(\"hexSticker\")\nlibrary(hexSticker)\n\n# imgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n# \n# sticker(\n#   ##########################################################################\n#   # Subplot Adjustments (Image or Plot) \n#   ##########################################################################\n#   imgurl,                              # Subplot (Image or Plot)\n#   s_x=1,                               # x position for subplot\n#   s_y=.75,                             # y position for subplot \n#   s_width=.6,                          # width for subplot\n#   # s_height=,                         # height for subplot\n#   ##########################################################################\n#   # Package Name Adjustments \n#   ##########################################################################\n#   package=\"hexSticker\",                # R Package or Shiny name\n#   # p_x = ,                            # x position for package name\n#   # p_y = ,                            # y position for package name\n#   p_size=20,                           # font size for package name\n#   p_family = \"gochi\",                  # font family for package name\n#   # p_color = ,                        # color for package name\n#   # p_fontface = ,                     # fontface for package name\n#   ##########################################################################\n#   # Hexagon Border Adjustments \n#   ##########################################################################\n#   # h_size = ,                         # size for hexagon border\n#   # h_fill = ,                         # color to fill hexagon\n#   # h_color = ,                        # color for hexagon border\n#   ##########################################################################\n#   # Spotlight Adjustments \n#   ##########################################################################\n#   # spotlight = ,                      # whether add spotlight\n#   # l_x = ,                            # x position for spotlight\n#   # l_y = ,                            # y position for spotlight\n#   # l_width = ,                        # width for spotlight\n#   # l_height = ,                       # height for spotlight\n#   # l_alpha = ,                        # maximum alpha for spotlight\n#   ##########################################################################\n#   # URL Adjustments \n#   ##########################################################################\n#   # url = ,                            # url at lower border\n#   # u_x = ,                            # x position for url\n#   # u_y = ,                            # y position for url\n#   # u_color = ,                        # color for url\n#   # u_family = ,                       # font family for url\n#   # u_size = ,                         # text size for url\n#   # u_angle = ,                        # angle for url\n#   ##########################################################################\n#   # Save \n#   ##########################################################################\n#   # white_around_sticker = ,           # default to FALSE. If set to TRUE, it puts white triangles in the corners\n#   # asp = ,                            # aspect ratio, only works if subplot is an image file\n#   # dpi = ,                            # dpi plot resolution\n#   filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n# )",
+    "text": "This collection was inspired by Chrissy Roberts’ Code Book, which I was introduced to by Caitlin Bourke. It brings together the most useful pieces of code I’ve accumulated over the years—scripts I often return to or have developed for specific analyses. My hope is that future me (and anyone else who happens to come across this) finds it a helpful and practical resource.\nHere are a list of my favourite R packages that will be leveraged throughout this section.",
     "crumbs": [
       "Home",
       "Code: The Basics",
-      "Create R Hexagon"
+      "Welcome"
     ]
   },
   {
-    "objectID": "Pages_Code/03_R_Hexagon.html#create-an-r-hexagon",
-    "href": "Pages_Code/03_R_Hexagon.html#create-an-r-hexagon",
-    "title": "Create R Hexagon",
-    "section": "",
-    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\n# install.packages(\"hexSticker\")\nlibrary(hexSticker)\n\n# imgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n# \n# sticker(\n#   ##########################################################################\n#   # Subplot Adjustments (Image or Plot) \n#   ##########################################################################\n#   imgurl,                              # Subplot (Image or Plot)\n#   s_x=1,                               # x position for subplot\n#   s_y=.75,                             # y position for subplot \n#   s_width=.6,                          # width for subplot\n#   # s_height=,                         # height for subplot\n#   ##########################################################################\n#   # Package Name Adjustments \n#   ##########################################################################\n#   package=\"hexSticker\",                # R Package or Shiny name\n#   # p_x = ,                            # x position for package name\n#   # p_y = ,                            # y position for package name\n#   p_size=20,                           # font size for package name\n#   p_family = \"gochi\",                  # font family for package name\n#   # p_color = ,                        # color for package name\n#   # p_fontface = ,                     # fontface for package name\n#   ##########################################################################\n#   # Hexagon Border Adjustments \n#   ##########################################################################\n#   # h_size = ,                         # size for hexagon border\n#   # h_fill = ,                         # color to fill hexagon\n#   # h_color = ,                        # color for hexagon border\n#   ##########################################################################\n#   # Spotlight Adjustments \n#   ##########################################################################\n#   # spotlight = ,                      # whether add spotlight\n#   # l_x = ,                            # x position for spotlight\n#   # l_y = ,                            # y position for spotlight\n#   # l_width = ,                        # width for spotlight\n#   # l_height = ,                       # height for spotlight\n#   # l_alpha = ,                        # maximum alpha for spotlight\n#   ##########################################################################\n#   # URL Adjustments \n#   ##########################################################################\n#   # url = ,                            # url at lower border\n#   # u_x = ,                            # x position for url\n#   # u_y = ,                            # y position for url\n#   # u_color = ,                        # color for url\n#   # u_family = ,                       # font family for url\n#   # u_size = ,                         # text size for url\n#   # u_angle = ,                        # angle for url\n#   ##########################################################################\n#   # Save \n#   ##########################################################################\n#   # white_around_sticker = ,           # default to FALSE. If set to TRUE, it puts white triangles in the corners\n#   # asp = ,                            # aspect ratio, only works if subplot is an image file\n#   # dpi = ,                            # dpi plot resolution\n#   filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n# )",
+    "objectID": "Pages_Code/01_Code_Log_Intro.html#data-wrangling",
+    "href": "Pages_Code/01_Code_Log_Intro.html#data-wrangling",
+    "title": "Welcome",
+    "section": "Data Wrangling",
+    "text": "Data Wrangling\n\nlibrary(tidyverse)",
     "crumbs": [
       "Home",
       "Code: The Basics",
-      "Create R Hexagon"
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
+    "href": "Pages_Code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
+    "title": "Welcome",
+    "section": "Epidemiology / Statistical Analysis",
+    "text": "Epidemiology / Statistical Analysis\n\nlibrary(tidyverse)\nlibrary(gtsummary)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/01_Code_Log_Intro.html#population-genetics-analysis",
+    "href": "Pages_Code/01_Code_Log_Intro.html#population-genetics-analysis",
+    "title": "Welcome",
+    "section": "Population Genetics Analysis",
+    "text": "Population Genetics Analysis\n\nlibrary(poppr)\nlibrary(adegenet)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/01_Code_Log_Intro.html#r-shiny",
+    "href": "Pages_Code/01_Code_Log_Intro.html#r-shiny",
+    "title": "Welcome",
+    "section": "R Shiny",
+    "text": "R Shiny\n\nlibrary(shiny)\nlibrary(shiny.fluent)\nlibrary(waiter)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/01_Code_Log_Intro.html#r-package-development",
+    "href": "Pages_Code/01_Code_Log_Intro.html#r-package-development",
+    "title": "Welcome",
+    "section": "R Package Development",
+    "text": "R Package Development\n\nlibrary(devtools)\nlibrary(usethis)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/01_Code_Log_Intro.html#general-git-things",
+    "href": "Pages_Code/01_Code_Log_Intro.html#general-git-things",
+    "title": "Welcome",
+    "section": "General Git things",
+    "text": "General Git things\n\nMaking changes\n\n# git add .\n# git commit -m \"Add a personalised and detailed message\"\n# git push\n\n\n\nClone a repository from GitHub\n\n\nPush a repository to GitHub\n\n\nHow to remove a repository on Github\n\nGo to the repository’s main page on GitHub (e.g., https://github.com/yourusername/pvsero)\nClick Settings (right-hand tab)\nScroll all the way to the Danger Zone at the bottom\nClick Delete this repository\nGitHub will ask you to:\n\nConfirm the name of the repo (e.g., yourusername/pvsero)\nType it in to confirm\n\nClick the red I understand the consequences, delete this repository button\n\nThe repository will be permanently deleted — this action cannot be undone.\nThis does not delete your local R project or files — only the copy on GitHub. If you want to disconnect GitHub but keep the local Git repo, you can just remove the remote link using: git remote remove origin",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/04_Quarto.html",
+    "href": "Pages_Code/04_Quarto.html",
+    "title": "04_Quarto",
+    "section": "",
+    "text": "# ![](images/02_r_package.png){width=\"500\"}",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "04_Quarto"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/04_Quarto.html#add-images",
+    "href": "Pages_Code/04_Quarto.html#add-images",
+    "title": "04_Quarto",
+    "section": "",
+    "text": "# ![](images/02_r_package.png){width=\"500\"}",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "04_Quarto"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/04_Quarto.html#callout-note",
+    "href": "Pages_Code/04_Quarto.html#callout-note",
+    "title": "04_Quarto",
+    "section": "Callout Note",
+    "text": "Callout Note",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "04_Quarto"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/04_Quarto.html#column-margin",
+    "href": "Pages_Code/04_Quarto.html#column-margin",
+    "title": "04_Quarto",
+    "section": "Column Margin",
+    "text": "Column Margin",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "04_Quarto"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/04_Quarto.html#two-columns",
+    "href": "Pages_Code/04_Quarto.html#two-columns",
+    "title": "04_Quarto",
+    "section": "Two Columns",
+    "text": "Two Columns\n\n# ::: {.grid}\n# \n# ::: {.g-col-6}\n# \n# **Column 1**\n# \n# :::\n#   \n# ::: {.g-col-6}\n# \n# **Column 2**\n# \n# :::\n#   \n# :::",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "04_Quarto"
+    ]
+  },
+  {
+    "objectID": "Pages_Code/04_Quarto.html#render-quarto-pakcges-from-random-document",
+    "href": "Pages_Code/04_Quarto.html#render-quarto-pakcges-from-random-document",
+    "title": "04_Quarto",
+    "section": "Render Quarto Pakcges from random document",
+    "text": "Render Quarto Pakcges from random document\nquarto publish tutorials/tutorials-main.qmd will sort it out",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "04_Quarto"
     ]
   },
   {
@@ -141,166 +247,60 @@
     ]
   },
   {
-    "objectID": "02_About.html",
-    "href": "02_About.html",
-    "title": "About Me",
+    "objectID": "Pages_Code/03_R_Hexagon.html",
+    "href": "Pages_Code/03_R_Hexagon.html",
+    "title": "Create R Hexagon",
     "section": "",
-    "text": "Back to top"
+    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\n# install.packages(\"hexSticker\")\nlibrary(hexSticker)\n\n# imgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n# \n# sticker(\n#   ##########################################################################\n#   # Subplot Adjustments (Image or Plot) \n#   ##########################################################################\n#   imgurl,                              # Subplot (Image or Plot)\n#   s_x=1,                               # x position for subplot\n#   s_y=.75,                             # y position for subplot \n#   s_width=.6,                          # width for subplot\n#   # s_height=,                         # height for subplot\n#   ##########################################################################\n#   # Package Name Adjustments \n#   ##########################################################################\n#   package=\"hexSticker\",                # R Package or Shiny name\n#   # p_x = ,                            # x position for package name\n#   # p_y = ,                            # y position for package name\n#   p_size=20,                           # font size for package name\n#   p_family = \"gochi\",                  # font family for package name\n#   # p_color = ,                        # color for package name\n#   # p_fontface = ,                     # fontface for package name\n#   ##########################################################################\n#   # Hexagon Border Adjustments \n#   ##########################################################################\n#   # h_size = ,                         # size for hexagon border\n#   # h_fill = ,                         # color to fill hexagon\n#   # h_color = ,                        # color for hexagon border\n#   ##########################################################################\n#   # Spotlight Adjustments \n#   ##########################################################################\n#   # spotlight = ,                      # whether add spotlight\n#   # l_x = ,                            # x position for spotlight\n#   # l_y = ,                            # y position for spotlight\n#   # l_width = ,                        # width for spotlight\n#   # l_height = ,                       # height for spotlight\n#   # l_alpha = ,                        # maximum alpha for spotlight\n#   ##########################################################################\n#   # URL Adjustments \n#   ##########################################################################\n#   # url = ,                            # url at lower border\n#   # u_x = ,                            # x position for url\n#   # u_y = ,                            # y position for url\n#   # u_color = ,                        # color for url\n#   # u_family = ,                       # font family for url\n#   # u_size = ,                         # text size for url\n#   # u_angle = ,                        # angle for url\n#   ##########################################################################\n#   # Save \n#   ##########################################################################\n#   # white_around_sticker = ,           # default to FALSE. If set to TRUE, it puts white triangles in the corners\n#   # asp = ,                            # aspect ratio, only works if subplot is an image file\n#   # dpi = ,                            # dpi plot resolution\n#   filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n# )",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Create R Hexagon"
+    ]
   },
   {
-    "objectID": "Pages_Code/04_Quarto.html",
-    "href": "Pages_Code/04_Quarto.html",
-    "title": "04_Quarto",
+    "objectID": "Pages_Code/03_R_Hexagon.html#create-an-r-hexagon",
+    "href": "Pages_Code/03_R_Hexagon.html#create-an-r-hexagon",
+    "title": "Create R Hexagon",
     "section": "",
-    "text": "# ![](images/02_r_package.png){width=\"500\"}",
+    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\n# install.packages(\"hexSticker\")\nlibrary(hexSticker)\n\n# imgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n# \n# sticker(\n#   ##########################################################################\n#   # Subplot Adjustments (Image or Plot) \n#   ##########################################################################\n#   imgurl,                              # Subplot (Image or Plot)\n#   s_x=1,                               # x position for subplot\n#   s_y=.75,                             # y position for subplot \n#   s_width=.6,                          # width for subplot\n#   # s_height=,                         # height for subplot\n#   ##########################################################################\n#   # Package Name Adjustments \n#   ##########################################################################\n#   package=\"hexSticker\",                # R Package or Shiny name\n#   # p_x = ,                            # x position for package name\n#   # p_y = ,                            # y position for package name\n#   p_size=20,                           # font size for package name\n#   p_family = \"gochi\",                  # font family for package name\n#   # p_color = ,                        # color for package name\n#   # p_fontface = ,                     # fontface for package name\n#   ##########################################################################\n#   # Hexagon Border Adjustments \n#   ##########################################################################\n#   # h_size = ,                         # size for hexagon border\n#   # h_fill = ,                         # color to fill hexagon\n#   # h_color = ,                        # color for hexagon border\n#   ##########################################################################\n#   # Spotlight Adjustments \n#   ##########################################################################\n#   # spotlight = ,                      # whether add spotlight\n#   # l_x = ,                            # x position for spotlight\n#   # l_y = ,                            # y position for spotlight\n#   # l_width = ,                        # width for spotlight\n#   # l_height = ,                       # height for spotlight\n#   # l_alpha = ,                        # maximum alpha for spotlight\n#   ##########################################################################\n#   # URL Adjustments \n#   ##########################################################################\n#   # url = ,                            # url at lower border\n#   # u_x = ,                            # x position for url\n#   # u_y = ,                            # y position for url\n#   # u_color = ,                        # color for url\n#   # u_family = ,                       # font family for url\n#   # u_size = ,                         # text size for url\n#   # u_angle = ,                        # angle for url\n#   ##########################################################################\n#   # Save \n#   ##########################################################################\n#   # white_around_sticker = ,           # default to FALSE. If set to TRUE, it puts white triangles in the corners\n#   # asp = ,                            # aspect ratio, only works if subplot is an image file\n#   # dpi = ,                            # dpi plot resolution\n#   filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n# )",
     "crumbs": [
       "Home",
       "Code: The Basics",
-      "04_Quarto"
+      "Create R Hexagon"
     ]
   },
   {
-    "objectID": "Pages_Code/04_Quarto.html#add-images",
-    "href": "Pages_Code/04_Quarto.html#add-images",
-    "title": "04_Quarto",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
     "section": "",
-    "text": "# ![](images/02_r_package.png){width=\"500\"}",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
     "crumbs": [
       "Home",
-      "Code: The Basics",
-      "04_Quarto"
+      "Introduction"
     ]
   },
   {
-    "objectID": "Pages_Code/04_Quarto.html#callout-note",
-    "href": "Pages_Code/04_Quarto.html#callout-note",
-    "title": "04_Quarto",
-    "section": "Callout Note",
-    "text": "Callout Note",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#column-margin",
-    "href": "Pages_Code/04_Quarto.html#column-margin",
-    "title": "04_Quarto",
-    "section": "Column Margin",
-    "text": "Column Margin",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#two-columns",
-    "href": "Pages_Code/04_Quarto.html#two-columns",
-    "title": "04_Quarto",
-    "section": "Two Columns",
-    "text": "Two Columns\n\n# ::: {.grid}\n# \n# ::: {.g-col-6}\n# \n# **Column 1**\n# \n# :::\n#   \n# ::: {.g-col-6}\n# \n# **Column 2**\n# \n# :::\n#   \n# :::",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#render-quarto-pakcges-from-random-document",
-    "href": "Pages_Code/04_Quarto.html#render-quarto-pakcges-from-random-document",
-    "title": "04_Quarto",
-    "section": "Render Quarto Pakcges from random document",
-    "text": "Render Quarto Pakcges from random document\nquarto publish tutorials/tutorials-main.qmd will sort it out",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html",
-    "href": "Pages_Code/01_Code_Log_Intro.html",
-    "title": "Welcome",
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "Introduction",
     "section": "",
-    "text": "This collection was inspired by Chrissy Roberts’ Code Book, which I was introduced to by Caitlin Bourke. It brings together the most useful pieces of code I’ve accumulated over the years—scripts I often return to or have developed for specific analyses. My hope is that future me (and anyone else who happens to come across this) finds it a helpful and practical resource.\nHere are a list of my favourite R packages that will be leveraged throughout this section.",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
     "crumbs": [
       "Home",
-      "Code: The Basics",
-      "Welcome"
+      "Introduction"
     ]
   },
   {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#data-wrangling",
-    "href": "Pages_Code/01_Code_Log_Intro.html#data-wrangling",
-    "title": "Welcome",
-    "section": "Data Wrangling",
-    "text": "Data Wrangling\n\nlibrary(tidyverse)",
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Introduction",
+    "section": "About Me",
+    "text": "About Me\nI have always had a keen interest in science. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in biology - specifically evolution and genetics - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed here.\nMy PhD thesis focussed on the molecular epidemiology and population genetics of Plasmodium falciparum malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of Plasmodium falciparum malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations.\nI am currently a post-doctoral Research Officer at the Walter and Eliza Hall Institute for Medical Research (WEHI) where I am investigating how we can use serological markers to classify Plasmodium vivax exposure, as well as how we can track antimicrobial resistance in wastewater systems in Australia. I am upskilling in statistical modelling and machine learning approaches to broaden my skill tool-kit.\nThroughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that’s developing a bookdown workshop, keeping up to date with functions in the tidyverse, creating new maps using packages such as MalariaAtlas and ggmap, or learning all the amazing ways quarto can be used to elevate documents, websites etc.",
     "crumbs": [
       "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
-    "href": "Pages_Code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
-    "title": "Welcome",
-    "section": "Epidemiology / Statistical Analysis",
-    "text": "Epidemiology / Statistical Analysis\n\nlibrary(tidyverse)\nlibrary(gtsummary)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#population-genetics-analysis",
-    "href": "Pages_Code/01_Code_Log_Intro.html#population-genetics-analysis",
-    "title": "Welcome",
-    "section": "Population Genetics Analysis",
-    "text": "Population Genetics Analysis\n\nlibrary(poppr)\nlibrary(adegenet)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#r-shiny",
-    "href": "Pages_Code/01_Code_Log_Intro.html#r-shiny",
-    "title": "Welcome",
-    "section": "R Shiny",
-    "text": "R Shiny\n\nlibrary(shiny)\nlibrary(shiny.fluent)\nlibrary(waiter)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#r-package-development",
-    "href": "Pages_Code/01_Code_Log_Intro.html#r-package-development",
-    "title": "Welcome",
-    "section": "R Package Development",
-    "text": "R Package Development\n\nlibrary(devtools)\nlibrary(usethis)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#general-git-things",
-    "href": "Pages_Code/01_Code_Log_Intro.html#general-git-things",
-    "title": "Welcome",
-    "section": "General Git things",
-    "text": "General Git things\n\nMaking changes\n\n# git add .\n# git commit -m \"Add a personalised and detailed message\"\n# git push\n\n\n\nClone a repository from GitHub\n\n\nPush a repository to GitHub\n\n\nHow to remove a repository on Github\n\nGo to the repository’s main page on GitHub (e.g., https://github.com/yourusername/pvsero)\nClick Settings (right-hand tab)\nScroll all the way to the Danger Zone at the bottom\nClick Delete this repository\nGitHub will ask you to:\n\nConfirm the name of the repo (e.g., yourusername/pvsero)\nType it in to confirm\n\nClick the red I understand the consequences, delete this repository button\n\nThe repository will be permanently deleted — this action cannot be undone.\nThis does not delete your local R project or files — only the copy on GitHub. If you want to disconnect GitHub but keep the local Git repo, you can just remove the remote link using: git remote remove origin",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
+      "Introduction"
     ]
   }
 ]

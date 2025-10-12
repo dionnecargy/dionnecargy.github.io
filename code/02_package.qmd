@@ -1,7 +1,11 @@
 ---
 title: "R Package Development"
 author: "Dionne Argyropoulos"
-date: 2025-07-29
+execute:
+  eval: false
+  echo: true 
+  warning: false
+  message: false
 ---
 
 ```{r}
@@ -83,7 +87,7 @@ There are many other possibilities to add! See more in the [documentation](https
 Once you have built one or multiple .R files, they need to be added to the manual! Here, you run the following line in your console!
 
 ```{r}
-# devtools::document()                          # updates NAMESPACE
+devtools::document()                          # updates NAMESPACE
 ```
 
 It is useful to run this command every time you write or update an .R file. This will create and update .Rd files for the manual. It will also update the [NAMESPACE](https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-NAMESPACE-file) file.
@@ -160,25 +164,25 @@ plotCounts <- function(counts_output, experiment_name){
 
 Lastly, we need to update the default empty [DESCRIPTION](https://r-pkgs.org/description.html) file which looks like below:
 
-```{r}
-# Package: mypackage
-# Title: What the Package Does (One Line, Title Case)
-# Version: 0.0.0.9000
-# Authors@R: 
-#     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-# Description: What the package does (one paragraph).
-# License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-#     license
-# Encoding: UTF-8
-# Roxygen: list(markdown = TRUE)
-# RoxygenNote: 7.3.2
+```{text}
+Package: mypackage
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R:
+   person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
 ```
 
 Which you can update as intended for your purposes. In order to add any [package dependencies](#dependencies) as discussed above, then to add packages to the dependencies, you must use:
 
 ```{r}
-# usethis::use_package("dplyr")                # adds to Imports in DESCRIPTIPN
-# usethis::use_package("ggplot2", "Suggests")  # adds to Suggests in DESCRIPTION
+usethis::use_package("dplyr")                # adds to Imports in DESCRIPTIPN 
+usethis::use_package("ggplot2", "Suggests")  # adds to Suggests in DESCRIPTION
 ```
 
 ### Check that the package works
@@ -186,7 +190,7 @@ Which you can update as intended for your purposes. In order to add any [package
 THEN you can check that all your functions and packages are loaded properly to build your package:
 
 ```{r}
-# devtools::check()
+devtools::check()
 ```
 
 It will tell you if your package:
@@ -210,7 +214,7 @@ For more detail about the R package development process, see the [manual](https:
 To add the Creative Commons Attribution licence (CC BY) in an R package's DESCRIPTION:
 
 ```{r}
-# usethis::use_ccby_license("Your Name")
+usethis::use_ccby_license("Your Name")
 ```
 
 ### Global Functions
@@ -222,7 +226,6 @@ This file generates the help page users see when they run `?my_package` and is t
 First create `R/my_package-package.R` and add the following roxygen block, for example:
 
 ```{r}
-#| eval: false
 #' pvsero: Tools for serology test-and-treat
 #'
 #' This package provides tools to process, model, and visualise serological data
@@ -250,32 +253,30 @@ If specific packages and/or functions are not added.
 You can handle variable column names that are defined in R in a file called `R/globals.R`
 
 ```{r}
-# e.g.: 
-# utils::globalVariables(c(
-#   ".", "Sample", "SampleID", "RAU", "MFI", "Plate", "Program",
-#   "Agg", "Antigen", "Beads", "Count", "Type", "QC_total", "Repeat",
-#   "Gate", "LL.5", "Well", "Location", "Location.2", "Region", 
-#   "pred_class_max", ".pred_new", "seropositive", "seronegative",
-#   "stdcurve", "Sampling Errors", "Sens_Spec", "Text", "Total", 
-#   "Warning", "status_code", "type.letter", "dilution", "div", "value",
-#   "xPONENT", "mfi", "mfi_pred", "new_fit", "eth_fit", "ref_mfi", 
-#   "error", "suffix", "prefix", "drm", "coef", "file_name", "data", 
-#   "tibble", "data_type", "pull", "fct_rev", "glue", "where",
-#   "fromJSON", "png_fit", "row_number", "everything", "n"
-# ))
+utils::globalVariables(c(
+  ".", "Sample", "SampleID", "RAU", "MFI", "Plate", "Program",
+  "Agg", "Antigen", "Beads", "Count", "Type", "QC_total", "Repeat",
+  "Gate", "LL.5", "Well", "Location", "Location.2", "Region", 
+  "pred_class_max", ".pred_new", "seropositive", "seronegative",
+  "stdcurve", "Sampling Errors", "Sens_Spec", "Text", "Total", 
+  "Warning", "status_code", "type.letter", "dilution", "div", "value",
+  "xPONENT", "mfi", "mfi_pred", "new_fit", "eth_fit", "ref_mfi", 
+  "error", "suffix", "prefix", "drm", "coef", "file_name", "data", 
+  "tibble", "data_type", "pull", "fct_rev", "glue", "where",
+  "fromJSON", "png_fit", "row_number", "everything", "n"
+))
 ```
 
 Then re-check and iterate
 
 ```{r}
-# devtools::document()
-# devtools::check()
+devtools::document()
+devtools::check()
 ```
 
 If you want to upload global R packages that apply to multiple functions:
 
 ```{r}
-#| eval: false
 #' pvsero: Tools for [Your Package Description Here]
 #'
 #' [Optional longer description of what your package does]
@@ -295,8 +296,8 @@ Create `inst/extdata` folder path and add all of the files to add.
 Then you can run the files here:
 
 ```{r}
-# magpix_file <- system.file("extdata", "example_MAGPIX_plate1.csv", package = "pvsero")
-# file <- read.csv(magpix_file)
+magpix_file <- system.file("extdata", "example_MAGPIX_plate1.csv", package = "pvsero")
+file <- read.csv(magpix_file)
 ```
 
 This also works for `.rda`, `.csv`, `.xlsx` or other files.
@@ -304,32 +305,32 @@ This also works for `.rda`, `.csv`, `.xlsx` or other files.
 You can also add a template.Rmd file to create PDFs or HTML outputs from rmarkdown files:
 
 ```{r}
-# template <- system.file("rmd", "template.Rmd", package = "pvsero")
+template <- system.file("rmd", "template.Rmd", package = "pvsero")
 
 ### OR FOR EXAMPLE IN THE `pvsero::renderQCReport()`: 
-  #   rmarkdown::render(
-  #     input = system.file("rmd/template.Rmd", package="pvsero"),
-  #     output_file = paste0(experiment_name, "_", date, "_", location, "_", version, "_QCreport.pdf"),
-  #     output_dir = here::here(),
-  #     params = list(
-  #       raw_data_filename = raw_data_filename,
-  #       experiment_name = experiment_name,
-  #       date = date,
-  #       experiment_notes = experiment_notes,
-  #       platform = platform,
-  #       stdcurve_plot = stdcurve_plot,
-  #       plateqc_plot = plateqc_plot,
-  #       blanks_plot = blanks_plot,
-  #       check_repeats_output = check_repeats_output,
-  #       check_repats_table_pdf = check_repats_table_pdf(check_repeats_output),
-  #       model_plot = model_plot,
-  #       operator_output = operator_output(),
-  #       volume_output = volume_output(),
-  #       calibration_output = calibration_output(),
-  #       machine_output = machine_output(),
-  #       plate_list_output = plate_list_output()
-  #     )
-  #   )
+    rmarkdown::render(
+      input = system.file("rmd/template.Rmd", package="pvsero"),
+      output_file = paste0(experiment_name, "_", date, "_", location, "_", version, "_QCreport.pdf"),
+      output_dir = here::here(),
+      params = list(
+        raw_data_filename = raw_data_filename,
+        experiment_name = experiment_name,
+        date = date,
+        experiment_notes = experiment_notes,
+        platform = platform,
+        stdcurve_plot = stdcurve_plot,
+        plateqc_plot = plateqc_plot,
+        blanks_plot = blanks_plot,
+        check_repeats_output = check_repeats_output,
+        check_repats_table_pdf = check_repats_table_pdf(check_repeats_output),
+        model_plot = model_plot,
+        operator_output = operator_output(),
+        volume_output = volume_output(),
+        calibration_output = calibration_output(),
+        machine_output = machine_output(),
+        plate_list_output = plate_list_output()
+      )
+    )
 ```
 
 ### Add documentation to a dataset
@@ -352,7 +353,7 @@ Let’s assume you're using the `data/` folder and loading the data with `data()
 In your package root:
 
 ```{r}
-# usethis::use_data(my_data, overwrite = TRUE)
+usethis::use_data(my_data, overwrite = TRUE)
 ```
 
 This creates `data/my_data.rda`.
@@ -362,7 +363,6 @@ This creates `data/my_data.rda`.
 Create a new R script, e.g. R/data-documentation.R, and add:
 
 ```{r}
-#| eval: false
 #' Example Serological Dataset
 #'
 #' A dataset containing raw RAU values and metadata from a test plate run.
@@ -388,13 +388,13 @@ The final line "my_data" tells roxygen you're documenting the object named my_da
 ### 4. Run devtools::document()
 
 ```{r}
-# devtools::document()
+devtools::document()
 ```
 
 This creates man/my_data.Rd, which users can now view via:
 
 ```{r}
-# ?my_data
+?my_data
 ```
 
 ::: callout-tip
@@ -404,7 +404,6 @@ Tip: Document each dataset in a separate roxygen block. Also, if you're using CS
 ### Example for multiple datasets:
 
 ```{r}
-#| eval: false
 #' Plate Metadata
 #'
 #' Metadata for the test plate used in example analysis.
@@ -432,7 +431,7 @@ Run the following command once, to:
 -   Configures `DESCRIPTION` to build vignettes
 
 ```{r}
-# usethis::use_vignette("getting-started")
+usethis::use_vignette("getting-started")
 ```
 
 This will be added to the DESCRIPTION: `VignetteBuilder: knitr`
@@ -441,31 +440,32 @@ This will be added to the DESCRIPTION: `VignetteBuilder: knitr`
 
 Simply open the .Rmd file and edit as per a normal R Markdown.
 
-```{r}
-# ---
-# title: "Getting Started with my_package"
-# output: rmarkdown::html_vignette
-# vignette: >
-#   %\VignetteIndexEntry{Getting Started with my_package}
-#   %\VignetteEngine{knitr::rmarkdown}
-#   %\VignetteEncoding{UTF-8}
-# ---
-# 
-# ```{r setup, include = FALSE}
-# knitr::opts_chunk$set(
-#   collapse = TRUE,
-#   comment = "#>"
-# )
-# library(my_package)
+````{.markdown}
+---
+title: 'Getting Started with my_package'
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with my_package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{.r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = '#>'
+)
+library(my_package)
 ```
+````
 
 ### Upload the vignette
 
 Once you are ready for the vignette to be updated to the manual, run the following command:
 
 ```{r}
-# devtools::build_vignettes()
-# devtools::document()
+devtools::build_vignettes()
+devtools::document()
 ```
 
 This will:
@@ -476,8 +476,8 @@ This will:
 Now you can view the vignette by:
 
 ```{r}
-# browseVignettes("my_package") # OR 
-# vignette("my_package") 
+browseVignettes("my_package") # OR 
+vignette("my_package") 
 ```
 
 ::: callout-tip
@@ -492,10 +492,10 @@ Keep vignettes short, succinct and low data space.
 
 ```{r}
 # Step 1: 
-# devtools::build() # this creates a `my_package_0.1.0.tar.gz` file
+devtools::build() # this creates a `my_package_0.1.0.tar.gz` file
 
 # Step 2: 
-# install.packages("my_package_0.1.0.tar.gz", repos = NULL, type = "source")
+install.packages("my_package_0.1.0.tar.gz", repos = NULL, type = "source")
 ```
 
 The `my_package_0.1.0.tar.gz` file file be shared to others and they can load the package by: `devtools::install("/path/to/my_package")`
@@ -510,15 +510,15 @@ To make this work:
 This can be done in the R console, as shown below, or in the [terminal](01_Code_Log_Intro.html#git-changes).
 
 ```{r}
-# usethis::use_git()       # if your package isn't using Git yet
-# usethis::use_github()    # this pushes it to GitHub
+usethis::use_git()       # if your package isn't using Git yet
+usethis::use_github()    # this pushes it to GitHub
 ```
 
 After uploading:
 
 ```{r}
-# devtools::install_github("yourusername/my_package") # OR 
-# remotes::install_github("yourusername/my_package")
+devtools::install_github("yourusername/my_package") # OR 
+remotes::install_github("yourusername/my_package")
 ```
 
 #### Creating Personal Access Token
@@ -526,7 +526,7 @@ After uploading:
 if you haven't created a personal access token for GitHub to interact with your R studio:
 
 ```{r}
-# usethis::create_github_token()
+usethis::create_github_token()
 ```
 
 This will:
@@ -541,7 +541,7 @@ Copy the token when it’s generated — this is your only chance to see it!
 Then, in R:
 
 ```{r}
-# gitcreds::gitcreds_set()
+gitcreds::gitcreds_set()
 ```
 
 And paste the token when it is prompted. This securely stores your token so Git can authenticate with GitHub from R (using HTTPS).
@@ -549,13 +549,13 @@ And paste the token when it is prompted. This securely stores your token so Git 
 Then verify you're signed in:
 
 ```{r}
-# gh::gh_whoami()
+gh::gh_whoami()
 ```
 
 Set your git name and email:
 
 ```{r}
-# usethis::use_git_config(user.name = "Your Name", user.email = "your@email.com")
+usethis::use_git_config(user.name = "Your Name", user.email = "your@email.com")
 ```
 
 ### Folder Organisation
@@ -563,20 +563,20 @@ Set your git name and email:
 The overall package folder looks like this:
 
 ```{r}
-# my_package/
-# ├── DESCRIPTION
-# ├── NAMESPACE
-# ├── R/
-# │   ├── function1.R
-# │   └── helper.R
-# ├── man/
-# │   ├── function1.Rd
-# ├── vignettes/           # optional
-# ├── tests/               # optional
-# ├── inst/                # optional (e.g. extdata, shiny apps)
-# ├── data/                # optional
-# ├── LICENSE              # optional (recommended)
-# ├── README.md            # optional but nice
+my_package/
+├── DESCRIPTION
+├── NAMESPACE
+├── R/
+│   ├── function1.R
+│   └── helper.R
+├── man/
+│   ├── function1.Rd
+├── vignettes/           # optional
+├── tests/               # optional
+├── inst/                # optional (e.g. extdata, shiny apps)
+├── data/                # optional
+├── LICENSE              # optional (recommended)
+├── README.md            # optional but nice
 ```
 
 ## Updating the Package
@@ -593,7 +593,7 @@ The overall package folder looks like this:
 After editing any .R file or adding roxygen tags:
 
 ```{r}
-# devtools::document()
+devtools::document()
 ```
 
 Updates your NAMESPACE (for `@export`, `@importFrom`, etc.). Regenerates .Rd files in `man/`.
@@ -611,7 +611,7 @@ In your DESCRIPTION file, the version might be written as `Version: 0.1.0`. If y
 Or use:
 
 ```{r}
-# usethis::use_version("minor")  # or "patch", "major"
+usethis::use_version("minor")  # or "patch", "major"
 ```
 
 ### 4. Test Your Package
@@ -619,7 +619,7 @@ Or use:
 Run a full check:
 
 ```{r}
-# devtools::check()
+devtools::check()
 ```
 
 Look for errors, warnings, or notes — especially related to new functions, dependencies, or documentation.
@@ -629,13 +629,13 @@ Look for errors, warnings, or notes — especially related to new functions, dep
 If you want to use the updated version in your own R session:
 
 ```{r}
-# devtools::install()
+devtools::install()
 ```
 
 Or with cleaning to remove old build artifacts:
 
 ```{r}
-# devtools::install(clean = TRUE)
+devtools::install(clean = TRUE)
 ```
 
 ### 6. Commit and Push
@@ -645,28 +645,94 @@ Or with cleaning to remove old build artifacts:
 If your changes affect a vignette:
 
 ```{r}
-# devtools::build_vignettes()
+devtools::build_vignettes()
 ```
 
-### Bonus: Keep a NEWS file
+## Bonus: Keep a NEWS file
 
 To track your changes over time, add a NEWS.md file:
 
 ```{r}
-# usethis::use_news_md()
+usethis::use_news_md()
 ```
 
 Then update it with each change, e.g.:
 
+```{text}
+markdown
+Copy
+Edit
+# pvsero 0.2.0
+
+* Added `plot_plate_mfi()` function for quick QC plots.
+* Updated vignette to include new workflow.
+* Fixed bug in `normalize_rau()`.
+```
+
+## Bonus: R Hexagon Sticker
+
+See more about how to make an R Hexagon with the [R Sticker documentation](https://github.com/GuangchuangYu/hexSticker).
+
 ```{r}
-# markdown
-# Copy
-# Edit
-# # pvsero 0.2.0
-# 
-# * Added `plot_plate_mfi()` function for quick QC plots.
-# * Updated vignette to include new workflow.
-# * Fixed bug in `normalize_rau()`.
+#| exec: false
+#| eval: false
+install.packages("hexSticker")
+library(hexSticker)
+
+imgurl <- system.file("figures/cat.png", package="hexSticker")
+
+sticker(
+  ##########################################################################
+  # Subplot Adjustments (Image or Plot)
+  ##########################################################################
+  imgurl,                              # Subplot (Image or Plot)
+  s_x=1,                               # x position for subplot
+  s_y=.75,                             # y position for subplot
+  s_width=.6,                          # width for subplot
+  # s_height=,                         # height for subplot
+  ##########################################################################
+  # Package Name Adjustments
+  ##########################################################################
+  package="hexSticker",                # R Package or Shiny name
+  p_x = ,                            # x position for package name
+  p_y = ,                            # y position for package name
+  p_size=20,                           # font size for package name
+  p_family = "gochi",                  # font family for package name
+  p_color = ,                        # color for package name
+  p_fontface = ,                     # fontface for package name
+  ##########################################################################
+  # Hexagon Border Adjustments
+  ##########################################################################
+  h_size = ,                         # size for hexagon border
+  h_fill = ,                         # color to fill hexagon
+  h_color = ,                        # color for hexagon border
+  ##########################################################################
+  # Spotlight Adjustments
+  ##########################################################################
+  spotlight = ,                      # whether add spotlight
+  l_x = ,                            # x position for spotlight
+  l_y = ,                            # y position for spotlight
+  l_width = ,                        # width for spotlight
+  l_height = ,                       # height for spotlight
+  l_alpha = ,                        # maximum alpha for spotlight
+  ##########################################################################
+  # URL Adjustments
+  ##########################################################################
+  url = ,                            # url at lower border
+  u_x = ,                            # x position for url
+  u_y = ,                            # y position for url
+  u_color = ,                        # color for url
+  u_family = ,                       # font family for url
+  u_size = ,                         # text size for url
+  u_angle = ,                        # angle for url
+  ##########################################################################
+  # Save
+  ##########################################################################
+  white_around_sticker = ,           # default to FALSE. If TRUE: white triangles in corners
+  asp = ,                            # aspect ratio, only works if subplot is an image file
+  dpi = ,                            # dpi plot resolution
+  filename="inst/figures/imgfile.png"  # filename to save sticker
+)
 ```
 
 ## Troubleshooting FAQs
@@ -679,10 +745,10 @@ Add `@importFrom {package} {function} {function} {function}` to those that have 
 
 ### Warning: Meta/ file corrupted or errors
 
-```{r}
-# Common error: Warning message:
-# In loadNamespace(package, lib.loc = libLoc) :
-#   package ‘my_package’ has no 'package.rds' in Meta/
+```{text}
+Common error: Warning message:
+In loadNamespace(package, lib.loc = libLoc) :
+  package ‘my_package’ has no 'package.rds' in Meta/
 ```
 
 1.  Restart R

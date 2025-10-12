@@ -1,0 +1,102 @@
+---
+title: "Quarto"
+author: "Dionne Argyropoulos"
+execute:
+  eval: false
+  echo: true
+  warning: false
+  message: false
+---
+
+## Key Commands
+
+Concepts that apply to all Quarto documents: 
+
+### Add images
+
+````{.markdown}
+![](images/02_r_package.png){width="500"}
+````
+
+### Callout Note
+
+:::{.callout-note}
+
+Note that there are five types of callouts, including:
+
+`note`, `tip`, `warning`, `caution`, and `important`.
+
+:::
+
+````{.markdown}
+:::{.callout-note}
+
+Note that there are five types of callouts, including:
+
+`note`, `tip`, `warning`, `caution`, and `important`.
+
+:::
+````
+
+### Column Margin
+
+::: {.column-margin}
+
+![A margin image](image.png)
+
+:::
+
+````{.markdown}
+::: {.column-margin}
+
+![A margin image](image.png)
+
+:::
+````
+
+### Two Columns
+
+::: {.grid}
+
+::: {.g-col-6}
+
+**Column 1**
+
+:::
+  
+::: {.g-col-6}
+
+**Column 2**
+ 
+:::
+   
+:::  
+
+````{.markdown}
+::: {.grid}
+
+::: {.g-col-6}
+
+**Column 1**
+
+:::
+  
+::: {.g-col-6}
+
+**Column 2**
+ 
+:::
+   
+::: 
+````
+
+## Websites
+
+### Render Quarto Packages from Random Document
+
+quarto publish tutorials/tutorials-main.qmd will sort it out
+
+## Documents
+
+## Slides 
+

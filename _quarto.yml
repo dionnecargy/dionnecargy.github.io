@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Website"
-  favicon: "Images/dionne_cartoon.png"
+  favicon: "images/dionne_cartoon.png"
   navbar:
     left:
       - href: index.qmd
@@ -30,7 +30,7 @@ website:
   sidebar:
     style: "docked"
     search: true
-    logo: "Images/dionne_cartoon.png"
+    logo: "images/dionne_cartoon.png"
     contents:
       - index.qmd
       # - section: "Research"
@@ -45,10 +45,11 @@ website:
       #     - "Pages_CV/08_Work.qmd"
       - section: "Code: The Basics"
         contents: 
-          - "Pages_Code/01_Code_Log_Intro.qmd"
-          - "Pages_Code/02_R_Package.qmd"
-          - "Pages_Code/03_R_Hexagon.qmd"
-          - "Pages_Code/04_Quarto.qmd"
+          - "code/00_code_intro.qmd"
+          - "code/01_quarto.qmd"
+          - "code/02_package.qmd"
+          - "code/03_shiny.qmd"
+          - "code/04_targets.qmd"
 
 format:
   html:

@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dionne Argyropoulos">
-<meta name="dcterms.date" content="2025-07-29">
 
 <title>R Package Development – Website</title>
 <style>
@@ -393,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../code/04_targets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">{targets}</span></a>
+ <span class="menu-text">Pipelines with {targets}</span></a>
   </div>
 </li>
       </ul>
@@ -479,12 +478,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 29, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -1325,7 +1318,7 @@ In loadNamespace(package, lib.loc = libLoc) :
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/dionnecargy\.github\.io\/website\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

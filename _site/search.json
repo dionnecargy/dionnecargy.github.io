@@ -7,660 +7,207 @@
     "text": "Back to top"
   },
   {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html",
-    "href": "Pages_Code/01_Code_Log_Intro.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "This collection was inspired by Chrissy Roberts’ Code Book, which I was introduced to by Caitlin Bourke. It brings together the most useful pieces of code I’ve accumulated over the years—scripts I often return to or have developed for specific analyses. My hope is that future me (and anyone else who happens to come across this) finds it a helpful and practical resource.\nHere are a list of my favourite R packages that will be leveraged throughout this section.",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#data-wrangling",
-    "href": "Pages_Code/01_Code_Log_Intro.html#data-wrangling",
-    "title": "Welcome",
-    "section": "Data Wrangling",
-    "text": "Data Wrangling\n\nlibrary(tidyverse)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
-    "href": "Pages_Code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
-    "title": "Welcome",
-    "section": "Epidemiology / Statistical Analysis",
-    "text": "Epidemiology / Statistical Analysis\n\nlibrary(tidyverse)\nlibrary(gtsummary)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#population-genetics-analysis",
-    "href": "Pages_Code/01_Code_Log_Intro.html#population-genetics-analysis",
-    "title": "Welcome",
-    "section": "Population Genetics Analysis",
-    "text": "Population Genetics Analysis\n\nlibrary(poppr)\nlibrary(adegenet)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#r-shiny",
-    "href": "Pages_Code/01_Code_Log_Intro.html#r-shiny",
-    "title": "Welcome",
-    "section": "R Shiny",
-    "text": "R Shiny\n\nlibrary(shiny)\nlibrary(shiny.fluent)\nlibrary(waiter)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#r-package-development",
-    "href": "Pages_Code/01_Code_Log_Intro.html#r-package-development",
-    "title": "Welcome",
-    "section": "R Package Development",
-    "text": "R Package Development\n\nlibrary(devtools)\nlibrary(usethis)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/01_Code_Log_Intro.html#general-git-things",
-    "href": "Pages_Code/01_Code_Log_Intro.html#general-git-things",
-    "title": "Welcome",
-    "section": "General Git things",
-    "text": "General Git things\n\nMaking changes\n\n# git add .\n# git commit -m \"Add a personalised and detailed message\"\n# git push\n\n\n\nClone a repository from GitHub\n\n\nPush a repository to GitHub\n\n\nHow to remove a repository on Github\n\nGo to the repository’s main page on GitHub (e.g., https://github.com/yourusername/pvsero)\nClick Settings (right-hand tab)\nScroll all the way to the Danger Zone at the bottom\nClick Delete this repository\nGitHub will ask you to:\n\nConfirm the name of the repo (e.g., yourusername/pvsero)\nType it in to confirm\n\nClick the red I understand the consequences, delete this repository button\n\nThe repository will be permanently deleted — this action cannot be undone.\nThis does not delete your local R project or files — only the copy on GitHub. If you want to disconnect GitHub but keep the local Git repo, you can just remove the remote link using: git remote remove origin",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html",
-    "href": "Pages_Code/04_Quarto.html",
-    "title": "04_Quarto",
-    "section": "",
-    "text": "# ![](images/02_r_package.png){width=\"500\"}",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#add-images",
-    "href": "Pages_Code/04_Quarto.html#add-images",
-    "title": "04_Quarto",
-    "section": "",
-    "text": "# ![](images/02_r_package.png){width=\"500\"}",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#callout-note",
-    "href": "Pages_Code/04_Quarto.html#callout-note",
-    "title": "04_Quarto",
-    "section": "Callout Note",
-    "text": "Callout Note",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#column-margin",
-    "href": "Pages_Code/04_Quarto.html#column-margin",
-    "title": "04_Quarto",
-    "section": "Column Margin",
-    "text": "Column Margin",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#two-columns",
-    "href": "Pages_Code/04_Quarto.html#two-columns",
-    "title": "04_Quarto",
-    "section": "Two Columns",
-    "text": "Two Columns\n\n# ::: {.grid}\n# \n# ::: {.g-col-6}\n# \n# **Column 1**\n# \n# :::\n#   \n# ::: {.g-col-6}\n# \n# **Column 2**\n# \n# :::\n#   \n# :::",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/04_Quarto.html#render-quarto-pakcges-from-random-document",
-    "href": "Pages_Code/04_Quarto.html#render-quarto-pakcges-from-random-document",
-    "title": "04_Quarto",
-    "section": "Render Quarto Pakcges from random document",
-    "text": "Render Quarto Pakcges from random document\nquarto publish tutorials/tutorials-main.qmd will sort it out",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "04_Quarto"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/02_R_Package.html",
-    "href": "Pages_Code/02_R_Package.html",
-    "title": "R Package Development",
-    "section": "",
-    "text": "First, open a new project in R and select: File &gt; New Project &gt; New Directory &gt; R Package.\nHere you will enter your R package name e.g.,{my_package} as shown in the image to the right.\n\n\n\n\n\n\nTip\n\n\n\nR-emember: A catchy name sticks! Make it short, smart, and a clever play on “R” can make your package name memorable!\n\n\n\n\n\n\n\n\n\nStart up your .R file and enter your function: R/processCounts.R\n\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nThen click inside the function and either use the shortcut command (Mac): Shift + Option + Command + R OR you can go into Code &gt; Insert Roxygen Skeleton.\nThis will load something that looks like this:\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @author Dionne Argyropoulos\n\nThere are many other possibilities to add! See more in the documentation.\n\n\n\nOnce you have built one or multiple .R files, they need to be added to the manual! Here, you run the following line in your console!\n\n# devtools::document()                          # updates NAMESPACE\n\nIt is useful to run this command every time you write or update an .R file. This will create and update .Rd files for the manual. It will also update the NAMESPACE file.\n\n\n\nYou will also need to add “imports” for each package in the roxygen file. This includes all of the packages and/or functions that are used. To save memory, it is best practice to load only the functions that you require in each function.\nFor example, in the processCounts() function, the dplyr::mutate(), dplyr::case_when() and tidyr::pivot_longer() functions are used. We can write them in the roxygen documentation by adding the @importFrom {package} {argument} function, where multiple arguments can be added by just listing them side-by-side (as shown for dplyr below).\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @importFrom dplyr mutate case_when\n#' @importFrom tidyr pivot_longer\n#' \n#' @author Dionne Argyropoulos\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nIf you used more functions from a package, for example in the plotCounts() function below where ggplot2:: is called often for many different functions, then we just load the ggplot2 package by @import {package}.\n\n#' Plot Bead Count Data\n#'\n#' This function gets the count data and plots the plate image, creating a new\n#' facet (i.e., panel) for each antigen and each line represents the\n#' different plates so that they can be visualised.\n#'\n#' @param counts_output Output from `getCounts()` (reactive).\n#' @param experiment_name User-input experiment name (reactive).\n#' @return Tile Plot showing binary result of \"sufficient beads\" with cut-off\n#' &gt;15 beads and \"repeat\" ≤15 beads (ggplot).\n#' @export\n#' @import ggplot2\n#' @author Shazia Ruybal-Pesántez, Dionne Argyropoulos\nplotCounts &lt;- function(counts_output, experiment_name){\n  bead_counts &lt;- counts_output\n  bead_counts$Plate &lt;- factor(bead_counts$Plate, levels = unique(bead_counts$Plate[order(as.numeric(str_extract(bead_counts$Plate, \"\\\\d+\")))])) # reorder by plate number\n  bead_counts %&gt;%\n    ggplot2::ggplot(mapping = aes(x = Col, y = fct_rev(Row), fill = Repeat), fill = summary) +\n    ggplot2::geom_tile(aes(height = 0.90, width = 0.90)) +\n    ggplot2::scale_x_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), position = \"top\") +\n    ggplot2::scale_fill_manual(values = c(\"sufficient beads\" = \"#91bfdb\", \"repeat\" = \"#d73027\"), drop=FALSE) +\n    ggplot2::theme_bw() +\n    ggplot2::labs(x = \"\", y = \"\", title = experiment_name , fill = \"\") +\n    ggplot2::facet_wrap( ~ Plate, ncol = 3, scales = \"free_y\")  # This will create separate facets for each level of 'Plate'\n}\n\n\n\n\nLastly, we need to update the default empty DESCRIPTION file which looks like below:\n\n# Package: mypackage\n# Title: What the Package Does (One Line, Title Case)\n# Version: 0.0.0.9000\n# Authors@R: \n#     person(\"First\", \"Last\", , \"first.last@example.com\", role = c(\"aut\", \"cre\"))\n# Description: What the package does (one paragraph).\n# License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n#     license\n# Encoding: UTF-8\n# Roxygen: list(markdown = TRUE)\n# RoxygenNote: 7.3.2\n\nWhich you can update as intended for your purposes. In order to add any package dependencies as discussed above, then to add packages to the dependencies, you must use:\n\n# usethis::use_package(\"dplyr\")                # adds to Imports in DESCRIPTIPN\n# usethis::use_package(\"ggplot2\", \"Suggests\")  # adds to Suggests in DESCRIPTION\n\n\n\n\nTHEN you can check that all your functions and packages are loaded properly to build your package:\n\n# devtools::check()\n\nIt will tell you if your package:\n\nUses functions from a package not listed in DESCRIPTION\nLists packages you don’t actually use\n\n\n\n\n\nCreate .R file\nAdd your function to the .R file\nAdd roxygen comments in .R file, including @import or @importFrom for package dependencies\nRun devtools::document() to update NAMESPACE\nUse usethis::use_package(\"package\") to add to DESCRIPTION\nRun devtools::check() to verify consistency\n\nFor more detail about the R package development process, see the manual.\n\n\n\nTo add the Creative Commons Attribution licence (CC BY) in an R package’s DESCRIPTION:\n\n# usethis::use_ccby_license(\"Your Name\")\n\n\n\n\nTo create a package-level documentation file in R, you create a special .R file (commonly my_package-package.R) that includes a @docType package and a NULL at the end.\nThis file generates the help page users see when they run ?my_package and is the right place to include global @importFrom directives like for %&gt;%.\nFirst create R/my_package-package.R and add the following roxygen block, for example:\n\n#' pvsero: Tools for serology test-and-treat\n#'\n#' This package provides tools to process, model, and visualise serological data\n#' as part of the PvSeroTaT study.\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\n#' @importFrom dplyr select filter mutate\n#' @importFrom ggplot2 ggplot aes geom_point\nNULL\n\nReplace the title and description with your own.\n\n@docType package tells roxygen this is the main package doc\n@name pvsero links the doc to the package name\n@importFrom … adds functions to NAMESPACE\nNULL at the end is required — the doc has no function attached\n\nThen rebuild the documentation: devtools::document() to update the NAMESPACE and creates \"man/my_package.Rd\", which is the file for ?my_package\nIf specific packages and/or functions are not added.\nYou can handle variable column names that are defined in R in a file called R/globals.R\n\n# e.g.: \n# utils::globalVariables(c(\n#   \".\", \"Sample\", \"SampleID\", \"RAU\", \"MFI\", \"Plate\", \"Program\",\n#   \"Agg\", \"Antigen\", \"Beads\", \"Count\", \"Type\", \"QC_total\", \"Repeat\",\n#   \"Gate\", \"LL.5\", \"Well\", \"Location\", \"Location.2\", \"Region\", \n#   \"pred_class_max\", \".pred_new\", \"seropositive\", \"seronegative\",\n#   \"stdcurve\", \"Sampling Errors\", \"Sens_Spec\", \"Text\", \"Total\", \n#   \"Warning\", \"status_code\", \"type.letter\", \"dilution\", \"div\", \"value\",\n#   \"xPONENT\", \"mfi\", \"mfi_pred\", \"new_fit\", \"eth_fit\", \"ref_mfi\", \n#   \"error\", \"suffix\", \"prefix\", \"drm\", \"coef\", \"file_name\", \"data\", \n#   \"tibble\", \"data_type\", \"pull\", \"fct_rev\", \"glue\", \"where\",\n#   \"fromJSON\", \"png_fit\", \"row_number\", \"everything\", \"n\"\n# ))\n\nThen re-check and iterate\n\n# devtools::document()\n# devtools::check()\n\nIf you want to upload global R packages that apply to multiple functions:\n\n#' pvsero: Tools for [Your Package Description Here]\n#'\n#' [Optional longer description of what your package does]\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\nNULL\n\nThis: - Documents the package as a whole (@docType package) - Imports %&gt;% once globally - Keeps your NAMESPACE tidy Then run: devtools::document()",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/02_R_Package.html#creating-an-r-package",
-    "href": "Pages_Code/02_R_Package.html#creating-an-r-package",
-    "title": "R Package Development",
-    "section": "",
-    "text": "First, open a new project in R and select: File &gt; New Project &gt; New Directory &gt; R Package.\nHere you will enter your R package name e.g.,{my_package} as shown in the image to the right.\n\n\n\n\n\n\nTip\n\n\n\nR-emember: A catchy name sticks! Make it short, smart, and a clever play on “R” can make your package name memorable!\n\n\n\n\n\n\n\n\n\nStart up your .R file and enter your function: R/processCounts.R\n\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nThen click inside the function and either use the shortcut command (Mac): Shift + Option + Command + R OR you can go into Code &gt; Insert Roxygen Skeleton.\nThis will load something that looks like this:\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @author Dionne Argyropoulos\n\nThere are many other possibilities to add! See more in the documentation.\n\n\n\nOnce you have built one or multiple .R files, they need to be added to the manual! Here, you run the following line in your console!\n\n# devtools::document()                          # updates NAMESPACE\n\nIt is useful to run this command every time you write or update an .R file. This will create and update .Rd files for the manual. It will also update the NAMESPACE file.\n\n\n\nYou will also need to add “imports” for each package in the roxygen file. This includes all of the packages and/or functions that are used. To save memory, it is best practice to load only the functions that you require in each function.\nFor example, in the processCounts() function, the dplyr::mutate(), dplyr::case_when() and tidyr::pivot_longer() functions are used. We can write them in the roxygen documentation by adding the @importFrom {package} {argument} function, where multiple arguments can be added by just listing them side-by-side (as shown for dplyr below).\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @importFrom dplyr mutate case_when\n#' @importFrom tidyr pivot_longer\n#' \n#' @author Dionne Argyropoulos\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nIf you used more functions from a package, for example in the plotCounts() function below where ggplot2:: is called often for many different functions, then we just load the ggplot2 package by @import {package}.\n\n#' Plot Bead Count Data\n#'\n#' This function gets the count data and plots the plate image, creating a new\n#' facet (i.e., panel) for each antigen and each line represents the\n#' different plates so that they can be visualised.\n#'\n#' @param counts_output Output from `getCounts()` (reactive).\n#' @param experiment_name User-input experiment name (reactive).\n#' @return Tile Plot showing binary result of \"sufficient beads\" with cut-off\n#' &gt;15 beads and \"repeat\" ≤15 beads (ggplot).\n#' @export\n#' @import ggplot2\n#' @author Shazia Ruybal-Pesántez, Dionne Argyropoulos\nplotCounts &lt;- function(counts_output, experiment_name){\n  bead_counts &lt;- counts_output\n  bead_counts$Plate &lt;- factor(bead_counts$Plate, levels = unique(bead_counts$Plate[order(as.numeric(str_extract(bead_counts$Plate, \"\\\\d+\")))])) # reorder by plate number\n  bead_counts %&gt;%\n    ggplot2::ggplot(mapping = aes(x = Col, y = fct_rev(Row), fill = Repeat), fill = summary) +\n    ggplot2::geom_tile(aes(height = 0.90, width = 0.90)) +\n    ggplot2::scale_x_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), position = \"top\") +\n    ggplot2::scale_fill_manual(values = c(\"sufficient beads\" = \"#91bfdb\", \"repeat\" = \"#d73027\"), drop=FALSE) +\n    ggplot2::theme_bw() +\n    ggplot2::labs(x = \"\", y = \"\", title = experiment_name , fill = \"\") +\n    ggplot2::facet_wrap( ~ Plate, ncol = 3, scales = \"free_y\")  # This will create separate facets for each level of 'Plate'\n}\n\n\n\n\nLastly, we need to update the default empty DESCRIPTION file which looks like below:\n\n# Package: mypackage\n# Title: What the Package Does (One Line, Title Case)\n# Version: 0.0.0.9000\n# Authors@R: \n#     person(\"First\", \"Last\", , \"first.last@example.com\", role = c(\"aut\", \"cre\"))\n# Description: What the package does (one paragraph).\n# License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n#     license\n# Encoding: UTF-8\n# Roxygen: list(markdown = TRUE)\n# RoxygenNote: 7.3.2\n\nWhich you can update as intended for your purposes. In order to add any package dependencies as discussed above, then to add packages to the dependencies, you must use:\n\n# usethis::use_package(\"dplyr\")                # adds to Imports in DESCRIPTIPN\n# usethis::use_package(\"ggplot2\", \"Suggests\")  # adds to Suggests in DESCRIPTION\n\n\n\n\nTHEN you can check that all your functions and packages are loaded properly to build your package:\n\n# devtools::check()\n\nIt will tell you if your package:\n\nUses functions from a package not listed in DESCRIPTION\nLists packages you don’t actually use\n\n\n\n\n\nCreate .R file\nAdd your function to the .R file\nAdd roxygen comments in .R file, including @import or @importFrom for package dependencies\nRun devtools::document() to update NAMESPACE\nUse usethis::use_package(\"package\") to add to DESCRIPTION\nRun devtools::check() to verify consistency\n\nFor more detail about the R package development process, see the manual.\n\n\n\nTo add the Creative Commons Attribution licence (CC BY) in an R package’s DESCRIPTION:\n\n# usethis::use_ccby_license(\"Your Name\")\n\n\n\n\nTo create a package-level documentation file in R, you create a special .R file (commonly my_package-package.R) that includes a @docType package and a NULL at the end.\nThis file generates the help page users see when they run ?my_package and is the right place to include global @importFrom directives like for %&gt;%.\nFirst create R/my_package-package.R and add the following roxygen block, for example:\n\n#' pvsero: Tools for serology test-and-treat\n#'\n#' This package provides tools to process, model, and visualise serological data\n#' as part of the PvSeroTaT study.\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\n#' @importFrom dplyr select filter mutate\n#' @importFrom ggplot2 ggplot aes geom_point\nNULL\n\nReplace the title and description with your own.\n\n@docType package tells roxygen this is the main package doc\n@name pvsero links the doc to the package name\n@importFrom … adds functions to NAMESPACE\nNULL at the end is required — the doc has no function attached\n\nThen rebuild the documentation: devtools::document() to update the NAMESPACE and creates \"man/my_package.Rd\", which is the file for ?my_package\nIf specific packages and/or functions are not added.\nYou can handle variable column names that are defined in R in a file called R/globals.R\n\n# e.g.: \n# utils::globalVariables(c(\n#   \".\", \"Sample\", \"SampleID\", \"RAU\", \"MFI\", \"Plate\", \"Program\",\n#   \"Agg\", \"Antigen\", \"Beads\", \"Count\", \"Type\", \"QC_total\", \"Repeat\",\n#   \"Gate\", \"LL.5\", \"Well\", \"Location\", \"Location.2\", \"Region\", \n#   \"pred_class_max\", \".pred_new\", \"seropositive\", \"seronegative\",\n#   \"stdcurve\", \"Sampling Errors\", \"Sens_Spec\", \"Text\", \"Total\", \n#   \"Warning\", \"status_code\", \"type.letter\", \"dilution\", \"div\", \"value\",\n#   \"xPONENT\", \"mfi\", \"mfi_pred\", \"new_fit\", \"eth_fit\", \"ref_mfi\", \n#   \"error\", \"suffix\", \"prefix\", \"drm\", \"coef\", \"file_name\", \"data\", \n#   \"tibble\", \"data_type\", \"pull\", \"fct_rev\", \"glue\", \"where\",\n#   \"fromJSON\", \"png_fit\", \"row_number\", \"everything\", \"n\"\n# ))\n\nThen re-check and iterate\n\n# devtools::document()\n# devtools::check()\n\nIf you want to upload global R packages that apply to multiple functions:\n\n#' pvsero: Tools for [Your Package Description Here]\n#'\n#' [Optional longer description of what your package does]\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\nNULL\n\nThis: - Documents the package as a whole (@docType package) - Imports %&gt;% once globally - Keeps your NAMESPACE tidy Then run: devtools::document()",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/02_R_Package.html#adding-files-to-the-package",
-    "href": "Pages_Code/02_R_Package.html#adding-files-to-the-package",
-    "title": "R Package Development",
-    "section": "Adding files to the package",
-    "text": "Adding files to the package\nCreate inst/extdata folder path and add all of the files to add.\nThen you can run the files here:\n\n# magpix_file &lt;- system.file(\"extdata\", \"example_MAGPIX_plate1.csv\", package = \"pvsero\")\n# file &lt;- read.csv(magpix_file)\n\nThis also works for .rda, .csv, .xlsx or other files.\nYou can also add a template.Rmd file to create PDFs or HTML outputs from rmarkdown files:\n\n# template &lt;- system.file(\"rmd\", \"template.Rmd\", package = \"pvsero\")\n\n### OR FOR EXAMPLE IN THE `pvsero::renderQCReport()`: \n  #   rmarkdown::render(\n  #     input = system.file(\"rmd/template.Rmd\", package=\"pvsero\"),\n  #     output_file = paste0(experiment_name, \"_\", date, \"_\", location, \"_\", version, \"_QCreport.pdf\"),\n  #     output_dir = here::here(),\n  #     params = list(\n  #       raw_data_filename = raw_data_filename,\n  #       experiment_name = experiment_name,\n  #       date = date,\n  #       experiment_notes = experiment_notes,\n  #       platform = platform,\n  #       stdcurve_plot = stdcurve_plot,\n  #       plateqc_plot = plateqc_plot,\n  #       blanks_plot = blanks_plot,\n  #       check_repeats_output = check_repeats_output,\n  #       check_repats_table_pdf = check_repats_table_pdf(check_repeats_output),\n  #       model_plot = model_plot,\n  #       operator_output = operator_output(),\n  #       volume_output = volume_output(),\n  #       calibration_output = calibration_output(),\n  #       machine_output = machine_output(),\n  #       plate_list_output = plate_list_output()\n  #     )\n  #   )\n\n\nAdd documentation to a dataset\nTo create .Rd documentation files for datasets included in your R package, you document them with roxygen2-style comments above the dataset definition or in a dedicated .R file. These get converted into .Rd files when you run devtools::document().\n\n\n1. Decide where to store the dataset\nYou have two options:\n\n\n\nType\nLocation\nFormat\nAccess\n\n\n\n\nLazy-loaded\ndata/\n.rda\ndata_name\n\n\nFile-based\ninst/extdata/\n.csv/.txt\nsystem.file()\n\n\n\nLet’s assume you’re using the data/ folder and loading the data with data() or library(my_package).\n\n\n2. Save the dataset\nIn your package root:\n\n# usethis::use_data(my_data, overwrite = TRUE)\n\nThis creates data/my_data.rda.\n\n\n3. Create documentation in R/ folder\nCreate a new R script, e.g. R/data-documentation.R, and add:\n\n#' Example Serological Dataset\n#'\n#' A dataset containing raw RAU values and metadata from a test plate run.\n#'\n#' @format A data frame with 96 rows and 8 variables:\n#' \\describe{\n#'   \\item{SampleID}{Unique identifier for the sample}\n#'   \\item{Antigen}{Antigen name}\n#'   \\item{RAU}{Relative antibody units}\n#'   \\item{Plate}{Plate ID}\n#'   \\item{Repeat}{Repeat measurement flag}\n#'   \\item{Status}{Classification of sample}\n#'   \\item{Region}{Geographic region}\n#'   \\item{Program}{Treatment program}\n#' }\n#'\n#' @source Mueller Lab, WEHI\n\"my_data\"\n\nThe final line “my_data” tells roxygen you’re documenting the object named my_data.\n\n\n4. Run devtools::document()\n\n# devtools::document()\n\nThis creates man/my_data.Rd, which users can now view via:\n\n# ?my_data\n\n\n\n\n\n\n\nTip\n\n\n\nTip: Document each dataset in a separate roxygen block. Also, if you’re using CSV files in inst/extdata/, you don’t need .Rd docs unless you’re loading them as data objects inside the package.\n\n\n\n\nExample for multiple datasets:\n\n#' Plate Metadata\n#'\n#' Metadata for the test plate used in example analysis.\n#'\n#' @format A data frame with 96 rows and 5 columns.\n#' @source Internal study data\n\"plate_meta\"\n\n#' Serological Measurements\n#'\n#' Processed MFI and RAU values used in the example vignette.\n#'\n#' @format A tibble with 96 observations of 3 variables.\n#' @source Simulated data\n\"sero_data\"",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/02_R_Package.html#creating-a-vignette",
-    "href": "Pages_Code/02_R_Package.html#creating-a-vignette",
-    "title": "R Package Development",
-    "section": "Creating a Vignette",
-    "text": "Creating a Vignette\nRun the following command once, to:\n\nCreates a vignettes/ directory (if it doesn’t exist)\nCreates an .Rmd file at e.g., vignettes/getting-started.Rmd\nAdds knitr and rmarkdown to Suggests: in DESCRIPTION\nConfigures DESCRIPTION to build vignettes\n\n\n# usethis::use_vignette(\"getting-started\")\n\nThis will be added to the DESCRIPTION: VignetteBuilder: knitr\n\nAdd content to the vignette\nSimply open the .Rmd file and edit as per a normal R Markdown.\n\n# ---\n# title: \"Getting Started with my_package\"\n# output: rmarkdown::html_vignette\n# vignette: &gt;\n#   %\\VignetteIndexEntry{Getting Started with my_package}\n#   %\\VignetteEngine{knitr::rmarkdown}\n#   %\\VignetteEncoding{UTF-8}\n# ---\n# \n# ```{r setup, include = FALSE}\n# knitr::opts_chunk$set(\n#   collapse = TRUE,\n#   comment = \"#&gt;\"\n# )\n# library(my_package)\n\n\n\nUpload the vignette\nOnce you are ready for the vignette to be updated to the manual, run the following command:\n\n# devtools::build_vignettes()\n# devtools::document()\n\nThis will:\n\nKnit the .Rmd file into .html and .R files\nPlace them into inst/doc/ so they’re included when your package is installed\n\nNow you can view the vignette by:\n\n# browseVignettes(\"my_package\") # OR \n# vignette(\"my_package\") \n\n\n\n\n\n\n\nTip\n\n\n\nUse devtools::check() to confirm your vignette builds cleanly.\nKeep vignettes short, succinct and low data space.",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/02_R_Package.html#exporting-the-package",
-    "href": "Pages_Code/02_R_Package.html#exporting-the-package",
-    "title": "R Package Development",
-    "section": "Exporting the Package",
-    "text": "Exporting the Package\n\nOption 1: Local Only: Build a .tar.gz file distributable package file\n\n# Step 1: \n# devtools::build() # this creates a `my_package_0.1.0.tar.gz` file\n\n# Step 2: \n# install.packages(\"my_package_0.1.0.tar.gz\", repos = NULL, type = \"source\")\n\nThe my_package_0.1.0.tar.gz file file be shared to others and they can load the package by: devtools::install(\"/path/to/my_package\")\n\n\nOption 2: Local or Global: Export to GitHub\nTo make this work:\n\nPush your package directory to a GitHub repo\nEnsure the structure is valid (DESCRIPTION, NAMESPACE, R/, etc.)\n\nThis can be done in the R console, as shown below, or in the terminal.\n\n# usethis::use_git()       # if your package isn't using Git yet\n# usethis::use_github()    # this pushes it to GitHub\n\nAfter uploading:\n\n# devtools::install_github(\"yourusername/my_package\") # OR \n# remotes::install_github(\"yourusername/my_package\")\n\n\nCreating Personal Access Token\nif you haven’t created a personal access token for GitHub to interact with your R studio:\n\n# usethis::create_github_token()\n\nThis will:\n\nOpen GitHub in your browser to the personal access token creation page\nSuggest the correct scopes (you can usually just accept the defaults: repo, user, etc.)\n\n\n\n\n\n\n\nImportant\n\n\n\nCopy the token when it’s generated — this is your only chance to see it!\n\n\nThen, in R:\n\n# gitcreds::gitcreds_set()\n\nAnd paste the token when it is prompted. This securely stores your token so Git can authenticate with GitHub from R (using HTTPS).\nThen verify you’re signed in:\n\n# gh::gh_whoami()\n\nSet your git name and email:\n\n# usethis::use_git_config(user.name = \"Your Name\", user.email = \"your@email.com\")\n\n\n\n\nFolder Organisation\nThe overall package folder looks like this:\n\n# my_package/\n# ├── DESCRIPTION\n# ├── NAMESPACE\n# ├── R/\n# │   ├── function1.R\n# │   └── helper.R\n# ├── man/\n# │   ├── function1.Rd\n# ├── vignettes/           # optional\n# ├── tests/               # optional\n# ├── inst/                # optional (e.g. extdata, shiny apps)\n# ├── data/                # optional\n# ├── LICENSE              # optional (recommended)\n# ├── README.md            # optional but nice",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/02_R_Package.html#updating-the-package",
-    "href": "Pages_Code/02_R_Package.html#updating-the-package",
-    "title": "R Package Development",
-    "section": "Updating the Package",
-    "text": "Updating the Package\n\n1. Make the Update\n\nAdd new functions, modify existing ones or remove functions sin the R/ folder.\nAdd new data to data/ or inst/extdata/ and document it.\nUpdate vignettes or README files if needed.\nAdd or update roxygen2 documentation in .R files.\n\n\n\n2. Update Package Documentation\nAfter editing any .R file or adding roxygen tags:\n\n# devtools::document()\n\nUpdates your NAMESPACE (for @export, @importFrom, etc.). Regenerates .Rd files in man/.\n\n\n3. Update Version Number (Optional)\nIn your DESCRIPTION file, the version might be written as Version: 0.1.0. If you’re making a user-visible change, bump the version. Use semantic versioning:\n\n\n\nType\nExample Version Bump\n\n\n\n\nBug fix\n0.1.0 → 0.1.1\n\n\nNew feature\n0.1.1 → 0.2.0\n\n\nMajor redesign\n0.2.1 → 1.0.0\n\n\n\nOr use:\n\n# usethis::use_version(\"minor\")  # or \"patch\", \"major\"\n\n\n\n4. Test Your Package\nRun a full check:\n\n# devtools::check()\n\nLook for errors, warnings, or notes — especially related to new functions, dependencies, or documentation.\n\n\n5. Reinstall Locally\nIf you want to use the updated version in your own R session:\n\n# devtools::install()\n\nOr with cleaning to remove old build artifacts:\n\n# devtools::install(clean = TRUE)\n\n\n\n6. Commit and Push\n\n\n7. Rebuild Vignettes (Optional)\nIf your changes affect a vignette:\n\n# devtools::build_vignettes()\n\n\n\nBonus: Keep a NEWS file\nTo track your changes over time, add a NEWS.md file:\n\n# usethis::use_news_md()\n\nThen update it with each change, e.g.:\n\n# markdown\n# Copy\n# Edit\n# # pvsero 0.2.0\n# \n# * Added `plot_plate_mfi()` function for quick QC plots.\n# * Updated vignette to include new workflow.\n# * Fixed bug in `normalize_rau()`.",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/02_R_Package.html#troubleshooting-faqs",
-    "href": "Pages_Code/02_R_Package.html#troubleshooting-faqs",
-    "title": "R Package Development",
-    "section": "Troubleshooting FAQs",
-    "text": "Troubleshooting FAQs\n\nWarning: Package or Functions not defined\nTo account for many “notes” from the devtools::check(), you can:\nAdd @importFrom {package} {function} {function} {function} to those that have not been added. Add @import {package} to those that have not been added.\n\n\nWarning: Meta/ file corrupted or errors\n\n# Common error: Warning message:\n# In loadNamespace(package, lib.loc = libLoc) :\n#   package ‘my_package’ has no 'package.rds' in Meta/\n\n\nRestart R\nClean the build cache: devtools::clean_dll()\nRemove previously installed/broken version: remove.packages(\"my_package\")\nCheck where it’s installed: find.package(\"my_package\"): if it is still installed then delete it manually from the folder\nReinstall the package cleanly: devtools::install(clean = TRUE):\n\n\nThis will clean previous build artifacts\nRebuild the package from source\nRegenerate the Meta/ and pacakge.rd correctly\n\n\nRun devtools::load_all() and the warning should disappear",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/03_R_Hexagon.html",
-    "href": "Pages_Code/03_R_Hexagon.html",
-    "title": "Create R Hexagon",
-    "section": "",
-    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\n# install.packages(\"hexSticker\")\nlibrary(hexSticker)\n\n# imgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n# \n# sticker(\n#   ##########################################################################\n#   # Subplot Adjustments (Image or Plot) \n#   ##########################################################################\n#   imgurl,                              # Subplot (Image or Plot)\n#   s_x=1,                               # x position for subplot\n#   s_y=.75,                             # y position for subplot \n#   s_width=.6,                          # width for subplot\n#   # s_height=,                         # height for subplot\n#   ##########################################################################\n#   # Package Name Adjustments \n#   ##########################################################################\n#   package=\"hexSticker\",                # R Package or Shiny name\n#   # p_x = ,                            # x position for package name\n#   # p_y = ,                            # y position for package name\n#   p_size=20,                           # font size for package name\n#   p_family = \"gochi\",                  # font family for package name\n#   # p_color = ,                        # color for package name\n#   # p_fontface = ,                     # fontface for package name\n#   ##########################################################################\n#   # Hexagon Border Adjustments \n#   ##########################################################################\n#   # h_size = ,                         # size for hexagon border\n#   # h_fill = ,                         # color to fill hexagon\n#   # h_color = ,                        # color for hexagon border\n#   ##########################################################################\n#   # Spotlight Adjustments \n#   ##########################################################################\n#   # spotlight = ,                      # whether add spotlight\n#   # l_x = ,                            # x position for spotlight\n#   # l_y = ,                            # y position for spotlight\n#   # l_width = ,                        # width for spotlight\n#   # l_height = ,                       # height for spotlight\n#   # l_alpha = ,                        # maximum alpha for spotlight\n#   ##########################################################################\n#   # URL Adjustments \n#   ##########################################################################\n#   # url = ,                            # url at lower border\n#   # u_x = ,                            # x position for url\n#   # u_y = ,                            # y position for url\n#   # u_color = ,                        # color for url\n#   # u_family = ,                       # font family for url\n#   # u_size = ,                         # text size for url\n#   # u_angle = ,                        # angle for url\n#   ##########################################################################\n#   # Save \n#   ##########################################################################\n#   # white_around_sticker = ,           # default to FALSE. If set to TRUE, it puts white triangles in the corners\n#   # asp = ,                            # aspect ratio, only works if subplot is an image file\n#   # dpi = ,                            # dpi plot resolution\n#   filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n# )",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Create R Hexagon"
-    ]
-  },
-  {
-    "objectID": "Pages_Code/03_R_Hexagon.html#create-an-r-hexagon",
-    "href": "Pages_Code/03_R_Hexagon.html#create-an-r-hexagon",
-    "title": "Create R Hexagon",
-    "section": "",
-    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\n# install.packages(\"hexSticker\")\nlibrary(hexSticker)\n\n# imgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n# \n# sticker(\n#   ##########################################################################\n#   # Subplot Adjustments (Image or Plot) \n#   ##########################################################################\n#   imgurl,                              # Subplot (Image or Plot)\n#   s_x=1,                               # x position for subplot\n#   s_y=.75,                             # y position for subplot \n#   s_width=.6,                          # width for subplot\n#   # s_height=,                         # height for subplot\n#   ##########################################################################\n#   # Package Name Adjustments \n#   ##########################################################################\n#   package=\"hexSticker\",                # R Package or Shiny name\n#   # p_x = ,                            # x position for package name\n#   # p_y = ,                            # y position for package name\n#   p_size=20,                           # font size for package name\n#   p_family = \"gochi\",                  # font family for package name\n#   # p_color = ,                        # color for package name\n#   # p_fontface = ,                     # fontface for package name\n#   ##########################################################################\n#   # Hexagon Border Adjustments \n#   ##########################################################################\n#   # h_size = ,                         # size for hexagon border\n#   # h_fill = ,                         # color to fill hexagon\n#   # h_color = ,                        # color for hexagon border\n#   ##########################################################################\n#   # Spotlight Adjustments \n#   ##########################################################################\n#   # spotlight = ,                      # whether add spotlight\n#   # l_x = ,                            # x position for spotlight\n#   # l_y = ,                            # y position for spotlight\n#   # l_width = ,                        # width for spotlight\n#   # l_height = ,                       # height for spotlight\n#   # l_alpha = ,                        # maximum alpha for spotlight\n#   ##########################################################################\n#   # URL Adjustments \n#   ##########################################################################\n#   # url = ,                            # url at lower border\n#   # u_x = ,                            # x position for url\n#   # u_y = ,                            # y position for url\n#   # u_color = ,                        # color for url\n#   # u_family = ,                       # font family for url\n#   # u_size = ,                         # text size for url\n#   # u_angle = ,                        # angle for url\n#   ##########################################################################\n#   # Save \n#   ##########################################################################\n#   # white_around_sticker = ,           # default to FALSE. If set to TRUE, it puts white triangles in the corners\n#   # asp = ,                            # aspect ratio, only works if subplot is an image file\n#   # dpi = ,                            # dpi plot resolution\n#   filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n# )",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Create R Hexagon"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "index.html#hello",
-    "href": "index.html#hello",
-    "title": "Introduction",
-    "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Introduction",
-    "section": "About Me",
-    "text": "About Me\nI have always had a keen interest in science. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in biology - specifically evolution and genetics - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed here.\nMy PhD thesis focussed on the molecular epidemiology and population genetics of Plasmodium falciparum malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of Plasmodium falciparum malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations.\nI am currently a post-doctoral Research Officer at the Walter and Eliza Hall Institute for Medical Research (WEHI) where I am investigating how we can use serological markers to classify Plasmodium vivax exposure, as well as how we can track antimicrobial resistance in wastewater systems in Australia. I am upskilling in statistical modelling and machine learning approaches to broaden my skill tool-kit.\nThroughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that’s developing a bookdown workshop, keeping up to date with functions in the tidyverse, creating new maps using packages such as MalariaAtlas and ggmap, or learning all the amazing ways quarto can be used to elevate documents, websites etc.",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "code/03_R_Hexagon.html",
-    "href": "code/03_R_Hexagon.html",
-    "title": "Create R Hexagon",
-    "section": "",
-    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\ninstall.packages(\"hexSticker\")\nlibrary(hexSticker)\n\nimgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n\nsticker(\n  ##########################################################################\n  # Subplot Adjustments (Image or Plot)\n  ##########################################################################\n  imgurl,                              # Subplot (Image or Plot)\n  s_x=1,                               # x position for subplot\n  s_y=.75,                             # y position for subplot\n  s_width=.6,                          # width for subplot\n  # s_height=,                         # height for subplot\n  ##########################################################################\n  # Package Name Adjustments\n  ##########################################################################\n  package=\"hexSticker\",                # R Package or Shiny name\n  p_x = ,                            # x position for package name\n  p_y = ,                            # y position for package name\n  p_size=20,                           # font size for package name\n  p_family = \"gochi\",                  # font family for package name\n  p_color = ,                        # color for package name\n  p_fontface = ,                     # fontface for package name\n  ##########################################################################\n  # Hexagon Border Adjustments\n  ##########################################################################\n  h_size = ,                         # size for hexagon border\n  h_fill = ,                         # color to fill hexagon\n  h_color = ,                        # color for hexagon border\n  ##########################################################################\n  # Spotlight Adjustments\n  ##########################################################################\n  spotlight = ,                      # whether add spotlight\n  l_x = ,                            # x position for spotlight\n  l_y = ,                            # y position for spotlight\n  l_width = ,                        # width for spotlight\n  l_height = ,                       # height for spotlight\n  l_alpha = ,                        # maximum alpha for spotlight\n  ##########################################################################\n  # URL Adjustments\n  ##########################################################################\n  url = ,                            # url at lower border\n  u_x = ,                            # x position for url\n  u_y = ,                            # y position for url\n  u_color = ,                        # color for url\n  u_family = ,                       # font family for url\n  u_size = ,                         # text size for url\n  u_angle = ,                        # angle for url\n  ##########################################################################\n  # Save\n  ##########################################################################\n  white_around_sticker = ,           # default to FALSE. If TRUE: white triangles in corners\n  asp = ,                            # aspect ratio, only works if subplot is an image file\n  dpi = ,                            # dpi plot resolution\n  filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n)\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Create R Hexagon"
-    ]
-  },
-  {
-    "objectID": "code/03_R_Hexagon.html#create-an-r-hexagon",
-    "href": "code/03_R_Hexagon.html#create-an-r-hexagon",
-    "title": "Create R Hexagon",
-    "section": "",
-    "text": "See more about how to make an R Hexagon with the R Sticker documentation.\n\ninstall.packages(\"hexSticker\")\nlibrary(hexSticker)\n\nimgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n\nsticker(\n  ##########################################################################\n  # Subplot Adjustments (Image or Plot)\n  ##########################################################################\n  imgurl,                              # Subplot (Image or Plot)\n  s_x=1,                               # x position for subplot\n  s_y=.75,                             # y position for subplot\n  s_width=.6,                          # width for subplot\n  # s_height=,                         # height for subplot\n  ##########################################################################\n  # Package Name Adjustments\n  ##########################################################################\n  package=\"hexSticker\",                # R Package or Shiny name\n  p_x = ,                            # x position for package name\n  p_y = ,                            # y position for package name\n  p_size=20,                           # font size for package name\n  p_family = \"gochi\",                  # font family for package name\n  p_color = ,                        # color for package name\n  p_fontface = ,                     # fontface for package name\n  ##########################################################################\n  # Hexagon Border Adjustments\n  ##########################################################################\n  h_size = ,                         # size for hexagon border\n  h_fill = ,                         # color to fill hexagon\n  h_color = ,                        # color for hexagon border\n  ##########################################################################\n  # Spotlight Adjustments\n  ##########################################################################\n  spotlight = ,                      # whether add spotlight\n  l_x = ,                            # x position for spotlight\n  l_y = ,                            # y position for spotlight\n  l_width = ,                        # width for spotlight\n  l_height = ,                       # height for spotlight\n  l_alpha = ,                        # maximum alpha for spotlight\n  ##########################################################################\n  # URL Adjustments\n  ##########################################################################\n  url = ,                            # url at lower border\n  u_x = ,                            # x position for url\n  u_y = ,                            # y position for url\n  u_color = ,                        # color for url\n  u_family = ,                       # font family for url\n  u_size = ,                         # text size for url\n  u_angle = ,                        # angle for url\n  ##########################################################################\n  # Save\n  ##########################################################################\n  white_around_sticker = ,           # default to FALSE. If TRUE: white triangles in corners\n  asp = ,                            # aspect ratio, only works if subplot is an image file\n  dpi = ,                            # dpi plot resolution\n  filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Create R Hexagon"
-    ]
-  },
-  {
-    "objectID": "code/04_Quarto.html",
-    "href": "code/04_Quarto.html",
-    "title": "Quarto: Websites, Documents, Slides",
-    "section": "",
-    "text": "# ![](images/02_r_package.png){width=\"500\"}",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto: Websites, Documents, Slides"
-    ]
-  },
-  {
-    "objectID": "code/04_Quarto.html#add-images",
-    "href": "code/04_Quarto.html#add-images",
-    "title": "Quarto: Websites, Documents, Slides",
-    "section": "",
-    "text": "# ![](images/02_r_package.png){width=\"500\"}",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto: Websites, Documents, Slides"
-    ]
-  },
-  {
-    "objectID": "code/04_Quarto.html#callout-note",
-    "href": "code/04_Quarto.html#callout-note",
-    "title": "Quarto: Websites, Documents, Slides",
-    "section": "Callout Note",
-    "text": "Callout Note",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto: Websites, Documents, Slides"
-    ]
-  },
-  {
-    "objectID": "code/04_Quarto.html#column-margin",
-    "href": "code/04_Quarto.html#column-margin",
-    "title": "Quarto: Websites, Documents, Slides",
-    "section": "Column Margin",
-    "text": "Column Margin",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto: Websites, Documents, Slides"
-    ]
-  },
-  {
-    "objectID": "code/04_Quarto.html#two-columns",
-    "href": "code/04_Quarto.html#two-columns",
-    "title": "Quarto: Websites, Documents, Slides",
-    "section": "Two Columns",
-    "text": "Two Columns\n\n# ::: {.grid}\n# \n# ::: {.g-col-6}\n# \n# **Column 1**\n# \n# :::\n#   \n# ::: {.g-col-6}\n# \n# **Column 2**\n# \n# :::\n#   \n# :::",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto: Websites, Documents, Slides"
-    ]
-  },
-  {
-    "objectID": "code/04_Quarto.html#render-quarto-pakcges-from-random-document",
-    "href": "code/04_Quarto.html#render-quarto-pakcges-from-random-document",
-    "title": "Quarto: Websites, Documents, Slides",
-    "section": "Render Quarto Pakcges from random document",
-    "text": "Render Quarto Pakcges from random document\nquarto publish tutorials/tutorials-main.qmd will sort it out",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto: Websites, Documents, Slides"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html",
-    "href": "code/02_R_Package.html",
-    "title": "R Package Development",
-    "section": "",
-    "text": "First, open a new project in R and select: File &gt; New Project &gt; New Directory &gt; R Package.\nHere you will enter your R package name e.g.,{my_package} as shown in the image to the right.\n\n\n\n\n\n\nTip\n\n\n\nR-emember: A catchy name sticks! Make it short, smart, and a clever play on “R” can make your package name memorable!\n\n\n\n\n\n\n\n\n\nStart up your .R file and enter your function: R/processCounts.R\n\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nThen click inside the function and either use the shortcut command (Mac): Shift + Option + Command + R OR you can go into Code &gt; Insert Roxygen Skeleton.\nThis will load something that looks like this:\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @author Dionne Argyropoulos\n\nThere are many other possibilities to add! See more in the documentation.\n\n\n\nOnce you have built one or multiple .R files, they need to be added to the manual! Here, you run the following line in your console!\n\ndevtools::document()                          # updates NAMESPACE\n\nIt is useful to run this command every time you write or update an .R file. This will create and update .Rd files for the manual. It will also update the NAMESPACE file.\n\n\n\nYou will also need to add “imports” for each package in the roxygen file. This includes all of the packages and/or functions that are used. To save memory, it is best practice to load only the functions that you require in each function.\nFor example, in the processCounts() function, the dplyr::mutate(), dplyr::case_when() and tidyr::pivot_longer() functions are used. We can write them in the roxygen documentation by adding the @importFrom {package} {argument} function, where multiple arguments can be added by just listing them side-by-side (as shown for dplyr below).\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @importFrom dplyr mutate case_when\n#' @importFrom tidyr pivot_longer\n#' \n#' @author Dionne Argyropoulos\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nIf you used more functions from a package, for example in the plotCounts() function below where ggplot2:: is called often for many different functions, then we just load the ggplot2 package by @import {package}.\n\n#' Plot Bead Count Data\n#'\n#' This function gets the count data and plots the plate image, creating a new\n#' facet (i.e., panel) for each antigen and each line represents the\n#' different plates so that they can be visualised.\n#'\n#' @param counts_output Output from `getCounts()` (reactive).\n#' @param experiment_name User-input experiment name (reactive).\n#' @return Tile Plot showing binary result of \"sufficient beads\" with cut-off\n#' &gt;15 beads and \"repeat\" ≤15 beads (ggplot).\n#' @export\n#' @import ggplot2\n#' @author Shazia Ruybal-Pesántez, Dionne Argyropoulos\nplotCounts &lt;- function(counts_output, experiment_name){\n  bead_counts &lt;- counts_output\n  bead_counts$Plate &lt;- factor(bead_counts$Plate, levels = unique(bead_counts$Plate[order(as.numeric(str_extract(bead_counts$Plate, \"\\\\d+\")))])) # reorder by plate number\n  bead_counts %&gt;%\n    ggplot2::ggplot(mapping = aes(x = Col, y = fct_rev(Row), fill = Repeat), fill = summary) +\n    ggplot2::geom_tile(aes(height = 0.90, width = 0.90)) +\n    ggplot2::scale_x_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), position = \"top\") +\n    ggplot2::scale_fill_manual(values = c(\"sufficient beads\" = \"#91bfdb\", \"repeat\" = \"#d73027\"), drop=FALSE) +\n    ggplot2::theme_bw() +\n    ggplot2::labs(x = \"\", y = \"\", title = experiment_name , fill = \"\") +\n    ggplot2::facet_wrap( ~ Plate, ncol = 3, scales = \"free_y\")  # This will create separate facets for each level of 'Plate'\n}\n\n\n\n\nLastly, we need to update the default empty DESCRIPTION file which looks like below:\n\nPackage: mypackage\nTitle: What the Package Does (One Line, Title Case)\nVersion: 0.0.0.9000\nAuthors@R:\n   person(\"First\", \"Last\", , \"first.last@example.com\", role = c(\"aut\", \"cre\"))\nDescription: What the package does (one paragraph).\nLicense: `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\nEncoding: UTF-8\nRoxygen: list(markdown = TRUE)\nRoxygenNote: 7.3.2\n\nWhich you can update as intended for your purposes. In order to add any package dependencies as discussed above, then to add packages to the dependencies, you must use:\n\nusethis::use_package(\"dplyr\")                # adds to Imports in DESCRIPTIPN \nusethis::use_package(\"ggplot2\", \"Suggests\")  # adds to Suggests in DESCRIPTION\n\n\n\n\nTHEN you can check that all your functions and packages are loaded properly to build your package:\n\ndevtools::check()\n\nIt will tell you if your package:\n\nUses functions from a package not listed in DESCRIPTION\nLists packages you don’t actually use\n\n\n\n\n\nCreate .R file\nAdd your function to the .R file\nAdd roxygen comments in .R file, including @import or @importFrom for package dependencies\nRun devtools::document() to update NAMESPACE\nUse usethis::use_package(\"package\") to add to DESCRIPTION\nRun devtools::check() to verify consistency\n\nFor more detail about the R package development process, see the manual.\n\n\n\nTo add the Creative Commons Attribution licence (CC BY) in an R package’s DESCRIPTION:\n\nusethis::use_ccby_license(\"Your Name\")\n\n\n\n\nTo create a package-level documentation file in R, you create a special .R file (commonly my_package-package.R) that includes a @docType package and a NULL at the end.\nThis file generates the help page users see when they run ?my_package and is the right place to include global @importFrom directives like for %&gt;%.\nFirst create R/my_package-package.R and add the following roxygen block, for example:\n\n#' pvsero: Tools for serology test-and-treat\n#'\n#' This package provides tools to process, model, and visualise serological data\n#' as part of the PvSeroTaT study.\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\n#' @importFrom dplyr select filter mutate\n#' @importFrom ggplot2 ggplot aes geom_point\nNULL\n\nReplace the title and description with your own.\n\n@docType package tells roxygen this is the main package doc\n@name pvsero links the doc to the package name\n@importFrom … adds functions to NAMESPACE\nNULL at the end is required — the doc has no function attached\n\nThen rebuild the documentation: devtools::document() to update the NAMESPACE and creates \"man/my_package.Rd\", which is the file for ?my_package\nIf specific packages and/or functions are not added.\nYou can handle variable column names that are defined in R in a file called R/globals.R\n\nutils::globalVariables(c(\n  \".\", \"Sample\", \"SampleID\", \"RAU\", \"MFI\", \"Plate\", \"Program\",\n  \"Agg\", \"Antigen\", \"Beads\", \"Count\", \"Type\", \"QC_total\", \"Repeat\",\n  \"Gate\", \"LL.5\", \"Well\", \"Location\", \"Location.2\", \"Region\", \n  \"pred_class_max\", \".pred_new\", \"seropositive\", \"seronegative\",\n  \"stdcurve\", \"Sampling Errors\", \"Sens_Spec\", \"Text\", \"Total\", \n  \"Warning\", \"status_code\", \"type.letter\", \"dilution\", \"div\", \"value\",\n  \"xPONENT\", \"mfi\", \"mfi_pred\", \"new_fit\", \"eth_fit\", \"ref_mfi\", \n  \"error\", \"suffix\", \"prefix\", \"drm\", \"coef\", \"file_name\", \"data\", \n  \"tibble\", \"data_type\", \"pull\", \"fct_rev\", \"glue\", \"where\",\n  \"fromJSON\", \"png_fit\", \"row_number\", \"everything\", \"n\"\n))\n\nThen re-check and iterate\n\ndevtools::document()\ndevtools::check()\n\nIf you want to upload global R packages that apply to multiple functions:\n\n#' pvsero: Tools for [Your Package Description Here]\n#'\n#' [Optional longer description of what your package does]\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\nNULL\n\nThis: - Documents the package as a whole (@docType package) - Imports %&gt;% once globally - Keeps your NAMESPACE tidy Then run: devtools::document()",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#creating-an-r-package",
-    "href": "code/02_R_Package.html#creating-an-r-package",
-    "title": "R Package Development",
-    "section": "",
-    "text": "First, open a new project in R and select: File &gt; New Project &gt; New Directory &gt; R Package.\nHere you will enter your R package name e.g.,{my_package} as shown in the image to the right.\n\n\n\n\n\n\nTip\n\n\n\nR-emember: A catchy name sticks! Make it short, smart, and a clever play on “R” can make your package name memorable!\n\n\n\n\n\n\n\n\n\nStart up your .R file and enter your function: R/processCounts.R\n\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nThen click inside the function and either use the shortcut command (Mac): Shift + Option + Command + R OR you can go into Code &gt; Insert Roxygen Skeleton.\nThis will load something that looks like this:\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @author Dionne Argyropoulos\n\nThere are many other possibilities to add! See more in the documentation.\n\n\n\nOnce you have built one or multiple .R files, they need to be added to the manual! Here, you run the following line in your console!\n\ndevtools::document()                          # updates NAMESPACE\n\nIt is useful to run this command every time you write or update an .R file. This will create and update .Rd files for the manual. It will also update the NAMESPACE file.\n\n\n\nYou will also need to add “imports” for each package in the roxygen file. This includes all of the packages and/or functions that are used. To save memory, it is best practice to load only the functions that you require in each function.\nFor example, in the processCounts() function, the dplyr::mutate(), dplyr::case_when() and tidyr::pivot_longer() functions are used. We can write them in the roxygen documentation by adding the @importFrom {package} {argument} function, where multiple arguments can be added by just listing them side-by-side (as shown for dplyr below).\n\n#' Process Counts from Raw Serological Data file\n#'\n#' A helper function to process counts data.\n#'\n#' @param antigen_output Output from `readAntigens()` (reactive).\n#' @return Returns a long table of counts with \"Warning\" category (&lt;15 == 1 and ≥ 15 == 0) for downstream wrangling.\n#' @export\n#' \n#' @importFrom dplyr mutate case_when\n#' @importFrom tidyr pivot_longer\n#' \n#' @author Dionne Argyropoulos\nprocessCounts &lt;- function(antigen_output){\n\n  # 1. Store Counts Data\n  counts_data &lt;- antigen_output$counts\n\n  # 2. Data Wrangling\n  counts_data &lt;- counts_data %&gt;%\n    dplyr::mutate(Location=gsub(\".*,\", \"\", Location)) %&gt;%\n    dplyr::mutate(Location=substr(Location, 1, nchar(Location)-1))  %&gt;%\n    tidyr::pivot_longer(-c(Sample, Location, Plate), names_to = \"Antigen\", values_to = \"Count\") %&gt;%\n    dplyr::mutate(Warning = dplyr::case_when(\n      as.numeric(Count)&lt;15~1,\n      as.numeric(Count)&gt;=15~0\n    ))\n\n  return(counts_data)\n}\n\nIf you used more functions from a package, for example in the plotCounts() function below where ggplot2:: is called often for many different functions, then we just load the ggplot2 package by @import {package}.\n\n#' Plot Bead Count Data\n#'\n#' This function gets the count data and plots the plate image, creating a new\n#' facet (i.e., panel) for each antigen and each line represents the\n#' different plates so that they can be visualised.\n#'\n#' @param counts_output Output from `getCounts()` (reactive).\n#' @param experiment_name User-input experiment name (reactive).\n#' @return Tile Plot showing binary result of \"sufficient beads\" with cut-off\n#' &gt;15 beads and \"repeat\" ≤15 beads (ggplot).\n#' @export\n#' @import ggplot2\n#' @author Shazia Ruybal-Pesántez, Dionne Argyropoulos\nplotCounts &lt;- function(counts_output, experiment_name){\n  bead_counts &lt;- counts_output\n  bead_counts$Plate &lt;- factor(bead_counts$Plate, levels = unique(bead_counts$Plate[order(as.numeric(str_extract(bead_counts$Plate, \"\\\\d+\")))])) # reorder by plate number\n  bead_counts %&gt;%\n    ggplot2::ggplot(mapping = aes(x = Col, y = fct_rev(Row), fill = Repeat), fill = summary) +\n    ggplot2::geom_tile(aes(height = 0.90, width = 0.90)) +\n    ggplot2::scale_x_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12), position = \"top\") +\n    ggplot2::scale_fill_manual(values = c(\"sufficient beads\" = \"#91bfdb\", \"repeat\" = \"#d73027\"), drop=FALSE) +\n    ggplot2::theme_bw() +\n    ggplot2::labs(x = \"\", y = \"\", title = experiment_name , fill = \"\") +\n    ggplot2::facet_wrap( ~ Plate, ncol = 3, scales = \"free_y\")  # This will create separate facets for each level of 'Plate'\n}\n\n\n\n\nLastly, we need to update the default empty DESCRIPTION file which looks like below:\n\nPackage: mypackage\nTitle: What the Package Does (One Line, Title Case)\nVersion: 0.0.0.9000\nAuthors@R:\n   person(\"First\", \"Last\", , \"first.last@example.com\", role = c(\"aut\", \"cre\"))\nDescription: What the package does (one paragraph).\nLicense: `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\nEncoding: UTF-8\nRoxygen: list(markdown = TRUE)\nRoxygenNote: 7.3.2\n\nWhich you can update as intended for your purposes. In order to add any package dependencies as discussed above, then to add packages to the dependencies, you must use:\n\nusethis::use_package(\"dplyr\")                # adds to Imports in DESCRIPTIPN \nusethis::use_package(\"ggplot2\", \"Suggests\")  # adds to Suggests in DESCRIPTION\n\n\n\n\nTHEN you can check that all your functions and packages are loaded properly to build your package:\n\ndevtools::check()\n\nIt will tell you if your package:\n\nUses functions from a package not listed in DESCRIPTION\nLists packages you don’t actually use\n\n\n\n\n\nCreate .R file\nAdd your function to the .R file\nAdd roxygen comments in .R file, including @import or @importFrom for package dependencies\nRun devtools::document() to update NAMESPACE\nUse usethis::use_package(\"package\") to add to DESCRIPTION\nRun devtools::check() to verify consistency\n\nFor more detail about the R package development process, see the manual.\n\n\n\nTo add the Creative Commons Attribution licence (CC BY) in an R package’s DESCRIPTION:\n\nusethis::use_ccby_license(\"Your Name\")\n\n\n\n\nTo create a package-level documentation file in R, you create a special .R file (commonly my_package-package.R) that includes a @docType package and a NULL at the end.\nThis file generates the help page users see when they run ?my_package and is the right place to include global @importFrom directives like for %&gt;%.\nFirst create R/my_package-package.R and add the following roxygen block, for example:\n\n#' pvsero: Tools for serology test-and-treat\n#'\n#' This package provides tools to process, model, and visualise serological data\n#' as part of the PvSeroTaT study.\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\n#' @importFrom dplyr select filter mutate\n#' @importFrom ggplot2 ggplot aes geom_point\nNULL\n\nReplace the title and description with your own.\n\n@docType package tells roxygen this is the main package doc\n@name pvsero links the doc to the package name\n@importFrom … adds functions to NAMESPACE\nNULL at the end is required — the doc has no function attached\n\nThen rebuild the documentation: devtools::document() to update the NAMESPACE and creates \"man/my_package.Rd\", which is the file for ?my_package\nIf specific packages and/or functions are not added.\nYou can handle variable column names that are defined in R in a file called R/globals.R\n\nutils::globalVariables(c(\n  \".\", \"Sample\", \"SampleID\", \"RAU\", \"MFI\", \"Plate\", \"Program\",\n  \"Agg\", \"Antigen\", \"Beads\", \"Count\", \"Type\", \"QC_total\", \"Repeat\",\n  \"Gate\", \"LL.5\", \"Well\", \"Location\", \"Location.2\", \"Region\", \n  \"pred_class_max\", \".pred_new\", \"seropositive\", \"seronegative\",\n  \"stdcurve\", \"Sampling Errors\", \"Sens_Spec\", \"Text\", \"Total\", \n  \"Warning\", \"status_code\", \"type.letter\", \"dilution\", \"div\", \"value\",\n  \"xPONENT\", \"mfi\", \"mfi_pred\", \"new_fit\", \"eth_fit\", \"ref_mfi\", \n  \"error\", \"suffix\", \"prefix\", \"drm\", \"coef\", \"file_name\", \"data\", \n  \"tibble\", \"data_type\", \"pull\", \"fct_rev\", \"glue\", \"where\",\n  \"fromJSON\", \"png_fit\", \"row_number\", \"everything\", \"n\"\n))\n\nThen re-check and iterate\n\ndevtools::document()\ndevtools::check()\n\nIf you want to upload global R packages that apply to multiple functions:\n\n#' pvsero: Tools for [Your Package Description Here]\n#'\n#' [Optional longer description of what your package does]\n#'\n#' @docType package\n#' @name pvsero\n#' @importFrom magrittr %&gt;%\nNULL\n\nThis: - Documents the package as a whole (@docType package) - Imports %&gt;% once globally - Keeps your NAMESPACE tidy Then run: devtools::document()",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#adding-files-to-the-package",
-    "href": "code/02_R_Package.html#adding-files-to-the-package",
-    "title": "R Package Development",
-    "section": "Adding files to the package",
-    "text": "Adding files to the package\nCreate inst/extdata folder path and add all of the files to add.\nThen you can run the files here:\n\nmagpix_file &lt;- system.file(\"extdata\", \"example_MAGPIX_plate1.csv\", package = \"pvsero\")\nfile &lt;- read.csv(magpix_file)\n\nThis also works for .rda, .csv, .xlsx or other files.\nYou can also add a template.Rmd file to create PDFs or HTML outputs from rmarkdown files:\n\ntemplate &lt;- system.file(\"rmd\", \"template.Rmd\", package = \"pvsero\")\n\n### OR FOR EXAMPLE IN THE `pvsero::renderQCReport()`: \n    rmarkdown::render(\n      input = system.file(\"rmd/template.Rmd\", package=\"pvsero\"),\n      output_file = paste0(experiment_name, \"_\", date, \"_\", location, \"_\", version, \"_QCreport.pdf\"),\n      output_dir = here::here(),\n      params = list(\n        raw_data_filename = raw_data_filename,\n        experiment_name = experiment_name,\n        date = date,\n        experiment_notes = experiment_notes,\n        platform = platform,\n        stdcurve_plot = stdcurve_plot,\n        plateqc_plot = plateqc_plot,\n        blanks_plot = blanks_plot,\n        check_repeats_output = check_repeats_output,\n        check_repats_table_pdf = check_repats_table_pdf(check_repeats_output),\n        model_plot = model_plot,\n        operator_output = operator_output(),\n        volume_output = volume_output(),\n        calibration_output = calibration_output(),\n        machine_output = machine_output(),\n        plate_list_output = plate_list_output()\n      )\n    )\n\n\nAdd documentation to a dataset\nTo create .Rd documentation files for datasets included in your R package, you document them with roxygen2-style comments above the dataset definition or in a dedicated .R file. These get converted into .Rd files when you run devtools::document().\n\n\n1. Decide where to store the dataset\nYou have two options:\n\n\n\nType\nLocation\nFormat\nAccess\n\n\n\n\nLazy-loaded\ndata/\n.rda\ndata_name\n\n\nFile-based\ninst/extdata/\n.csv/.txt\nsystem.file()\n\n\n\nLet’s assume you’re using the data/ folder and loading the data with data() or library(my_package).\n\n\n2. Save the dataset\nIn your package root:\n\nusethis::use_data(my_data, overwrite = TRUE)\n\nThis creates data/my_data.rda.\n\n\n3. Create documentation in R/ folder\nCreate a new R script, e.g. R/data-documentation.R, and add:\n\n#' Example Serological Dataset\n#'\n#' A dataset containing raw RAU values and metadata from a test plate run.\n#'\n#' @format A data frame with 96 rows and 8 variables:\n#' \\describe{\n#'   \\item{SampleID}{Unique identifier for the sample}\n#'   \\item{Antigen}{Antigen name}\n#'   \\item{RAU}{Relative antibody units}\n#'   \\item{Plate}{Plate ID}\n#'   \\item{Repeat}{Repeat measurement flag}\n#'   \\item{Status}{Classification of sample}\n#'   \\item{Region}{Geographic region}\n#'   \\item{Program}{Treatment program}\n#' }\n#'\n#' @source Mueller Lab, WEHI\n\"my_data\"\n\nThe final line “my_data” tells roxygen you’re documenting the object named my_data.\n\n\n4. Run devtools::document()\n\ndevtools::document()\n\nThis creates man/my_data.Rd, which users can now view via:\n\n?my_data\n\n\n\n\n\n\n\nTip\n\n\n\nTip: Document each dataset in a separate roxygen block. Also, if you’re using CSV files in inst/extdata/, you don’t need .Rd docs unless you’re loading them as data objects inside the package.\n\n\n\n\nExample for multiple datasets:\n\n#' Plate Metadata\n#'\n#' Metadata for the test plate used in example analysis.\n#'\n#' @format A data frame with 96 rows and 5 columns.\n#' @source Internal study data\n\"plate_meta\"\n\n#' Serological Measurements\n#'\n#' Processed MFI and RAU values used in the example vignette.\n#'\n#' @format A tibble with 96 observations of 3 variables.\n#' @source Simulated data\n\"sero_data\"",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#creating-a-vignette",
-    "href": "code/02_R_Package.html#creating-a-vignette",
-    "title": "R Package Development",
-    "section": "Creating a Vignette",
-    "text": "Creating a Vignette\nRun the following command once, to:\n\nCreates a vignettes/ directory (if it doesn’t exist)\nCreates an .Rmd file at e.g., vignettes/getting-started.Rmd\nAdds knitr and rmarkdown to Suggests: in DESCRIPTION\nConfigures DESCRIPTION to build vignettes\n\n\nusethis::use_vignette(\"getting-started\")\n\nThis will be added to the DESCRIPTION: VignetteBuilder: knitr\n\nAdd content to the vignette\nSimply open the .Rmd file and edit as per a normal R Markdown.\n---\ntitle: 'Getting Started with my_package'\noutput: rmarkdown::html_vignette\nvignette: &gt;\n  %\\VignetteIndexEntry{Getting Started with my_package}\n  %\\VignetteEngine{knitr::rmarkdown}\n  %\\VignetteEncoding{UTF-8}\n---\n\n```{.r setup, include = FALSE}\nknitr::opts_chunk$set(\n  collapse = TRUE,\n  comment = '#&gt;'\n)\nlibrary(my_package)\n```\n\n\nUpload the vignette\nOnce you are ready for the vignette to be updated to the manual, run the following command:\n\ndevtools::build_vignettes()\ndevtools::document()\n\nThis will:\n\nKnit the .Rmd file into .html and .R files\nPlace them into inst/doc/ so they’re included when your package is installed\n\nNow you can view the vignette by:\n\nbrowseVignettes(\"my_package\") # OR \nvignette(\"my_package\") \n\n\n\n\n\n\n\nTip\n\n\n\nUse devtools::check() to confirm your vignette builds cleanly.\nKeep vignettes short, succinct and low data space.",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#exporting-the-package",
-    "href": "code/02_R_Package.html#exporting-the-package",
-    "title": "R Package Development",
-    "section": "Exporting the Package",
-    "text": "Exporting the Package\n\nOption 1: Local Only: Build a .tar.gz file distributable package file\n\n# Step 1: \ndevtools::build() # this creates a `my_package_0.1.0.tar.gz` file\n\n# Step 2: \ninstall.packages(\"my_package_0.1.0.tar.gz\", repos = NULL, type = \"source\")\n\nThe my_package_0.1.0.tar.gz file file be shared to others and they can load the package by: devtools::install(\"/path/to/my_package\")\n\n\nOption 2: Local or Global: Export to GitHub\nTo make this work:\n\nPush your package directory to a GitHub repo\nEnsure the structure is valid (DESCRIPTION, NAMESPACE, R/, etc.)\n\nThis can be done in the R console, as shown below, or in the terminal.\n\nusethis::use_git()       # if your package isn't using Git yet\nusethis::use_github()    # this pushes it to GitHub\n\nAfter uploading:\n\ndevtools::install_github(\"yourusername/my_package\") # OR \nremotes::install_github(\"yourusername/my_package\")\n\n\nCreating Personal Access Token\nif you haven’t created a personal access token for GitHub to interact with your R studio:\n\nusethis::create_github_token()\n\nThis will:\n\nOpen GitHub in your browser to the personal access token creation page\nSuggest the correct scopes (you can usually just accept the defaults: repo, user, etc.)\n\n\n\n\n\n\n\nImportant\n\n\n\nCopy the token when it’s generated — this is your only chance to see it!\n\n\nThen, in R:\n\ngitcreds::gitcreds_set()\n\nAnd paste the token when it is prompted. This securely stores your token so Git can authenticate with GitHub from R (using HTTPS).\nThen verify you’re signed in:\n\ngh::gh_whoami()\n\nSet your git name and email:\n\nusethis::use_git_config(user.name = \"Your Name\", user.email = \"your@email.com\")\n\n\n\n\nFolder Organisation\nThe overall package folder looks like this:\n\nmy_package/\n├── DESCRIPTION\n├── NAMESPACE\n├── R/\n│   ├── function1.R\n│   └── helper.R\n├── man/\n│   ├── function1.Rd\n├── vignettes/           # optional\n├── tests/               # optional\n├── inst/                # optional (e.g. extdata, shiny apps)\n├── data/                # optional\n├── LICENSE              # optional (recommended)\n├── README.md            # optional but nice",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#updating-the-package",
-    "href": "code/02_R_Package.html#updating-the-package",
-    "title": "R Package Development",
-    "section": "Updating the Package",
-    "text": "Updating the Package\n\n1. Make the Update\n\nAdd new functions, modify existing ones or remove functions sin the R/ folder.\nAdd new data to data/ or inst/extdata/ and document it.\nUpdate vignettes or README files if needed.\nAdd or update roxygen2 documentation in .R files.\n\n\n\n2. Update Package Documentation\nAfter editing any .R file or adding roxygen tags:\n\ndevtools::document()\n\nUpdates your NAMESPACE (for @export, @importFrom, etc.). Regenerates .Rd files in man/.\n\n\n3. Update Version Number (Optional)\nIn your DESCRIPTION file, the version might be written as Version: 0.1.0. If you’re making a user-visible change, bump the version. Use semantic versioning:\n\n\n\nType\nExample Version Bump\n\n\n\n\nBug fix\n0.1.0 → 0.1.1\n\n\nNew feature\n0.1.1 → 0.2.0\n\n\nMajor redesign\n0.2.1 → 1.0.0\n\n\n\nOr use:\n\nusethis::use_version(\"minor\")  # or \"patch\", \"major\"\n\n\n\n4. Test Your Package\nRun a full check:\n\ndevtools::check()\n\nLook for errors, warnings, or notes — especially related to new functions, dependencies, or documentation.\n\n\n5. Reinstall Locally\nIf you want to use the updated version in your own R session:\n\ndevtools::install()\n\nOr with cleaning to remove old build artifacts:\n\ndevtools::install(clean = TRUE)\n\n\n\n6. Commit and Push\n\n\n7. Rebuild Vignettes (Optional)\nIf your changes affect a vignette:\n\ndevtools::build_vignettes()",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#troubleshooting-faqs",
-    "href": "code/02_R_Package.html#troubleshooting-faqs",
-    "title": "R Package Development",
-    "section": "Troubleshooting FAQs",
-    "text": "Troubleshooting FAQs\n\nWarning: Package or Functions not defined\nTo account for many “notes” from the devtools::check(), you can:\nAdd @importFrom {package} {function} {function} {function} to those that have not been added. Add @import {package} to those that have not been added.\n\n\nWarning: Meta/ file corrupted or errors\n\nCommon error: Warning message:\nIn loadNamespace(package, lib.loc = libLoc) :\n  package ‘my_package’ has no 'package.rds' in Meta/\n\n\nRestart R\nClean the build cache: devtools::clean_dll()\nRemove previously installed/broken version: remove.packages(\"my_package\")\nCheck where it’s installed: find.package(\"my_package\"): if it is still installed then delete it manually from the folder\nReinstall the package cleanly: devtools::install(clean = TRUE):\n\n\nThis will clean previous build artifacts\nRebuild the package from source\nRegenerate the Meta/ and pacakge.rd correctly\n\n\nRun devtools::load_all() and the warning should disappear",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/01_Code_Log_Intro.html",
-    "href": "code/01_Code_Log_Intro.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "This collection was inspired by Chrissy Roberts’ Code Book, which I was introduced to by Caitlin Bourke. It brings together the most useful pieces of code I’ve accumulated over the years—scripts I often return to or have developed for specific analyses. My hope is that future me (and anyone else who happens to come across this) finds it a helpful and practical resource.\nHere are a list of my favourite R packages that will be leveraged throughout this section.",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "code/01_Code_Log_Intro.html#data-wrangling",
-    "href": "code/01_Code_Log_Intro.html#data-wrangling",
-    "title": "Welcome",
-    "section": "Data Wrangling",
-    "text": "Data Wrangling\n\nlibrary(tidyverse)\nlibrary(janitor)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
-    "href": "code/01_Code_Log_Intro.html#epidemiology-statistical-analysis",
-    "title": "Welcome",
-    "section": "Epidemiology / Statistical Analysis",
-    "text": "Epidemiology / Statistical Analysis\n\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(gtsummary)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "code/01_Code_Log_Intro.html#population-genetics-analysis",
-    "href": "code/01_Code_Log_Intro.html#population-genetics-analysis",
-    "title": "Welcome",
-    "section": "Population Genetics Analysis",
-    "text": "Population Genetics Analysis\n\nlibrary(poppr)\nlibrary(adegenet)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "code/01_Code_Log_Intro.html#r-shiny",
-    "href": "code/01_Code_Log_Intro.html#r-shiny",
-    "title": "Welcome",
-    "section": "R Shiny",
-    "text": "R Shiny\n\nlibrary(shiny)\nlibrary(shiny.fluent)\nlibrary(waiter)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "code/01_Code_Log_Intro.html#r-package-development",
-    "href": "code/01_Code_Log_Intro.html#r-package-development",
-    "title": "Welcome",
-    "section": "R Package Development",
-    "text": "R Package Development\n\nlibrary(devtools)\nlibrary(usethis)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "code/01_Code_Log_Intro.html#general-git-things",
-    "href": "code/01_Code_Log_Intro.html#general-git-things",
-    "title": "Welcome",
-    "section": "General Git things",
-    "text": "General Git things\n\nMaking changes\n\ngit add .\ngit commit -m \"Add a personalised and detailed message\"\ngit push\n\n\n\nClone a repository from GitHub\n\ngit clone &lt;&lt;INSERT GITHUB REPOSITORY&gt;&gt;\n\n\n\nHow to remove a repository on Github\n\nGo to the repository’s main page on GitHub (e.g., https://github.com/yourusername/pvsero)\nClick Settings (right-hand tab)\nScroll all the way to the Danger Zone at the bottom\nClick Delete this repository\nGitHub will ask you to:\n\nConfirm the name of the repo (e.g., yourusername/pvsero)\nType it in to confirm\n\nClick the red I understand the consequences, delete this repository button\n\nThe repository will be permanently deleted — this action cannot be undone.\nThis does not delete your local R project or files — only the copy on GitHub. If you want to disconnect GitHub but keep the local Git repo, you can just remove the remote link using: git remote remove origin",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#bonus-keep-a-news-file",
-    "href": "code/02_R_Package.html#bonus-keep-a-news-file",
-    "title": "R Package Development",
-    "section": "Bonus: Keep a NEWS file",
-    "text": "Bonus: Keep a NEWS file\nTo track your changes over time, add a NEWS.md file:\n\nusethis::use_news_md()\n\nThen update it with each change, e.g.:\n\nmarkdown\nCopy\nEdit\n# pvsero 0.2.0\n\n* Added `plot_plate_mfi()` function for quick QC plots.\n* Updated vignette to include new workflow.\n* Fixed bug in `normalize_rau()`.",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/02_R_Package.html#bonus-r-hexagon-sticker",
-    "href": "code/02_R_Package.html#bonus-r-hexagon-sticker",
-    "title": "R Package Development",
-    "section": "Bonus: R Hexagon Sticker",
-    "text": "Bonus: R Hexagon Sticker\nSee more about how to make an R Hexagon with the R Sticker documentation.\n\ninstall.packages(\"hexSticker\")\nlibrary(hexSticker)\n\nimgurl &lt;- system.file(\"figures/cat.png\", package=\"hexSticker\")\n\nsticker(\n  ##########################################################################\n  # Subplot Adjustments (Image or Plot)\n  ##########################################################################\n  imgurl,                              # Subplot (Image or Plot)\n  s_x=1,                               # x position for subplot\n  s_y=.75,                             # y position for subplot\n  s_width=.6,                          # width for subplot\n  # s_height=,                         # height for subplot\n  ##########################################################################\n  # Package Name Adjustments\n  ##########################################################################\n  package=\"hexSticker\",                # R Package or Shiny name\n  p_x = ,                            # x position for package name\n  p_y = ,                            # y position for package name\n  p_size=20,                           # font size for package name\n  p_family = \"gochi\",                  # font family for package name\n  p_color = ,                        # color for package name\n  p_fontface = ,                     # fontface for package name\n  ##########################################################################\n  # Hexagon Border Adjustments\n  ##########################################################################\n  h_size = ,                         # size for hexagon border\n  h_fill = ,                         # color to fill hexagon\n  h_color = ,                        # color for hexagon border\n  ##########################################################################\n  # Spotlight Adjustments\n  ##########################################################################\n  spotlight = ,                      # whether add spotlight\n  l_x = ,                            # x position for spotlight\n  l_y = ,                            # y position for spotlight\n  l_width = ,                        # width for spotlight\n  l_height = ,                       # height for spotlight\n  l_alpha = ,                        # maximum alpha for spotlight\n  ##########################################################################\n  # URL Adjustments\n  ##########################################################################\n  url = ,                            # url at lower border\n  u_x = ,                            # x position for url\n  u_y = ,                            # y position for url\n  u_color = ,                        # color for url\n  u_family = ,                       # font family for url\n  u_size = ,                         # text size for url\n  u_angle = ,                        # angle for url\n  ##########################################################################\n  # Save\n  ##########################################################################\n  white_around_sticker = ,           # default to FALSE. If TRUE: white triangles in corners\n  asp = ,                            # aspect ratio, only works if subplot is an image file\n  dpi = ,                            # dpi plot resolution\n  filename=\"inst/figures/imgfile.png\"  # filename to save sticker\n)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "R Package Development"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html#add-images",
-    "href": "code/01_quarto.html#add-images",
-    "title": "Quarto",
-    "section": "Add images",
-    "text": "Add images\n\n# ![](images/02_r_package.png){width=\"500\"}",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html#callout-note",
-    "href": "code/01_quarto.html#callout-note",
-    "title": "Quarto",
-    "section": "Callout Note",
-    "text": "Callout Note",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html#column-margin",
-    "href": "code/01_quarto.html#column-margin",
-    "title": "Quarto",
-    "section": "Column Margin",
-    "text": "Column Margin",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html#two-columns",
-    "href": "code/01_quarto.html#two-columns",
-    "title": "Quarto",
-    "section": "Two Columns",
-    "text": "Two Columns\n\n# ::: {.grid}\n# \n# ::: {.g-col-6}\n# \n# **Column 1**\n# \n# :::\n#   \n# ::: {.g-col-6}\n# \n# **Column 2**\n# \n# :::\n#   \n# :::",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html#render-quarto-pakcges-from-random-document",
-    "href": "code/01_quarto.html#render-quarto-pakcges-from-random-document",
-    "title": "Quarto",
-    "section": "Render Quarto Pakcges from random document",
-    "text": "Render Quarto Pakcges from random document\nquarto publish tutorials/tutorials-main.qmd will sort it out",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
     "objectID": "code/03_shiny.html",
     "href": "code/03_shiny.html",
     "title": "R Shiny Apps",
     "section": "",
-    "text": "Back to top",
+    "text": "To be added.\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "Code: The Basics",
       "R Shiny Apps"
+    ]
+  },
+  {
+    "objectID": "code/01_quarto.html",
+    "href": "code/01_quarto.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "Concepts that apply to all Quarto documents:\n\n\n![](images/02_r_package.png){width=\"500\"}\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including:\nnote, tip, warning, caution, and important.\n\n\n:::{.callout-note}\n\nNote that there are five types of callouts, including:\n\n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nA margin image\n\n\n::: {.column-margin}\n\n![A margin image](image.png)\n\n:::\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n::: {.grid}\n\n::: {.g-col-6}\n\n**Column 1**\n\n:::\n  \n::: {.g-col-6}\n\n**Column 2**\n \n:::\n   \n:::",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Quarto"
+    ]
+  },
+  {
+    "objectID": "code/01_quarto.html#key-commands",
+    "href": "code/01_quarto.html#key-commands",
+    "title": "Quarto",
+    "section": "",
+    "text": "Concepts that apply to all Quarto documents:\n\n\n![](images/02_r_package.png){width=\"500\"}\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including:\nnote, tip, warning, caution, and important.\n\n\n:::{.callout-note}\n\nNote that there are five types of callouts, including:\n\n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nA margin image\n\n\n::: {.column-margin}\n\n![A margin image](image.png)\n\n:::\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n::: {.grid}\n\n::: {.g-col-6}\n\n**Column 1**\n\n:::\n  \n::: {.g-col-6}\n\n**Column 2**\n \n:::\n   \n:::",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Quarto"
+    ]
+  },
+  {
+    "objectID": "code/01_quarto.html#websites",
+    "href": "code/01_quarto.html#websites",
+    "title": "Quarto",
+    "section": "Websites",
+    "text": "Websites\n\nRender Quarto Packages from Random Document\nquarto publish tutorials/tutorials-main.qmd will sort it out",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Quarto"
+    ]
+  },
+  {
+    "objectID": "code/01_quarto.html#documents",
+    "href": "code/01_quarto.html#documents",
+    "title": "Quarto",
+    "section": "Documents",
+    "text": "Documents",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Quarto"
+    ]
+  },
+  {
+    "objectID": "code/01_quarto.html#slides",
+    "href": "code/01_quarto.html#slides",
+    "title": "Quarto",
+    "section": "Slides",
+    "text": "Slides",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Quarto"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html",
+    "href": "code/04_targets.html",
+    "title": "Pipelines with {targets}",
+    "section": "",
+    "text": "The {targets} R package is a tool to:\n\nRun code in a “pipeline”: step-by-step with one command\nAutomatic caching\nAutomatic detection and visualisation of steps dependencies\nAutomatic detection of changes in data and/or code\nUses parallel computing\nPerform your analysis\nKeep up to date with minor and major changes\nMake your analyses reproducible",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#case-study-pf-haploatlas",
+    "href": "code/04_targets.html#case-study-pf-haploatlas",
+    "title": "Pipelines with {targets}",
+    "section": "Case Study: Pf-HaploAtlas",
+    "text": "Case Study: Pf-HaploAtlas\nThe Plasmodium falciparum Haplotype Atlas (or Pf-HaploAtlas) is a user-friendly way to study and track genetic mutations across any gene in the P. falciparum genome!\nCurrently, the app uses the MalariaGEN repository Pf8 database containing 24,409 QC-passed samples, from 34 countries, and spread between the years 1966 and 2022, facilitating comprehensive spatial and temporal analyses of genes and variants of interest.",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#heres-my-current-code-pipeline",
+    "href": "code/04_targets.html#heres-my-current-code-pipeline",
+    "title": "Pipelines with {targets}",
+    "section": "Here’s my current code pipeline …",
+    "text": "Here’s my current code pipeline …\n\ndhfr_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0417200_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfdhfr\")\nmdr1_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0523000_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfmdr1\")\naat1_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0629500_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfaat1\")\ncrt_Pf8     &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0709000_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfcrt\")\ndhps_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0810800_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfdhps\")\nK13_Pf8     &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_1343700_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfK13\")\npfs47_Pf8   &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_1346800_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfs47\")\nread_haploatlas &lt;- function(df){\n\n  this_Gene &lt;- unique(df$Gene)   # assumes only one Gene per df\n  max_splits &lt;- max(str_count(df$ns_changes, \"/\")) + 1 # Identify how many mutations in total dataset\n    \n  df_qc &lt;- df %&gt;% \n    # Keep only samples that passed QC and are not excluded \n    dplyr::filter(QC.pass == \"True\", HaploAtlas.exclusion.reason == \"Analysis_set\") %&gt;%\n    # Keep only Country-Year groups with ≥25 samples\n    dplyr::group_by(Population, Country, Year) %&gt;% \n    dplyr::filter(dplyr::n() &gt;= 25) %&gt;% \n    dplyr::ungroup() %&gt;% \n    # Process haplotypes \n    tidyr::separate(ns_changes, into = paste0(\"ns_change_\", 1:max_splits), sep = \"/\", fill = \"right\") %&gt;%\n    tidyr::pivot_longer(-c(Sample:HaploAtlas.exclusion.reason, Gene), names_to = \"changes\", values_to = \"ns_changes\")  %&gt;% \n    dplyr::mutate(pos = str_extract(ns_changes, \"\\\\d+\")) %&gt;% \n    dplyr::filter(!(is.na(ns_changes) & is.na(pos))) %&gt;% \n    dplyr::select(-changes) %&gt;% \n    tidyr::pivot_wider(id_cols = c(Sample:HaploAtlas.exclusion.reason, Gene), names_from = pos, values_from = ns_changes)\n  \n  if (this_Gene == \"pfdhfr\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `50`, `51`, `59`, `108`, `164`, Gene) %&gt;% \n      unite(ns_changes, c(`50`, `51`, `59`, `108`, `164`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"dhfr\")\n    df_final &lt;- df1\n  \n  } else if (this_Gene == \"pfmdr1\"){\n     \n    df1 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `86`, `184`, Gene) %&gt;% \n      unite(ns_changes, c(`86`, `184`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"mdr11\")\n    \n    df2 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `1034`, `1042`, Gene) %&gt;% \n      unite(ns_changes, c(`1034`, `1042`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"mdr12\")\n    \n    df3 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `1246`, Gene) %&gt;% \n      unite(ns_changes, c(`1246`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"mdr13\")\n    \n    df_final &lt;- bind_rows(df1, df2, df3)\n    \n  } else if (this_Gene == \"pfaat1\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `258`, `313`, Gene) %&gt;% \n      unite(ns_changes, c(`258`, `313`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"aat1\")\n    df_final &lt;- df1\n    \n  } else if (this_Gene == \"pfcrt\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `72`, `74`, `75`, `76`, Gene) %&gt;%\n      unite(ns_changes, c(`72`, `74`, `75`, `76`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"crt\")\n    df_final &lt;- df1\n    \n  } else if (this_Gene == \"pfdhps\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `431`, `436`, `437`, Gene) %&gt;% \n      unite(ns_changes, c(`431`, `436`, `437`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"dhps1\")\n    \n    df2 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `540`, `581`, `613`, Gene) %&gt;% \n      unite(ns_changes, c(`540`, `581`, `613`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"dhps2\")\n    \n    df_final &lt;- bind_rows(df1, df2)\n    \n  } \n   \n  df_final &lt;- df_final %&gt;% dplyr::mutate(ns_changes = ifelse(ns_changes == \"\" | is.na(ns_changes), \"WT\", ns_changes)) \n  return(df_final)\n}\n\nall_pop_data &lt;- bind_rows(\n  read_haploatlas(dhfr_Pf8), \n  read_haploatlas(dhps_Pf8), \n  read_haploatlas(crt_Pf8),\n  read_haploatlas(mdr1_Pf8), \n  read_haploatlas(aat1_Pf8)\n) \nall_pop_data_1 &lt;- all_pop_data %&gt;% \n  # Filter for countries that have data for ALL Markers\n  group_by(Country, Year) %&gt;%\n  filter(n_distinct(Marker) == n_distinct(all_pop_data$Marker)) %&gt;%\n  ungroup() %&gt;% \n  # Filter for the latest year available per country\n  group_by(Country, Marker) %&gt;% \n  filter(Year == max(Year, na.rm = TRUE)) %&gt;% \n  ungroup() \n\n# join all samples together\n# Dataset to compare countries only when Population == \"AF-W\"\nWAFR_data_summarised &lt;- all_pop_data_1 %&gt;% \n  filter(Population == \"AF-W\") %&gt;% \n  summarise(n = n(), .by = c(Country, Year, Gene, Marker, ns_changes)) %&gt;% \n  group_by(Country, Year, Marker) %&gt;% \n  mutate(\n    Total = sum(n),\n    prop = n / Total\n  ) \n# compare samples \nWAFR_data_summarised_plot &lt;- WAFR_data_summarised %&gt;%\n  mutate(\n    Country_Year = paste0(Country,\"\\n\", Year),\n    Country_Year = factor(\n      Country_Year, \n      levels = c(\"Ghana\\n2019\", \"Benin\\n2016\", \"Nigeria\\n2020\", \"Côte d'Ivoire\\n2013\",\n                 \"Mali\\n2016\", \"Guinea\\n2011\", \"Senegal\\n2015\", \"Gambia\\n2017\", \"Mauritania\\n2014\", \n                 \"Cameroon\\n2013\", \"Gabon\\n2014\")\n    ), \n    Marker = factor(\n      Marker, \n      levels = c(\"aat1\", \"crt\", \"mdr11\", \"mdr12\", \"mdr13\", \"dhfr\", \"dhps1\", \"dhps2\")\n    )\n  ) %&gt;% ungroup()\n\nWAFR_data_summarised_plot %&gt;% \n  filter(!c(Marker %in% c(\"mdr12\", \"mdr13\"))) %&gt;% \n  ggplot(aes(x = Country_Year, y = prop, fill = ns_changes)) +\n  geom_bar(stat = \"identity\", width = 1, colour = \"white\") +\n  facet_wrap(~Marker) + \n  theme(legend.position = \"none\", axis.text.x = element_text(angle = 45, hjust = 1))",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#step-1-turn-your-code-into-functions",
+    "href": "code/04_targets.html#step-1-turn-your-code-into-functions",
+    "title": "Pipelines with {targets}",
+    "section": "Step 1: Turn your code into functions",
+    "text": "Step 1: Turn your code into functions\nDon’t forget to document your functions! ({roxygen}-style)\n\n#' Read and clean data\n#' \n#' Reads in the haplotype data, renames and selects relevant columns. The\n#' following transformations are applied to the data: \n#' * only keep S8 data\n#' * replace special characters ; to / in line with Pf-haploatlas data\n#' * summarise prevalence of non-synonymous changes \n#' * remove K13 and pfs47 data \n#' \n#' @param file_path Character, path to Bongo haplotype data for Bongo MRS study (.csv file).\n#' @param survey_name Survey to filter analysis by. Default = S8.\n#' @param year Optional variable to label year by. Default = 2020.\n#' @param location Optional variable to label location. Default = Bongo, Ghana. \n#' @returns A tibble.\n#' @author Dionne Argyropoulos\nread_data &lt;- function(file_path, survey_name = \"S8\", year = 2020, location = \"Bongo, Ghana\") {\n  read_csv(here::here(file_path)) %&gt;% \n    dplyr::filter(Survey == survey_name) %&gt;% \n    dplyr::mutate(\n      ## modifying columns\n    ) %&gt;% \n    dplyr::summarise(n = dplyr::n(), .by = c(Marker, ns_changes)) %&gt;% \n    dplyr::group_by(Marker) %&gt;% \n    dplyr::mutate(\n      ## modifying columns\n    ) %&gt;% \n    dplyr::ungroup() %&gt;% \n    dplyr::filter(\n      ## remove unnecessary rows \n    ) %&gt;%\n    dplyr::select(\n      ## relevant columns \n    )\n}\n\nImproved script:\n\n\n\n\n\nR/helper_functions.R\n\n#' Read and clean data\n#' \n#' ...\nread_data &lt;- function(file_path) { ... }\n\n#' Read and filter Pf-Haploatlas Data\n#' \n#' ...\nread_haploatlas &lt;- function(file_paths) { ... }\n\n#' Join Bongo and Pf-Haploatlas data, filter for countries in West Africa\n#' \n#' ...\nfilter_and_merge &lt;- function(df1, df2, region = \"AF-W\") { ... }\n\n#' Bar Plot of Haplotype prevalence \n#' \n#' ...\nbar_plot &lt;- function(df) { ... }\n\n\n\n\n\n\nanalysis/first_script.R\n\nlibrary(here)\n\nsource(here(\"R/helper_functions.R\"))\n\nbongo_df &lt;- read_data(\n  here(\"data/bongo_results/S7810_all_MH_Epi.csv\")\n)\n\nhaploatlas_df &lt;- read_haploatlas(\n  file_paths = c(\n    \"data/sample_summary/pf-haploatlas-PF3D7_0417200_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0810800_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0709000_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0523000_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0629500_sample_summary.csv\"\n  ),\n  gene_names = c(\"pfdhfr\", \"pfdhps\", \"pfcrt\", \"pfmdr1\", \"pfaat1\")\n)\n\nwest_africa_df &lt;- filter_and_merge(\n  bongo_df, \n  haploatlas_df, \n  region = \"AF-W\"\n)\n\nwest_africa_haplotypes_plot &lt;- bar_plot(\n  west_africa_df\n)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#step-2-turn-your-main-script-into-a-targets-pipeline",
+    "href": "code/04_targets.html#step-2-turn-your-main-script-into-a-targets-pipeline",
+    "title": "Pipelines with {targets}",
+    "section": "Step 2: Turn your main script into a {targets} pipeline!",
+    "text": "Step 2: Turn your main script into a {targets} pipeline!\n\nlibrary(targets)\nlibrary(here)\nlibrary(tidyverse)\n\nsource(here(\"R/helper_functions.R\"))\n\nlist(\n  tar_target(bongo_raw_file, here(\"data/bongo_results/S7810_all_MH_Epi.csv\"), format = \"file\"),\n  \n  tar_target(penguins_df, read_data(penguins_raw_file)),\n  \n  tar_target(pf_haploatlas_raw_files,\n             c(\n               \"data/sample_summary/pf-haploatlas-PF3D7_0417200_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0810800_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0709000_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0523000_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0629500_sample_summary.csv\"\n             ),\n             format = \"file\"\n  ),\n  \n  tar_target(pf_haploatlas_raw_files, read_haploatlas(pf_haploatlas_raw_files, gene_names = c(\"pfdhfr\", \"pfdhps\", \"pfcrt\", \"pfmdr1\", \"pfaat1\"))),\n\n  tar_target(west_africa_df, filter_and_merge(bongo_df, haploatlas_df, region = \"AF-W\")),\n\n  tar_target(west_africa_haplotypes_plot, bar_plot(west_africa_df))\n)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#visualise-your-pipeline",
+    "href": "code/04_targets.html#visualise-your-pipeline",
+    "title": "Pipelines with {targets}",
+    "section": "Visualise your pipeline",
+    "text": "Visualise your pipeline\nIn the console, run:\n\ntargets::tar_visnetwork()",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#execute-your-pipeline",
+    "href": "code/04_targets.html#execute-your-pipeline",
+    "title": "Pipelines with {targets}",
+    "section": "Execute your pipeline",
+    "text": "Execute your pipeline\nIn the console, run:\n\ntargets::tar_make()\n\n\n\n\n\nhere() starts at /Users/Dionne/Library/CloudStorage/OneDrive-wehi.edu.au/2_Projects/Lab_Jex/targets_tutorial\n+ pf_haploatlas_raw_files dispatched         \n✔ pf_haploatlas_raw_files completed [0ms, 36.77 MB]\n+ bongo_raw_file dispatched\n✔ bongo_raw_file completed [0ms, 9.54 MB]\n+ bongo_df dispatched\n✔ bongo_df completed [1.2s, 744 B]\n+ west_africa_df dispatched\n✔ west_africa_df completed [0ms, 744 B]\n+ west_africa_haplotypes_plot dispatched\n✔ west_africa_haplotypes_plot completed [0ms, 744 B]\n✔ ended pipeline [1.3s, 5 completed, 0 skipped]",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#get-the-pipeline-results",
+    "href": "code/04_targets.html#get-the-pipeline-results",
+    "title": "Pipelines with {targets}",
+    "section": "Get the pipeline results",
+    "text": "Get the pipeline results\n\ntargets::tar_read(west_africa_haplotypes_plot)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#change-in-a-step",
+    "href": "code/04_targets.html#change-in-a-step",
+    "title": "Pipelines with {targets}",
+    "section": "Change in a step",
+    "text": "Change in a step\n\nHi Dionne,\nGreat work! Just a minor comment, could you change the colours bar-plot? It’s hard to see the difference between the haplotypes\n\n\n\n\nR/helper_functions.R\n\nplot_bill_length_depth &lt;- function(df) {\n  df %&gt;%\n    ggplot(aes(x = Country_Year, y = prop, fill = ns_changes)) +\n    geom_bar(stat = \"identity\", width = 1, colour = \"white\") +\n    scale_fill_manual(values = colour_palette_for_drugr) + \n    facet_wrap(~Marker) + \n    theme(legend.position = \"none\", axis.text.x = element_text(angle = 45, hjust = 1))\n}\n\n\n\ntargets::tar_make()\n\n\n\n\nhere() starts at /Users/Dionne/Library/CloudStorage/OneDrive-wehi.edu.au/2_Projects/Lab_Jex/targets_tutorial\n+ west_africa_haplotypes_plot dispatched     \n✔ west_africa_haplotypes_plot completed [62ms, 293.62 kB]\n✔ ended pipeline [248ms, 1 completed, 4 skipped]\n\n\n\ntargets::tar_read(west_africa_haplotypes_plot)",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#change-in-the-data",
+    "href": "code/04_targets.html#change-in-the-data",
+    "title": "Pipelines with {targets}",
+    "section": "Change in the data",
+    "text": "Change in the data\n\nHi Dionne,\nOopsie! We realised there was a mistake in the original data Bongo file. Here is the updated spreadsheet, could you re-run the analysis with this version?\n\n\ntargets::tar_visnetwork()",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
+    ]
+  },
+  {
+    "objectID": "code/04_targets.html#aside-where-should-my-targets-script-live",
+    "href": "code/04_targets.html#aside-where-should-my-targets-script-live",
+    "title": "Pipelines with {targets}",
+    "section": "Aside: where should my targets script live?",
+    "text": "Aside: where should my targets script live?\n\ndefault would be in the _targets.R file in the main directory\nto choose a custom folder and file name, need to specify targets configuration:\n\nIn the console, run (from main directory):\n\ntargets::tar_config_set(script = \"analysis/_targets.R\", store = \"analysis/_targets\")\n\nWill create a _targets.yaml file:\n\n\n\n_target.yaml\n\nmain:\n  script: analysis/_targets.R\n  store: analysis/_targets",
+    "crumbs": [
+      "Home",
+      "Code: The Basics",
+      "Pipelines with {targets}"
     ]
   },
   {
@@ -856,219 +403,36 @@
     ]
   },
   {
-    "objectID": "code/01_quarto.html#websites",
-    "href": "code/01_quarto.html#websites",
-    "title": "Quarto",
-    "section": "Websites",
-    "text": "Websites\n\nRender Quarto Packages from Random Document\nquarto publish tutorials/tutorials-main.qmd will sort it out",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html#documents",
-    "href": "code/01_quarto.html#documents",
-    "title": "Quarto",
-    "section": "Documents",
-    "text": "Documents",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html#slides",
-    "href": "code/01_quarto.html#slides",
-    "title": "Quarto",
-    "section": "Slides",
-    "text": "Slides",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/01_quarto.html",
-    "href": "code/01_quarto.html",
-    "title": "Quarto",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
     "section": "",
-    "text": "Concepts that apply to all Quarto documents:\n\n\n![](images/02_r_package.png){width=\"500\"}\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including:\nnote, tip, warning, caution, and important.\n\n\n:::{.callout-note}\n\nNote that there are five types of callouts, including:\n\n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nA margin image\n\n\n::: {.column-margin}\n\n![A margin image](image.png)\n\n:::\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n::: {.grid}\n\n::: {.g-col-6}\n\n**Column 1**\n\n:::\n  \n::: {.g-col-6}\n\n**Column 2**\n \n:::\n   \n:::",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
     "crumbs": [
       "Home",
-      "Code: The Basics",
-      "Quarto"
+      "Introduction"
     ]
   },
   {
-    "objectID": "code/01_quarto.html#concepts-that-apply-to-all-quarto-documents",
-    "href": "code/01_quarto.html#concepts-that-apply-to-all-quarto-documents",
-    "title": "Quarto",
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "Introduction",
     "section": "",
-    "text": "![](images/02_r_package.png){width=\"500\"}\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including:\nnote, tip, warning, caution, and important.\n\n\n:::{.callout-note}\n\nNote that there are five types of callouts, including:\n\n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nA margin image\n\n\n::: {.column-margin}\n\n![A margin image](image.png)\n\n:::\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n::: {.grid}\n\n::: {.g-col-6}\n\n**Column 1**\n\n:::\n  \n::: {.g-col-6}\n\n**Column 2**\n \n:::\n   \n:::  \n```",
+    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
     "crumbs": [
       "Home",
-      "Code: The Basics",
-      "Quarto"
+      "Introduction"
     ]
   },
   {
-    "objectID": "code/01_quarto.html#key-commands",
-    "href": "code/01_quarto.html#key-commands",
-    "title": "Quarto",
-    "section": "",
-    "text": "Concepts that apply to all Quarto documents:\n\n\n![](images/02_r_package.png){width=\"500\"}\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including:\nnote, tip, warning, caution, and important.\n\n\n:::{.callout-note}\n\nNote that there are five types of callouts, including:\n\n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nA margin image\n\n\n::: {.column-margin}\n\n![A margin image](image.png)\n\n:::\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n::: {.grid}\n\n::: {.g-col-6}\n\n**Column 1**\n\n:::\n  \n::: {.g-col-6}\n\n**Column 2**\n \n:::\n   \n:::",
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Introduction",
+    "section": "About Me",
+    "text": "About Me\nI have always had a keen interest in science. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in biology - specifically evolution and genetics - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed here.\nMy PhD thesis focussed on the molecular epidemiology and population genetics of Plasmodium falciparum malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of Plasmodium falciparum malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations.\nI am currently a post-doctoral Research Officer at the Walter and Eliza Hall Institute for Medical Research (WEHI) where I am investigating how we can use serological markers to classify Plasmodium vivax exposure, as well as how we can track antimicrobial resistance in wastewater systems in Australia. I am upskilling in statistical modelling and machine learning approaches to broaden my skill tool-kit.\nThroughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that’s developing a bookdown workshop, keeping up to date with functions in the tidyverse, creating new maps using packages such as MalariaAtlas and ggmap, or learning all the amazing ways quarto can be used to elevate documents, websites etc.",
     "crumbs": [
       "Home",
-      "Code: The Basics",
-      "Quarto"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html",
-    "href": "code/04_targets.html",
-    "title": "Pipelines with {targets}",
-    "section": "",
-    "text": "The {targets} R package is a tool to:\n\nRun code in a “pipeline”: step-by-step with one command\nAutomatic caching\nAutomatic detection and visualisation of steps dependencies\nAutomatic detection of changes in data and/or code\nUses parallel computing\nPerform your analysis\nKeep up to date with minor and major changes\nMake your analyses reproducible",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#lets-go-through-an-case-study",
-    "href": "code/04_targets.html#lets-go-through-an-case-study",
-    "title": "{targets}",
-    "section": "Let’s go through an case study!",
-    "text": "Let’s go through an case study!\n\nLet’s get started.\nI will show you some examples of how I have used {targets} to streamline my data processing and make my code reproducible.\nI will then show you examples of how I wish I could have used this package in my PhD!",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "{targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#case-study-pf-haploatlas",
-    "href": "code/04_targets.html#case-study-pf-haploatlas",
-    "title": "Pipelines with {targets}",
-    "section": "Case Study: Pf-HaploAtlas",
-    "text": "Case Study: Pf-HaploAtlas\nThe Plasmodium falciparum Haplotype Atlas (or Pf-HaploAtlas) is a user-friendly way to study and track genetic mutations across any gene in the P. falciparum genome!\nCurrently, the app uses the MalariaGEN repository Pf8 database containing 24,409 QC-passed samples, from 34 countries, and spread between the years 1966 and 2022, facilitating comprehensive spatial and temporal analyses of genes and variants of interest.",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#heres-my-current-code-pipeline",
-    "href": "code/04_targets.html#heres-my-current-code-pipeline",
-    "title": "Pipelines with {targets}",
-    "section": "Here’s my current code pipeline …",
-    "text": "Here’s my current code pipeline …\n\ndhfr_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0417200_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfdhfr\")\nmdr1_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0523000_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfmdr1\")\naat1_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0629500_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfaat1\")\ncrt_Pf8     &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0709000_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfcrt\")\ndhps_Pf8    &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_0810800_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfdhps\")\nK13_Pf8     &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_1343700_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfK13\")\npfs47_Pf8   &lt;- read.csv(here::here(\"data/sample_summary/pf-haploatlas-PF3D7_1346800_sample_summary.csv\"))[,-1] %&gt;% mutate(Gene = \"pfs47\")\nread_haploatlas &lt;- function(df){\n\n  this_Gene &lt;- unique(df$Gene)   # assumes only one Gene per df\n  max_splits &lt;- max(str_count(df$ns_changes, \"/\")) + 1 # Identify how many mutations in total dataset\n    \n  df_qc &lt;- df %&gt;% \n    # Keep only samples that passed QC and are not excluded \n    dplyr::filter(QC.pass == \"True\", HaploAtlas.exclusion.reason == \"Analysis_set\") %&gt;%\n    # Keep only Country-Year groups with ≥25 samples\n    dplyr::group_by(Population, Country, Year) %&gt;% \n    dplyr::filter(dplyr::n() &gt;= 25) %&gt;% \n    dplyr::ungroup() %&gt;% \n    # Process haplotypes \n    tidyr::separate(ns_changes, into = paste0(\"ns_change_\", 1:max_splits), sep = \"/\", fill = \"right\") %&gt;%\n    tidyr::pivot_longer(-c(Sample:HaploAtlas.exclusion.reason, Gene), names_to = \"changes\", values_to = \"ns_changes\")  %&gt;% \n    dplyr::mutate(pos = str_extract(ns_changes, \"\\\\d+\")) %&gt;% \n    dplyr::filter(!(is.na(ns_changes) & is.na(pos))) %&gt;% \n    dplyr::select(-changes) %&gt;% \n    tidyr::pivot_wider(id_cols = c(Sample:HaploAtlas.exclusion.reason, Gene), names_from = pos, values_from = ns_changes)\n  \n  if (this_Gene == \"pfdhfr\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `50`, `51`, `59`, `108`, `164`, Gene) %&gt;% \n      unite(ns_changes, c(`50`, `51`, `59`, `108`, `164`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"dhfr\")\n    df_final &lt;- df1\n  \n  } else if (this_Gene == \"pfmdr1\"){\n     \n    df1 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `86`, `184`, Gene) %&gt;% \n      unite(ns_changes, c(`86`, `184`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"mdr11\")\n    \n    df2 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `1034`, `1042`, Gene) %&gt;% \n      unite(ns_changes, c(`1034`, `1042`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"mdr12\")\n    \n    df3 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `1246`, Gene) %&gt;% \n      unite(ns_changes, c(`1246`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"mdr13\")\n    \n    df_final &lt;- bind_rows(df1, df2, df3)\n    \n  } else if (this_Gene == \"pfaat1\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `258`, `313`, Gene) %&gt;% \n      unite(ns_changes, c(`258`, `313`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"aat1\")\n    df_final &lt;- df1\n    \n  } else if (this_Gene == \"pfcrt\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `72`, `74`, `75`, `76`, Gene) %&gt;%\n      unite(ns_changes, c(`72`, `74`, `75`, `76`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"crt\")\n    df_final &lt;- df1\n    \n  } else if (this_Gene == \"pfdhps\"){\n    \n    df1 &lt;- df_qc %&gt;%\n      select(Sample:HaploAtlas.exclusion.reason, `431`, `436`, `437`, Gene) %&gt;% \n      unite(ns_changes, c(`431`, `436`, `437`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"dhps1\")\n    \n    df2 &lt;- df_qc %&gt;% \n      select(Sample:HaploAtlas.exclusion.reason, `540`, `581`, `613`, Gene) %&gt;% \n      unite(ns_changes, c(`540`, `581`, `613`), sep = \"/\", na.rm = TRUE) %&gt;% \n      mutate(Marker = \"dhps2\")\n    \n    df_final &lt;- bind_rows(df1, df2)\n    \n  } \n   \n  df_final &lt;- df_final %&gt;% dplyr::mutate(ns_changes = ifelse(ns_changes == \"\" | is.na(ns_changes), \"WT\", ns_changes)) \n  return(df_final)\n}\n\nall_pop_data &lt;- bind_rows(\n  read_haploatlas(dhfr_Pf8), \n  read_haploatlas(dhps_Pf8), \n  read_haploatlas(crt_Pf8),\n  read_haploatlas(mdr1_Pf8), \n  read_haploatlas(aat1_Pf8)\n) \nall_pop_data_1 &lt;- all_pop_data %&gt;% \n  # Filter for countries that have data for ALL Markers\n  group_by(Country, Year) %&gt;%\n  filter(n_distinct(Marker) == n_distinct(all_pop_data$Marker)) %&gt;%\n  ungroup() %&gt;% \n  # Filter for the latest year available per country\n  group_by(Country, Marker) %&gt;% \n  filter(Year == max(Year, na.rm = TRUE)) %&gt;% \n  ungroup() \n\n# join all samples together\n# Dataset to compare countries only when Population == \"AF-W\"\nWAFR_data_summarised &lt;- all_pop_data_1 %&gt;% \n  filter(Population == \"AF-W\") %&gt;% \n  summarise(n = n(), .by = c(Country, Year, Gene, Marker, ns_changes)) %&gt;% \n  group_by(Country, Year, Marker) %&gt;% \n  mutate(\n    Total = sum(n),\n    prop = n / Total\n  ) \n# compare samples \nWAFR_data_summarised_plot &lt;- WAFR_data_summarised %&gt;%\n  mutate(\n    Country_Year = paste0(Country,\"\\n\", Year),\n    Country_Year = factor(\n      Country_Year, \n      levels = c(\"Ghana\\n2019\", \"Benin\\n2016\", \"Nigeria\\n2020\", \"Côte d'Ivoire\\n2013\",\n                 \"Mali\\n2016\", \"Guinea\\n2011\", \"Senegal\\n2015\", \"Gambia\\n2017\", \"Mauritania\\n2014\", \n                 \"Cameroon\\n2013\", \"Gabon\\n2014\")\n    ), \n    Marker = factor(\n      Marker, \n      levels = c(\"aat1\", \"crt\", \"mdr11\", \"mdr12\", \"mdr13\", \"dhfr\", \"dhps1\", \"dhps2\")\n    )\n  ) %&gt;% ungroup()\n\nWAFR_data_summarised_plot %&gt;% \n  filter(!c(Marker %in% c(\"mdr12\", \"mdr13\"))) %&gt;% \n  ggplot(aes(x = Country_Year, y = prop, fill = ns_changes)) +\n  geom_bar(stat = \"identity\", width = 1, colour = \"white\") +\n  facet_wrap(~Marker) + \n  theme(legend.position = \"none\", axis.text.x = element_text(angle = 45, hjust = 1))",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#step-1-turn-your-code-into-functions",
-    "href": "code/04_targets.html#step-1-turn-your-code-into-functions",
-    "title": "Pipelines with {targets}",
-    "section": "Step 1: Turn your code into functions",
-    "text": "Step 1: Turn your code into functions\nDon’t forget to document your functions! ({roxygen}-style)\n\n#' Read and clean data\n#' \n#' Reads in the haplotype data, renames and selects relevant columns. The\n#' following transformations are applied to the data: \n#' * only keep S8 data\n#' * replace special characters ; to / in line with Pf-haploatlas data\n#' * summarise prevalence of non-synonymous changes \n#' * remove K13 and pfs47 data \n#' \n#' @param file_path Character, path to Bongo haplotype data for Bongo MRS study (.csv file).\n#' @param survey_name Survey to filter analysis by. Default = S8.\n#' @param year Optional variable to label year by. Default = 2020.\n#' @param location Optional variable to label location. Default = Bongo, Ghana. \n#' @returns A tibble.\n#' @author Dionne Argyropoulos\nread_data &lt;- function(file_path, survey_name = \"S8\", year = 2020, location = \"Bongo, Ghana\") {\n  read_csv(here::here(file_path)) %&gt;% \n    dplyr::filter(Survey == survey_name) %&gt;% \n    dplyr::mutate(\n      ## modifying columns\n    ) %&gt;% \n    dplyr::summarise(n = dplyr::n(), .by = c(Marker, ns_changes)) %&gt;% \n    dplyr::group_by(Marker) %&gt;% \n    dplyr::mutate(\n      ## modifying columns\n    ) %&gt;% \n    dplyr::ungroup() %&gt;% \n    dplyr::filter(\n      ## remove unnecessary rows \n    ) %&gt;%\n    dplyr::select(\n      ## relevant columns \n    )\n}\n\nImproved script:\n\n\n\n\n\nR/helper_functions.R\n\n#' Read and clean data\n#' \n#' ...\nread_data &lt;- function(file_path) { ... }\n\n#' Read and filter Pf-Haploatlas Data\n#' \n#' ...\nread_haploatlas &lt;- function(file_paths) { ... }\n\n#' Join Bongo and Pf-Haploatlas data, filter for countries in West Africa\n#' \n#' ...\nfilter_and_merge &lt;- function(df1, df2, region = \"AF-W\") { ... }\n\n#' Bar Plot of Haplotype prevalence \n#' \n#' ...\nbar_plot &lt;- function(df) { ... }\n\n\n\n\n\n\nanalysis/first_script.R\n\nlibrary(here)\n\nsource(here(\"R/helper_functions.R\"))\n\nbongo_df &lt;- read_data(\n  here(\"data/bongo_results/S7810_all_MH_Epi.csv\")\n)\n\nhaploatlas_df &lt;- read_haploatlas(\n  file_paths = c(\n    \"data/sample_summary/pf-haploatlas-PF3D7_0417200_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0810800_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0709000_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0523000_sample_summary.csv\",\n    \"data/sample_summary/pf-haploatlas-PF3D7_0629500_sample_summary.csv\"\n  ),\n  gene_names = c(\"pfdhfr\", \"pfdhps\", \"pfcrt\", \"pfmdr1\", \"pfaat1\")\n)\n\nwest_africa_df &lt;- filter_and_merge(\n  bongo_df, \n  haploatlas_df, \n  region = \"AF-W\"\n)\n\nwest_africa_haplotypes_plot &lt;- bar_plot(\n  west_africa_df\n)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#step-2-turn-your-main-script-into-a-targets-pipeline",
-    "href": "code/04_targets.html#step-2-turn-your-main-script-into-a-targets-pipeline",
-    "title": "Pipelines with {targets}",
-    "section": "Step 2: Turn your main script into a {targets} pipeline!",
-    "text": "Step 2: Turn your main script into a {targets} pipeline!\n\nlibrary(targets)\nlibrary(here)\nlibrary(tidyverse)\n\nsource(here(\"R/helper_functions.R\"))\n\nlist(\n  tar_target(bongo_raw_file, here(\"data/bongo_results/S7810_all_MH_Epi.csv\"), format = \"file\"),\n  \n  tar_target(penguins_df, read_data(penguins_raw_file)),\n  \n  tar_target(pf_haploatlas_raw_files,\n             c(\n               \"data/sample_summary/pf-haploatlas-PF3D7_0417200_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0810800_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0709000_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0523000_sample_summary.csv\",\n               \"data/sample_summary/pf-haploatlas-PF3D7_0629500_sample_summary.csv\"\n             ),\n             format = \"file\"\n  ),\n  \n  tar_target(pf_haploatlas_raw_files, read_haploatlas(pf_haploatlas_raw_files, gene_names = c(\"pfdhfr\", \"pfdhps\", \"pfcrt\", \"pfmdr1\", \"pfaat1\"))),\n\n  tar_target(west_africa_df, filter_and_merge(bongo_df, haploatlas_df, region = \"AF-W\")),\n\n  tar_target(west_africa_haplotypes_plot, bar_plot(west_africa_df))\n)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#visualise-your-pipeline",
-    "href": "code/04_targets.html#visualise-your-pipeline",
-    "title": "Pipelines with {targets}",
-    "section": "Visualise your pipeline",
-    "text": "Visualise your pipeline\nIn the console, run:\n\ntargets::tar_visnetwork()",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#execute-your-pipeline",
-    "href": "code/04_targets.html#execute-your-pipeline",
-    "title": "Pipelines with {targets}",
-    "section": "Execute your pipeline",
-    "text": "Execute your pipeline\nIn the console, run:\n\ntargets::tar_make()\n\n\n\n\n\nhere() starts at /Users/Dionne/Library/CloudStorage/OneDrive-wehi.edu.au/2_Projects/Lab_Jex/targets_tutorial\n+ pf_haploatlas_raw_files dispatched         \n✔ pf_haploatlas_raw_files completed [0ms, 36.77 MB]\n+ bongo_raw_file dispatched\n✔ bongo_raw_file completed [0ms, 9.54 MB]\n+ bongo_df dispatched\n✔ bongo_df completed [1.2s, 744 B]\n+ west_africa_df dispatched\n✔ west_africa_df completed [0ms, 744 B]\n+ west_africa_haplotypes_plot dispatched\n✔ west_africa_haplotypes_plot completed [0ms, 744 B]\n✔ ended pipeline [1.3s, 5 completed, 0 skipped]",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#get-the-pipeline-results",
-    "href": "code/04_targets.html#get-the-pipeline-results",
-    "title": "Pipelines with {targets}",
-    "section": "Get the pipeline results",
-    "text": "Get the pipeline results\n\ntargets::tar_read(west_africa_haplotypes_plot)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#change-in-a-step",
-    "href": "code/04_targets.html#change-in-a-step",
-    "title": "Pipelines with {targets}",
-    "section": "Change in a step",
-    "text": "Change in a step\n\nHi Dionne,\nGreat work! Just a minor comment, could you change the colours bar-plot? It’s hard to see the difference between the haplotypes\n\n\n\n\nR/helper_functions.R\n\nplot_bill_length_depth &lt;- function(df) {\n  df %&gt;%\n    ggplot(aes(x = Country_Year, y = prop, fill = ns_changes)) +\n    geom_bar(stat = \"identity\", width = 1, colour = \"white\") +\n    scale_fill_manual(values = colour_palette_for_drugr) + \n    facet_wrap(~Marker) + \n    theme(legend.position = \"none\", axis.text.x = element_text(angle = 45, hjust = 1))\n}\n\n\n\ntargets::tar_make()\n\n\n\n\nhere() starts at /Users/Dionne/Library/CloudStorage/OneDrive-wehi.edu.au/2_Projects/Lab_Jex/targets_tutorial\n+ west_africa_haplotypes_plot dispatched     \n✔ west_africa_haplotypes_plot completed [62ms, 293.62 kB]\n✔ ended pipeline [248ms, 1 completed, 4 skipped]\n\n\n\ntargets::tar_read(west_africa_haplotypes_plot)",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#change-in-the-data",
-    "href": "code/04_targets.html#change-in-the-data",
-    "title": "Pipelines with {targets}",
-    "section": "Change in the data",
-    "text": "Change in the data\n\nHi Dionne,\nOopsie! We realised there was a mistake in the original data Bongo file. Here is the updated spreadsheet, could you re-run the analysis with this version?\n\n\ntargets::tar_visnetwork()",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
-    ]
-  },
-  {
-    "objectID": "code/04_targets.html#aside-where-should-my-targets-script-live",
-    "href": "code/04_targets.html#aside-where-should-my-targets-script-live",
-    "title": "Pipelines with {targets}",
-    "section": "Aside: where should my targets script live?",
-    "text": "Aside: where should my targets script live?\n\ndefault would be in the _targets.R file in the main directory\nto choose a custom folder and file name, need to specify targets configuration:\n\nIn the console, run (from main directory):\n\ntargets::tar_config_set(script = \"analysis/_targets.R\", store = \"analysis/_targets\")\n\nWill create a _targets.yaml file:\n\n\n\n_target.yaml\n\nmain:\n  script: analysis/_targets.R\n  store: analysis/_targets",
-    "crumbs": [
-      "Home",
-      "Code: The Basics",
-      "Pipelines with {targets}"
+      "Introduction"
     ]
   }
 ]

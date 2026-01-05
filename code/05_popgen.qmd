@@ -1,0 +1,71 @@
+---
+title: "Population Genetics"
+author: "Dionne Argyropoulos"
+---
+
+## Genetic Differentiation 
+
+### Differentiation using `DEMEtics`
+
+```{r setup genetic differentiation}
+install.packages("http://cran.r-project.org/src/contrib/Archive/DEMEtics/DEMEtics_0.8-7.tar.gz", repos=NULL, type="source")
+library(DEMEtics)
+```
+
+Load in CSV file in binary format 
+
+```{r data prep for barcode binary data 1}
+csv <- read.csv("data/snp_barcode_data.csv")
+```
+
+```{r}
+#| echo: false
+csv %>% 
+  kable()
+```
+
+Write as a .txt file 
+
+```{r}
+write.table(csv, "data/snp_barcode_data.txt")
+```
+
+```{r run DEMEtics Jost's D and GST}
+#| echo: true
+#| eval: false
+#| exec: false 
+# Read in .txt file for DEMEtics
+test1 = read.table("data/snp_barcode_data.txt", sep = "")
+# Run Jost's D with 1,000 iterations
+D.Jost("test1", bias = "correct", object = TRUE, format.table = TRUE, pm = "pairwise", statistics = "all", bt = 1000)
+# Run GST with 1,000 iterations
+Gst.Nei("test1", bias = "correct", object = TRUE, format.table = TRUE, pm = "pairwise", statistics = "all", bt = 1000)
+```
+
+### Jost's D using `mmod`
+```{r}
+library(mmod)
+# Region
+#diff_stats(Single24SNPs_JostD_R)
+#D_Jost(Single24SNPs_JostD_R, hsht_mean = "arithmetic")
+#pair_1 <- pairwise_D(Single24SNPs_JostD_R, linearized = FALSE, hsht_mean = "arithmetic")
+
+#Single24SNPs_R_BS <- chao_bootstrap(Single24SNPs_R)
+#Summary_Region <- summarise_bootstrap(Single24SNPs_R_BS, D_Jost)
+
+# Country
+#diff_stats(Single24SNPs_JostD_C)
+#D_Jost(Single24SNPs_JostD_C, hsht_mean = "arithmetic")
+#pair_2 <- pairwise_D(Single24SNPs_JostD_C, linearized = FALSE, hsht_mean = "arithmetic")
+
+#Single24SNPs_JostD_C_BS <- chao_bootstrap(Single24SNPs_JostD_C)
+#Summary_Country <- summarise_bootstrap(Single24SNPs_JostD_C_BS, D_Jost)
+
+# Site_Year
+#diff_stats(Single24SNPs_JostD)
+#D_Jost(Single24SNPs_JostD, hsht_mean = "arithmetic")
+#pair_3 <- pairwise_D(Single24SNPs_JostD, linearized = FALSE, hsht_mean = "arithmetic")
+
+#Single24SNPs_JostD_BS <- chao_bootstrap(Single24SNPs_JostD)
+#Summary_SiteYear <- summarise_bootstrap(Single24SNPs_JostD_BS, D_Jost)
+```

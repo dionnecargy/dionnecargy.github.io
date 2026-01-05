@@ -1,0 +1,60 @@
+Gst.est.locus Locus Population1 Population2 P.value
+NaN Locus10 0 1 NA
+NaN Locus11 0 1 NA
+NaN Locus12 0 1 NA
+NaN Locus13 0 1 NA
+NaN Locus14 0 1 NA
+NaN Locus15 0 1 NA
+NaN Locus16 0 1 NA
+NaN Locus17 0 1 NA
+NaN Locus18 0 1 NA
+NaN Locus19 0 1 NA
+NaN Locus2 0 1 NA
+NaN Locus20 0 1 NA
+NaN Locus21 0 1 NA
+NaN Locus22 0 1 NA
+NaN Locus23 0 1 NA
+NaN Locus24 0 1 NA
+NaN Locus25 0 1 NA
+NaN Locus26 0 1 NA
+NaN Locus27 0 1 NA
+NaN Locus28 0 1 NA
+NaN Locus29 0 1 NA
+NaN Locus3 0 1 NA
+NaN Locus30 0 1 NA
+NaN Locus4 0 1 NA
+NaN Locus5 0 1 NA
+NaN Locus6 0 1 NA
+NaN Locus7 0 1 NA
+NaN Locus8 0 1 NA
+NaN Locus9 0 1 NA
+Gst.est.for.locus locus population1 population2 p.values p.bonferroni p.holm p.hommel pBH
+NaN Locus10 0 1 NA NA NA NA NA
+NaN Locus11 0 1 NA NA NA NA NA
+NaN Locus12 0 1 NA NA NA NA NA
+NaN Locus13 0 1 NA NA NA NA NA
+NaN Locus14 0 1 NA NA NA NA NA
+NaN Locus15 0 1 NA NA NA NA NA
+NaN Locus16 0 1 NA NA NA NA NA
+NaN Locus17 0 1 NA NA NA NA NA
+NaN Locus18 0 1 NA NA NA NA NA
+NaN Locus19 0 1 NA NA NA NA NA
+NaN Locus2 0 1 NA NA NA NA NA
+NaN Locus20 0 1 NA NA NA NA NA
+NaN Locus21 0 1 NA NA NA NA NA
+NaN Locus22 0 1 NA NA NA NA NA
+NaN Locus23 0 1 NA NA NA NA NA
+NaN Locus24 0 1 NA NA NA NA NA
+NaN Locus25 0 1 NA NA NA NA NA
+NaN Locus26 0 1 NA NA NA NA NA
+NaN Locus27 0 1 NA NA NA NA NA
+NaN Locus28 0 1 NA NA NA NA NA
+NaN Locus29 0 1 NA NA NA NA NA
+NaN Locus3 0 1 NA NA NA NA NA
+NaN Locus30 0 1 NA NA NA NA NA
+NaN Locus4 0 1 NA NA NA NA NA
+NaN Locus5 0 1 NA NA NA NA NA
+NaN Locus6 0 1 NA NA NA NA NA
+NaN Locus7 0 1 NA NA NA NA NA
+NaN Locus8 0 1 NA NA NA NA NA
+NaN Locus9 0 1 NA NA NA NA NA

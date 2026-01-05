@@ -1,0 +1,2 @@
+Mean.Dest population1 population2
+0 0 1

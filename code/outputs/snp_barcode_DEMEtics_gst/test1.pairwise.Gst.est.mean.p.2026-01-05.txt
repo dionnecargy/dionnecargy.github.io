@@ -1,0 +1,4 @@
+Gst.est.mean Population1 Population2 P.value
+NaN 0 1 NA
+Mean.Gst.est population1 population2 p.values p.bonferroni p.holm p.hommel pBH
+NaN 0 1 NA NA NA NA NA

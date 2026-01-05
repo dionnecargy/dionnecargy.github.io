@@ -1,0 +1,4 @@
+Mean.Dest population1 population2 0.95.conf.int.lower 0.95.confint.upper
+0 0 1 0 0
+Dest.mean Population1 Population2 Lower.0.95.CI Upper.0.95.CI
+0 0 1 0 0

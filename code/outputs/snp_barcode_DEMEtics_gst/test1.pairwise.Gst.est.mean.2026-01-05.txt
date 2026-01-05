@@ -1,0 +1,2 @@
+Mean.Gst.est population1 population2
+NaN 0 1

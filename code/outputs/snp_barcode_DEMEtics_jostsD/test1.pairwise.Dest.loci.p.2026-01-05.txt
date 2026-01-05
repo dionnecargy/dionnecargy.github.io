@@ -1,0 +1,60 @@
+Dest.locus Locus Population1 Population2 P.value
+0 Locus10 0 1 1
+0 Locus11 0 1 1
+0 Locus12 0 1 1
+0 Locus13 0 1 1
+0 Locus14 0 1 1
+0 Locus15 0 1 1
+0 Locus16 0 1 1
+0 Locus17 0 1 1
+0 Locus18 0 1 1
+0 Locus19 0 1 1
+0 Locus2 0 1 1
+0 Locus20 0 1 1
+0 Locus21 0 1 1
+0 Locus22 0 1 NA
+0 Locus23 0 1 1
+0 Locus24 0 1 NA
+0 Locus25 0 1 1
+0 Locus26 0 1 1
+0 Locus27 0 1 NA
+0 Locus28 0 1 1
+0 Locus29 0 1 1
+0 Locus3 0 1 1
+0 Locus30 0 1 1
+0 Locus4 0 1 1
+0 Locus5 0 1 1
+0 Locus6 0 1 1
+0 Locus7 0 1 1
+0 Locus8 0 1 1
+0 Locus9 0 1 1
+Dest.for.locus locus population1 population2 p.values p.bonferroni p.holm p.hommel pBH
+0 Locus10 0 1 1  1  1  1  1
+0 Locus11 0 1 1  1  1  1  1
+0 Locus12 0 1 1  1  1  1  1
+0 Locus13 0 1 1  1  1  1  1
+0 Locus14 0 1 1  1  1  1  1
+0 Locus15 0 1 1  1  1  1  1
+0 Locus16 0 1 1  1  1  1  1
+0 Locus17 0 1 1  1  1  1  1
+0 Locus18 0 1 1  1  1  1  1
+0 Locus19 0 1 1  1  1  1  1
+0 Locus2 0 1 1  1  1  1  1
+0 Locus20 0 1 1  1  1  1  1
+0 Locus21 0 1 1  1  1  1  1
+0 Locus22 0 1 NA NA NA NA NA
+0 Locus23 0 1 1  1  1  1  1
+0 Locus24 0 1 NA NA NA NA NA
+0 Locus25 0 1 1  1  1  1  1
+0 Locus26 0 1 1  1  1  1  1
+0 Locus27 0 1 NA NA NA NA NA
+0 Locus28 0 1 1  1  1  1  1
+0 Locus29 0 1 1  1  1  1  1
+0 Locus3 0 1 1  1  1  1  1
+0 Locus30 0 1 1  1  1  1  1
+0 Locus4 0 1 1  1  1  1  1
+0 Locus5 0 1 1  1  1  1  1
+0 Locus6 0 1 1  1  1  1  1
+0 Locus7 0 1 1  1  1  1  1
+0 Locus8 0 1 1  1  1  1  1
+0 Locus9 0 1 1  1  1  1  1

@@ -1,0 +1,3 @@
+Population Hj.est.mean
+0 0
+1 0

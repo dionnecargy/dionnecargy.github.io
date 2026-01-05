@@ -1,0 +1,4 @@
+Mean.Gst.est population1 population2 0.95.conf.int.lower 0.95.confint.upper
+NaN 0 1 NaN NA
+Gst.est.mean Population1 Population2 Lower.0.95.CI Upper.0.95.CI
+NaN 0 1 NaN NA

@@ -1,0 +1,4 @@
+Dest.mean Population1 Population2 P.value
+0 0 1 NA
+Mean.Dest population1 population2 p.values p.bonferroni p.holm p.hommel pBH
+0 0 1 NA NA NA NA NA

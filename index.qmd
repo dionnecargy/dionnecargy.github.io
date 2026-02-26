@@ -1,18 +1,72 @@
 ---
-title: "Introduction"
-format: html
+title: "Dionne Argyropoulos, PhD"
+subtitle: "she/her · Dee-own · 🇦🇺 Melbourne, AU"
+about:
+  id: hero-heading
+  template: trestles
+  image: images/dargy_headshot.jpeg
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/dionnecargy
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dionneargy/
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/dionnecargy.bsky.social
+    - icon: envelope-fill
+      text: Email
+      href: malto:dionne.argy@gmail.com
+listing: 
+  id: projects
+  contents: 
+    - projects.yml
+  type: grid
+  fields: [title, image]
+  image-height: 100%
+  template: projects.ejs
+toc: false 
 ---
+<!-- colour palettes: #8A9A5B, #8A88AA, #AA8897, #8897AA, #88AA9B -->
 
 ## Hello!
 
-My name is Dionne (she/her; pronounciation: Dee-own) and I completed my **PhD** in the [Day Lab](https://biomedicalsciences.unimelb.edu.au/sbs-research-groups/microbiology-and-immunology-research-groups/day-laboratory-malaria-genomics,-epidemiology-and-control) at the University of Melbourne 🇦🇺🦘 and am currently stationed in the [Mueller Lab](https://www.wehi.edu.au/researcher/ivo-mueller/) at WEHI!
+Nice to virtually meet you and welcome to my website! Here you will be able to learn about me - whether you're interested in my research outputs and curriculum vitae, specific R-related tutorials, or get a shortcut to the tools that I've helped to develop. 
 
--   🇦🇺 From Melbourne, AU
--   🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at [The University of Melbourne](https://www.unimelb.edu.au/)
--   💻 Current President of [R-Ladies Melbourne Inc.](%5Bhttps://twitter.com/rladiesmelb%5D(https://r-ladiesmelbourne.github.io/))
--   💬 Ask me about: - 🧬 **Population Genetics** and 🔎 **Molecular Epidemiology** of *Plasmodium falciparum* - ⚙️ Machine Learning Techniques and Modelling!
--   📫 You can reach me on [Bluesky](https://bsky.app/profile/dionnecargy.bsky.social), [LinkedIn](https://www.linkedin.com/in/dionne-argyropoulos-47749b14b/) or at my current email address: argyropoulos.d\@wehi.edu.au
+:::{#hero-heading}
 
+Dionne is a Research Officer at WEHI (Walter and Eliza Hall Institute for Medical Research) and President of R-Ladies+ Melbourne. While her coding expertise often takes the spotlight, Dionne is also a renowned Eurovision diva and Tiramisu connoisseur. 
+
+## Education
+
+**University of Melbourne** | Melbourne, AU
+\
+PhD in Medicine, Densitry and Health Sciences | Feb 2020 - Aug 2025
+
+**University of Melbourne** | Melbourne, AU
+\
+MSc in BioSciences | Feb 2018 - Dec 2019
+
+**University of Melbourne** | Melbourne, AU
+\
+BSc major in Genetics | Feb 2015 - Dec 2017
+
+## Experience
+
+**WEHI** | Research Officer | Nov 2024 - present
+
+**R-Ladies+ Melbourne** | Organising Committee | Feb 2023 - present
+
+:::
+
+## Projects
+
+The work I have devoted my education and post-doctoral career have centered around **population genetics**, **molecular epidemiology**, **statistical epidemiology** and **machine learning**. I am a keen codeR, primarily using the R coding language. 
+
+::: {#projects}
+:::
+  
 ## About Me
 
 I have always had a keen interest in **science**. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in **biology** - specifically **evolution** and **genetics** - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed [here]().

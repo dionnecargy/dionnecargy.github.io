@@ -1,0 +1,34 @@
+```{=html}
+<%/* so category filtering works */%>
+<ul class="list" style="list-style-type:none">
+
+<div class="list-container">
+
+<%/* create custom listing */%>
+<% for (const item of items) { %>
+
+  <div class="item-container" <%= metadataAttrs(item) %>>
+
+  <li <%= metadataAttrs(item) %>>
+  
+  <div id="itemImage" class="image-box">
+    <a href="<%- item.path %>" class="listing-image">
+      <img src="<%- item.image %>" alt="<%- item.title %>"/>
+    </a>
+  </div>
+  
+    <div class="listing-links">
+    <p class="no-anchor listing-title" style="margin-bottom: 3px;"><%= item.title %></p>
+    <p class="no-anchor listing-subtitle" style="margin-bottom: 2px; font-size: 0.7rem;"><%= item.subtitle %></p>
+    <a href="<%- item.path %>" target="_blank" class="listing-url button">Website</a>
+  </div>
+  
+  </li>
+  
+  </div>
+    
+<% } %>
+</div>
+
+</ul>
+```

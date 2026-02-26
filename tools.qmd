@@ -1,0 +1,18 @@
+---
+title: "Tools"
+listing:
+  id: tools
+  contents:
+    - "tools.yml"
+  type: grid
+  fields: [title, image]
+  image-height: 100%
+  template: tools.ejs
+page-layout: full
+title-block-banner: "#AA8897"
+title-block-banner-color: "white"
+title-block-style: default
+---
+
+::: {#tools}
+:::

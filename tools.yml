@@ -1,0 +1,23 @@
+- title:      "PvSeroApp"
+  subtitle:   "R Shiny App · Sero-Surveillance"
+  image:      images/PvSeroApp_sticker.png
+  path:       https://github.com/dionnecargy/PvSeroApp
+  tutorial:   https://vispa.online/tutorial-on-how-to-perform-serological-data-analysis/
+- title:      "SeroTrackR"
+  subtitle:   "R Package · Sero-Surveillance · Data Analysis"
+  image:      images/SeroTrackR_sticker.png
+  path:       https://github.com/dionnecargy/SeroTrackR
+  tutorial:   https://vispa-malaria.github.io/sero-analysis/
+- title:      "melbourne"
+  subtitle:   "R Package · Plotting"
+  image:      images/melbourne_sticker.png
+  path:       https://github.com/dionnecargy/melbourne
+- title:      "wastewateR"
+  subtitle:   "R Package · Data Analysis"
+  image:      images/wastewateR_sticker.png
+  path:       https://github.com/dionnecargy/wastewateR
+- title:      "ALARMcoding"
+  subtitle:   "Lab Protocol · Sequencing"
+  image:      images/ALARMcoding_sticker.png
+  path:       https://github.com/UniMelb-Day-Lab/tutorialALARMcoding
+  tutorial:   https://unimelb-day-lab.github.io/tutorialALARMcoding/

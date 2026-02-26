@@ -405,34 +405,180 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Introduction",
+    "title": "Dionne Argyropoulos, PhD",
     "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
+    "text": "Github\n  \n  \n    \n     Bluesky\n  \n  \n    \n     Email\n  \n\n  \n  \nDionne Argyropoulos, PhD is a Research Officer at WEHI (Walter and Eliza Hall Institute for Medical Research) and President of R-Ladies+ Melbourne. While her coding expertise often takes the spotlight, Dionne is also a renowned Eurovision diva and Tiramisu connoisseur.\n\n\nUniversity of Melbourne | Melbourne, AU\nPhD in Medicine, Densitry and Health Sciences | Feb 2020 - Aug 2025\nUniversity of Melbourne | Melbourne, AU\nMSc in BioSciences | Feb 2018 - Dec 2019\nUniversity of Melbourne | Melbourne, AU\nBSc major in Genetics | Feb 2015 - Dec 2017\n\n\n\nWEHI | Research Officer | Nov 2024 - present\nR-Ladies+ Melbourne | Organising Committee | Feb 2023 - present"
   },
   {
     "objectID": "index.html#hello",
     "href": "index.html#hello",
-    "title": "Introduction",
-    "section": "",
-    "text": "My name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about: - 🧬 Population Genetics and 🔎 Molecular Epidemiology of Plasmodium falciparum - ⚙️ Machine Learning Techniques and Modelling!\n📫 You can reach me on Bluesky, LinkedIn or at my current email address: argyropoulos.d@wehi.edu.au",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
+    "title": "Dionne Argyropoulos, PhD",
+    "section": "Hello!",
+    "text": "Hello!\nMy name is Dionne (she/her; pronounciation: Dee-own) and I completed my PhD in the Day Lab at the University of Melbourne 🇦🇺🦘 and am currently stationed in the Mueller Lab at WEHI!\n\n🇦🇺 From Melbourne, AU\n🎓 BSc (major in Genetics), MSc (BioSciences) and PhD at The University of Melbourne\n💻 Current President of R-Ladies Melbourne Inc.\n💬 Ask me about:\n\n🧬 Population Genetics and 🔎 Molecular Epidemiology,\n📈 Statistics and Epidemiology,\n⚙️ Machine Learning Techniques and Modelling!"
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
-    "title": "Introduction",
+    "title": "Dionne Argyropoulos, PhD",
     "section": "About Me",
-    "text": "About Me\nI have always had a keen interest in science. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in biology - specifically evolution and genetics - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed here.\nMy PhD thesis focussed on the molecular epidemiology and population genetics of Plasmodium falciparum malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of Plasmodium falciparum malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations.\nI am currently a post-doctoral Research Officer at the Walter and Eliza Hall Institute for Medical Research (WEHI) where I am investigating how we can use serological markers to classify Plasmodium vivax exposure, as well as how we can track antimicrobial resistance in wastewater systems in Australia. I am upskilling in statistical modelling and machine learning approaches to broaden my skill tool-kit.\nThroughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that’s developing a bookdown workshop, keeping up to date with functions in the tidyverse, creating new maps using packages such as MalariaAtlas and ggmap, or learning all the amazing ways quarto can be used to elevate documents, websites etc.",
+    "text": "About Me\nI have always had a keen interest in science. From adding vinegar to baking soda in kindergarten to make a volcano, to spending two months in Mallacoota, Victoria at school learning about the environment and renewable energy, I became fascinated with how the world works, how humans work and how life works. While I enjoyed chemistry at school and university, my interest in biology - specifically evolution and genetics - ultimately led me to major in genetics in my Bachelor of Science degree at the University of Melbourne (2015-2017). More about my research journey is discussed here.\nMy PhD thesis focussed on the molecular epidemiology and population genetics of Plasmodium falciparum malaria in high-transmission settings with the Day Lab at the University of Melbourne. I completed a Bachelor of Science with a major in Genetics at the University of Melbourne. I then joined the Day Lab in February 2018 to start my Master of Science (BioSciences). I investigated the effects of perturbations on the population genetics of the reservoir of Plasmodium falciparum malaria in Bongo District, Ghana. My PhD project extended this by considering various population genetics metrics on perturbations.\nI am currently a post-doctoral Research Officer at the Walter and Eliza Hall Institute for Medical Research (WEHI) where I am investigating how we can use serological markers to classify Plasmodium vivax exposure, as well as how we can track antimicrobial resistance in wastewater systems in Australia. I am upskilling in statistical modelling and machine learning approaches to broaden my skill tool-kit.\nThroughout my research projects, I developed a deep interest in coding and have generated this website using R/Quarto! I have been an active member of R-Ladies Melbourne Inc. since 2023, serving as a committee member, Vice President and am now currently the President of the group. Coding in R always comes with challenges but the satisfaction when completing a task, in my opinion, is unparalleled. I have been continuing to seek new ways to up-skill in my coding, whether that’s developing a bookdown workshop, keeping up to date with functions in the tidyverse, creating new maps using packages such as MalariaAtlas and ggmap, or learning all the amazing ways quarto can be used to elevate documents, websites etc."
+  },
+  {
+    "objectID": "Pages_CV/05_Conferences.html",
+    "href": "Pages_CV/05_Conferences.html",
+    "title": "Conferences",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/05_Conferences.html#quarto",
+    "href": "Pages_CV/05_Conferences.html#quarto",
+    "title": "Conferences",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/05_Conferences.html#running-code",
+    "href": "Pages_CV/05_Conferences.html#running-code",
+    "title": "Conferences",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "Pages_CV/04_PublishedPapers.html",
+    "href": "Pages_CV/04_PublishedPapers.html",
+    "title": "Published Papers",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/04_PublishedPapers.html#quarto",
+    "href": "Pages_CV/04_PublishedPapers.html#quarto",
+    "title": "Published Papers",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/04_PublishedPapers.html#running-code",
+    "href": "Pages_CV/04_PublishedPapers.html#running-code",
+    "title": "Published Papers",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "Pages_CV/08_Work.html",
+    "href": "Pages_CV/08_Work.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/08_Work.html#quarto",
+    "href": "Pages_CV/08_Work.html#quarto",
+    "title": "Teaching",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/08_Work.html#running-code",
+    "href": "Pages_CV/08_Work.html#running-code",
+    "title": "Teaching",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "code/05_popgen.html",
+    "href": "code/05_popgen.html",
+    "title": "Population Genetics",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "Pages_CV/03_ResearchInterests.html",
+    "href": "Pages_CV/03_ResearchInterests.html",
+    "title": "Research Interests",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/03_ResearchInterests.html#quarto",
+    "href": "Pages_CV/03_ResearchInterests.html#quarto",
+    "title": "Research Interests",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/03_ResearchInterests.html#running-code",
+    "href": "Pages_CV/03_ResearchInterests.html#running-code",
+    "title": "Research Interests",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "Pages_CV/07_Awards.html",
+    "href": "Pages_CV/07_Awards.html",
+    "title": "Awards",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/07_Awards.html#quarto",
+    "href": "Pages_CV/07_Awards.html#quarto",
+    "title": "Awards",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/07_Awards.html#running-code",
+    "href": "Pages_CV/07_Awards.html#running-code",
+    "title": "Awards",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "Pages_CV/06_Volunteering.html",
+    "href": "Pages_CV/06_Volunteering.html",
+    "title": "Volunteering",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/06_Volunteering.html#quarto",
+    "href": "Pages_CV/06_Volunteering.html#quarto",
+    "title": "Volunteering",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Pages_CV/06_Volunteering.html#running-code",
+    "href": "Pages_CV/06_Volunteering.html#running-code",
+    "title": "Volunteering",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Dionne Argyropoulos, PhD",
+    "section": "",
+    "text": "University of Melbourne | Melbourne, AU\nPhD in Medicine, Densitry and Health Sciences | Feb 2020 - Aug 2025\nUniversity of Melbourne | Melbourne, AU\nMSc in BioSciences | Feb 2018 - Dec 2019\nUniversity of Melbourne | Melbourne, AU\nBSc major in Genetics | Feb 2015 - Dec 2017"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Dionne Argyropoulos, PhD",
+    "section": "",
+    "text": "WEHI | Research Officer | Nov 2024 - present\nR-Ladies+ Melbourne | Organising Committee | Feb 2023 - present"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Dionne Argyropoulos, PhD",
+    "section": "",
+    "text": "she/her · Dee-own\n\n\n  \n    \n\n    \n  \n    \n     Github\n  \n  \n    \n     Bluesky\n  \n  \n    \n     Email\n  \n\n  \n  \nDionne Argyropoulos, PhD is a Research Officer at WEHI (Walter and Eliza Hall Institute for Medical Research) and President of R-Ladies+ Melbourne. While her coding expertise often takes the spotlight, Dionne is also a renowned Eurovision diva and Tiramisu connoisseur.\n\n\nUniversity of Melbourne | Melbourne, AU\nPhD in Medicine, Densitry and Health Sciences | Feb 2020 - Aug 2025\nUniversity of Melbourne | Melbourne, AU\nMSc in BioSciences | Feb 2018 - Dec 2019\nUniversity of Melbourne | Melbourne, AU\nBSc major in Genetics | Feb 2015 - Dec 2017\n\n\n\nWEHI | Research Officer | Nov 2024 - present\nR-Ladies+ Melbourne | Organising Committee | Feb 2023 - present",
     "crumbs": [
       "Home",
-      "Introduction"
+      "Dionne Argyropoulos, PhD"
     ]
   }
 ]

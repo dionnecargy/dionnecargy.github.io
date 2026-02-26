@@ -1,1 +1,200 @@
 /* css styles */
+h2[id] {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* First h2 after h1 doesn't need as much top margin */
+h1 + h2[id] {
+  margin-top: 1.5rem;
+}
+
+/* --- Custom Card Component (Two-Panel Design) --- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* Wider cards for side-by-side layout */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Left Panel - Colored */
+.card-left {
+  background-color: #26c8a2; /* Light teal tint */
+  background: linear-gradient(135deg, #26c8a2 0%, #0a9674 100%);
+  flex: 0 0 140px; /* Fixed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* This centers the content vertically */
+  padding: 20px 10px;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.03);
+  position: relative;
+}
+
+/* Badge (optional, top of left panel) */
+.card-badge-top {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #000000; /* Changed to black as requested */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px; /* Space between badge and images */
+  opacity: 0.8;
+  position: absolute; /* Take out of flow to let images center perfectly */
+  top: 15px;
+}
+
+/* Right Panel - White */
+.card-right {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; /* For footer positioning if needed */
+}
+
+/* Card title styling (if using h3 inside cards) */
+.card-right h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+  border-bottom: none;
+}
+
+/* --- Existing Styles --- */
+.listing-links {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.listing-links .listing-url:first-child {
+  margin-right: 10px;
+}
+
+.source-sans-3-light {
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.button {
+  text-align: left;
+  color: #666;
+  padding: 10px 16px;
+  padding: 6px 12px;
+  margin: 0;
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle; 
+}
+
+.button:hover,
+.button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.quarto-title-block .quarto-title-banner {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.quarto-title-block .quarto-title-banner h1 {
+  margin-left: 130px;
+}
+
+.quarto-title-banner {
+  margin-bottom: -30px;
+}
+
+.item-container {
+  border: 1px solid #ccc;
+  padding: 0px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+  width: 250px;          /* match image width */
+  vertical-align: top;
+  display: inline-block; /* keep items side by side if needed */
+}
+  
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;                        /* fill the same width as the container */
+  box-sizing: border-box;             /* include padding in width */
+  word-wrap: break-word;              /* break long words */
+  overflow-wrap: break-word;
+}
+
+.listing-links {
+  margin: 10px 4;
+  margin-top: 5px;
+  width: 100%;                       /* match container width */
+  box-sizing: border-box;            /* include padding in width */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.listing-title,
+.listing-subtitle {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.image-box {
+  width: 6.62cm;   /* desired width */
+  height: 7.94cm;  /* desired height */
+  background-color: transparent; /* ensures transparency */
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+  overflow: hidden;         /* clip anything outside the box */
+  border: 1px dashed rgba(0,0,0,0.1); /* optional: for debugging/visualization */
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain; /* ensures the image fits inside without distortion */
+}

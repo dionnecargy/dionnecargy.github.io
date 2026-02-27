@@ -16,34 +16,37 @@ website:
         text: Home
       - href: tools.qmd
         text: Tools
-      # - href: Research
+      - href: pages_cv/publications.qmd
+      - text: Codebook
+        menu:
+          - href: "codebook/00_code_intro.qmd"
+            text: "Introduction"
+          # - href: "codebook/01_quarto.qmd"
+          #   text: "Quarto"
+          - href: "codebook/02_package.qmd"
+            text: "Creating Packages"
+          # - href: "codebook/03_shiny.qmd"
+          #   text: "R Shiny"
+          - href: "codebook/04_targets.qmd"
+            text: "Using {targets}"
+          # - href: "codebook/05_popgen.qmd"
+          #   text: Population Genetics
+      # - text: Research
       #   menu: 
-      #     - href: "Pages_CV/03_ResearchInterests.qmd"
+      #     - href: "pages_cv/03_ResearchInterests.qmd"
       #       text: "Research Interests"
-      #     - href: "Pages_CV/04_PublishedPapers.qmd"
+      #     - href: "pages_cv/04_PublishedPapers.qmd"
       #       text: "Published Papers"
-      #     - href: "Pages_CV/05_Conferences.qmd"
+      #     - href: "pages_cv/05_Conferences.qmd"
       #       text: "Conferences"
-      # - href: Leadership, Community and Engagement
+      # - text: Leadership, Community and Engagement
       #   menu: 
-      #     - href: "Pages_CV/06_Volunteering.qmd"
+      #     - href: "pages_cv/06_Volunteering.qmd"
       #       text: "Volunteering"
-      #     - href: "Pages_CV/07_Awards.qmd"
+      #     - href: "pages_cv/07_Awards.qmd"
       #       text: "Awards"
-      #     - href: "Pages_CV/08_Work.qmd"
+      #     - href: "pages_cv/08_Work.qmd"
       #       text: "Work"
-      # - href: Codebook
-      #   menu: 
-      #     - href: "code/00_code_intro.qmd"
-      #       text: "Introduction"
-      #     - href: "code/01_quarto.qmd"
-      #       text: "Quarto"
-      #     - href: "code/02_package.qmd"
-      #       text: "Packages"
-      #     - href: "code/03_shiny.qmd"
-      #       text: "R Shiny"
-      #     - href: "code/04_targets.qmd"
-      #       text: "Targets"
     tools:
       - icon: linkedin
         href: https://www.linkedin.com/in/dionneargy/
@@ -66,29 +69,6 @@ website:
         href: https://bsky.app/profile/dionnecargy.bsky.social
   page-navigation: true
   back-to-top-navigation: true
-  # sidebar:
-  #   style: "docked"
-  #   search: true
-  #   logo: "images/dionne_cartoon.png"
-  #   contents:
-  #     - index.qmd
-      # - section: "Research"
-      #   contents: 
-      #     - "Pages_CV/03_ResearchInterests.qmd"
-      #     - "Pages_CV/04_PublishedPapers.qmd"
-      #     - "Pages_CV/05_Conferences.qmd"
-      # - section: "Leadership, Community and Engagement"
-      #   contents: 
-      #     - "Pages_CV/06_Volunteering.qmd"
-      #     - "Pages_CV/07_Awards.qmd"
-      #     - "Pages_CV/08_Work.qmd"
-      # - section: "Code: The Basics"
-      #   contents: 
-      #     - "code/00_code_intro.qmd"
-      #     - "code/01_quarto.qmd"
-      #     - "code/02_package.qmd"
-      #     - "code/03_shiny.qmd"
-      #     - "code/04_targets.qmd"
 
 format:
   html:
@@ -105,4 +85,3 @@ format:
       warning: false
 
 editor: visual
-

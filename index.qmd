@@ -12,6 +12,8 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/dionneargy/
+    - text: ORCID
+      href: https://orcid.org/0000-0002-8068-0215
     - icon: bluesky
       text: Bluesky
       href: https://bsky.app/profile/dionnecargy.bsky.social
@@ -30,9 +32,13 @@ toc: false
 ---
 <!-- colour palettes: #8A9A5B, #8A88AA, #AA8897, #8897AA, #88AA9B -->
 
-## Hello!
+<div style="text-align: center;">
 
-Nice to virtually meet you and welcome to my website! Here you will be able to learn about me - whether you're interested in my research outputs and curriculum vitae, specific R-related tutorials, or get a shortcut to the tools that I've helped to develop. 
+# Hello!
+
+</div>
+
+It’s lovely to virtually meet you, and welcome to my website. Here you’ll find my research outputs and CV, R-focused tutorials, and the tools I’ve helped develop.
 
 :::{#hero-heading}
 

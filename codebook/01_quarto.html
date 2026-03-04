@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dionne Argyropoulos">
 
-<title>Teaching – Dionne Argyropoulos, PhD</title>
+<title>Quarto – Dionne Argyropoulos, PhD</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -302,6 +303,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../tools.html"> 
 <span class="menu-text">Tools</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages_cv/publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pages_cv/cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-codebook" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Codebook</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-codebook">    
+        <li>
+    <a class="dropdown-item" href="../codebook/00_code_intro.html">
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../codebook/02_package.html">
+ <span class="dropdown-text">Creating Packages</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../codebook/04_targets.html">
+ <span class="dropdown-text">Using {targets}</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
@@ -336,24 +364,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a></li>
-  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">Running Code</a></li>
+  <li><a href="#key-commands" id="toc-key-commands" class="nav-link active" data-scroll-target="#key-commands">Key Commands</a>
+  <ul class="collapse">
+  <li><a href="#add-images" id="toc-add-images" class="nav-link" data-scroll-target="#add-images">Add images</a></li>
+  <li><a href="#callout-note" id="toc-callout-note" class="nav-link" data-scroll-target="#callout-note">Callout Note</a></li>
+  <li><a href="#column-margin" id="toc-column-margin" class="nav-link" data-scroll-target="#column-margin">Column Margin</a></li>
+  <li><a href="#two-columns" id="toc-two-columns" class="nav-link" data-scroll-target="#two-columns">Two Columns</a></li>
+  </ul></li>
+  <li><a href="#websites" id="toc-websites" class="nav-link" data-scroll-target="#websites">Websites</a>
+  <ul class="collapse">
+  <li><a href="#render-quarto-packages-from-random-document" id="toc-render-quarto-packages-from-random-document" class="nav-link" data-scroll-target="#render-quarto-packages-from-random-document">Render Quarto Packages from Random Document</a></li>
+  </ul></li>
+  <li><a href="#documents" id="toc-documents" class="nav-link" data-scroll-target="#documents">Documents</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Quarto</h1>
 </div>
 
 
 
 <div class="quarto-title-meta column-page-left">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dionne Argyropoulos </p>
+          </div>
+  </div>
     
   
     
@@ -364,26 +409,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+<section id="key-commands" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="key-commands">Key Commands</h2>
+<p>Concepts that apply to all Quarto documents:</p>
+<section id="add-images" class="level3">
+<h3 class="anchored" data-anchor-id="add-images">Add images</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/02_r_package.png)</span>{width="500"}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="running-code" class="level2">
-<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<section id="callout-note" class="level3">
+<h3 class="anchored" data-anchor-id="callout-note">Callout Note</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
-<p>You can add options to executable code like this</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
+<div class="callout-body-container callout-body">
+<p>Note that there are five types of callouts, including:</p>
+<p><code>note</code>, <code>tip</code>, <code>warning</code>, <code>caution</code>, and <code>important</code>.</p>
 </div>
 </div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including:</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="column-margin" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="column-margin">Column Margin</h3>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image.png" class="img-fluid figure-img"></p>
+<figcaption>A margin image</figcaption>
+</figure>
+</div>
+</div></div><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {.column-margin}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="al">![A margin image](image.png)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="two-columns" class="level3">
+<h3 class="anchored" data-anchor-id="two-columns">Two Columns</h3>
+<div class="grid">
+<div class="g-col-6">
+<p><strong>Column 1</strong></p>
+</div>
+<div class="g-col-6">
+<p><strong>Column 2</strong></p>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>::: {.g-col-6}</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>**Column 1**</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>::: {.g-col-6}</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>**Column 2**</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>::: </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="websites" class="level2">
+<h2 class="anchored" data-anchor-id="websites">Websites</h2>
+<section id="render-quarto-packages-from-random-document" class="level3">
+<h3 class="anchored" data-anchor-id="render-quarto-packages-from-random-document">Render Quarto Packages from Random Document</h3>
+<p>quarto publish tutorials/tutorials-main.qmd will sort it out</p>
+</section>
+</section>
+<section id="documents" class="level2">
+<h2 class="anchored" data-anchor-id="documents">Documents</h2>
+</section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
 
 
 </section>

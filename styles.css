@@ -134,12 +134,10 @@ h1 + h2[id] {
 .quarto-title-block .quarto-title-banner {
   height: 200px;
   display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-.quarto-title-block .quarto-title-banner h1 {
-  margin-left: 130px;
+  flex-direction: column;      /* ← KEY FIX */
+  justify-content: center;     /* vertical centering */
+  align-items: flex-start;     /* left align */
+  padding-left: 130px;         /* instead of margin on h1 */
 }
 
 .quarto-title-banner {
@@ -198,3 +196,26 @@ h1 + h2[id] {
   width: auto;
   object-fit: contain; /* ensures the image fits inside without distortion */
 }
+
+/* Custom callout style for references */
+.references-callout {
+  display: flex;                /* make icon + content align */
+  align-items: flex-start;
+  background-color: #f5f5f5;    /* light grey background */
+  border-left: 5px solid #888;  /* dark grey line */
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  color: #333;
+  gap: 10px;                    /* space between icon and text */
+  font-family: sans-serif;
+}
+
+/* Add a books icon on the left */
+.references-callout::before {
+  content: "📚";                 /* books emoji */
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/* subtitle */

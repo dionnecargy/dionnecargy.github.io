@@ -1,0 +1,7 @@
+---
+title: "cv"
+---
+
+<!-- <iframe src="/pdfs/cv_dionne_argy.pdf" width="100%" height="800px"></iframe> -->
+
+<!-- My CV was generated using the `{vitae}` R package, with source code found [here]() and the pdf can be downloaded [here](/pdfs/cv_dionne_argy.pdf). -->

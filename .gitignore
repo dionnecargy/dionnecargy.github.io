@@ -4,5 +4,4 @@
 .Ruserdata
 
 /.quarto/
-/Pages_CV/
 **/*.quarto_ipynb

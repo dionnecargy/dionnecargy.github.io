@@ -17,6 +17,9 @@ website:
       - href: tools.qmd
         text: Tools
       - href: pages_cv/publications.qmd
+        text: Publications
+      - href: pages_cv/cv.qmd
+        text: CV 
       - text: Codebook
         menu:
           - href: "codebook/00_code_intro.qmd"

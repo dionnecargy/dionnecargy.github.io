@@ -134,12 +134,10 @@ h1 + h2[id] {
 .quarto-title-block .quarto-title-banner {
   height: 200px;
   display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-.quarto-title-block .quarto-title-banner h1 {
-  margin-left: 130px;
+  flex-direction: column;      /* ← KEY FIX */
+  justify-content: center;     /* vertical centering */
+  align-items: flex-start;     /* left align */
+  padding-left: 130px;         /* instead of margin on h1 */
 }
 
 .quarto-title-banner {
@@ -219,3 +217,5 @@ h1 + h2[id] {
   font-size: 1.5em;
   line-height: 1;
 }
+
+/* subtitle */

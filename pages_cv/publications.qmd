@@ -1,8 +1,8 @@
 ---
 title: "Publications"
-format:
-  html:
-    page-layout: full
+title-block-banner: "#AA8897"
+title-block-banner-color: white
+page-layout: full
 ---
 
 *Last updated: `r format(Sys.Date(), "%B %d, %Y")`*

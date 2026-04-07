@@ -1,0 +1,164 @@
+---
+title: "Webscraping"
+---
+
+:::{.callout-info}
+## What is Webscraping?
+
+Webscraping is a tool to extract data from web pages. The term usually refers to an automated process which is faster and less error-prone than gathering data by hand. 
+
+**Each web page includes**: 
+
+- **HTML** (HyperText Markup Language: web page infrastructure), 
+- **CSS** (appearance of a site), and 
+- **JavaScript** (behaviour of a page)
+
+A comprehensive tutorial has been written in the [R for Data Science (2e) Book](https://r4ds.hadley.nz/webscraping.html). Another useful tutorial that I used to guide my analysis is from the [Stats and R Blog](https://statsandr.com/blog/web-scraping-in-r/).
+
+:::
+
+```{r}
+library(tidyverse)
+library(rvest) # helps to scrape information from web pages
+library(xml2) # wrapper around libxml2 C library that makes it easier to work with XML and HTML in R 
+```
+
+## Extracting Habitats
+
+To get started scraping, you will need the URL of the page you want to scrape. Here, I had to use `read_html_live()` rather than `read_html()`. This is because [`read_html()`](https://rvest.tidyverse.org/reference/read_html.html) downloads raw static HTML from the server whereas [`read_html_live()`](https://rvest.tidyverse.org/reference/read_html_live.html) loads the page in a real brower with JavaScript and in my case, the tables only exist AFTER JavaScript runs. 
+
+```{r}
+habitat_pg  <- read_html_live("https://games.gg/pokemon-pokopia/guides/pokemon-pokopia-how-to-build-every-habitat/")
+
+tables <- habitat_pg %>% 
+  html_elements("table")
+
+tables_parsed <- tables %>% 
+  map(html_table)
+
+habitats <- tables_parsed %>%
+  map(~ mutate(.x, across(everything(), as.character))) %>%
+  bind_rows()
+```
+
+## Extracting Recipes 
+
+```{r}
+base_url <- "https://www.serebii.net/pokemonpokopia/crafting.shtml"
+
+recipe_pg <- read_html(base_url)
+
+# Extract Titles
+titles <- recipe_pg %>%
+  html_elements("h2, h3") %>%
+  html_text2()
+
+# Extract Tables
+tables <- recipe_pg %>%
+  html_elements("table.dextable") %>%
+  html_table(fill = TRUE)
+
+tidy_tables <- map(tables, ~ .x %>%
+  # Use first row as column names  
+  setNames(.[1, ]) %>%
+  
+  # Clean column names  
+  janitor::clean_names() %>%
+  
+  # Merge requirements columns  
+  unite("requirements", requirements:last_col(), sep = ", ", na.rm = TRUE) %>%
+  
+  # Remove unwanted rows  
+  filter(!str_detect(name, "\\*")) %>%
+  
+  # Remove picture column  
+  select(-picture) %>%
+  
+  # Remove first row  
+  slice(-1) %>%
+  
+  # Standard fix
+  mutate(locations = ifelse(
+    locations == "Daily Shop SpecialSparkling Water",
+    "Daily Shop Special, Sparkling Water",
+    locations
+  ))
+)
+
+tidy_tables <- map2(
+  tidy_tables,
+  titles,
+  ~ mutate(.x, type = .y)
+)
+
+recipes <- bind_rows(tidy_tables)
+```
+
+## Automatic scraping 
+
+<!-- We can automate this: -->
+
+<!-- ```{r} -->
+<!-- scrape_pg <- function(url){ -->
+<!--   tryCatch({ -->
+<!--     read_html(url) %>%  -->
+<!--       html_elements("table") %>% -->
+<!--       html_table() %>% -->
+<!--       # Bind and remove unnecessary lists -->
+<!--       list_rbind() %>% -->
+<!--       # Reduce redundancy -->
+<!--       distinct(Image, Type, .keep_all = T) -->
+<!--   }, error = function(e) NULL ) -->
+<!-- } -->
+
+<!-- recipes_all <- map_dfr(base_url, scrape_pg) -->
+
+<!-- recipes_all -->
+<!-- ``` -->
+
+```{r}
+base_url <- "https://www.ign.com/wikis/pokemon-pokopia/DIY_Recipes"
+
+scrape_all_pages <- function(start_url) {
+  
+  all_data <- list()
+  url <- start_url
+  
+  repeat {
+    
+    message("Scraping: ", url)
+    
+    page <- tryCatch(read_html(url), error = function(e) NULL)
+    
+    if (is.null(page)) break
+    
+    # Extract table
+    page_data <- page %>%
+      html_elements("table") %>%
+      html_table() %>%
+      list_rbind()
+    
+    if (nrow(page_data) == 0) break
+    
+    all_data[[length(all_data) + 1]] <- page_data
+    
+    # Find the "next" page link
+    next_link <- page %>%
+      html_element(".pagination-next a") %>%
+      html_attr("href")
+    
+    # Stop if no next page
+    if (is.na(next_link) || is.null(next_link)) break
+    
+    url <- paste0("https://www.ign.com", next_link)
+  }
+  
+  bind_rows(all_data)
+}
+
+recipes_all <- scrape_all_pages(base_url) %>%
+  distinct(Image, Type, .keep_all = TRUE)
+
+recipes_all
+```
+

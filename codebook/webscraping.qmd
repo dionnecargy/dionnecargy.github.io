@@ -162,3 +162,114 @@ recipes_all <- scrape_all_pages(base_url) %>%
 recipes_all
 ```
 
+
+## Extracting Pokedex
+
+```{r}
+pokedex_pg  <- read_html_live("https://mapgenie.io/pokopia/guides/pokemon")
+
+pokedex_tables <- pokedex_pg %>% 
+  html_elements("table")
+
+pokedex_tables_parsed <- pokedex_tables %>% 
+  map(html_table)
+
+pokedex <- pokedex_tables_parsed %>%
+  map(~ mutate(.x, across(everything(), as.character))) %>%
+  bind_rows()
+
+# tidy up 
+pokedex <- pokedex %>% 
+  dplyr::select(-Found) %>% 
+  # separate pokemon from their numbers
+  separate(Item, c("Pokedex", "Pokemon"), sep = " - ", extra = "merge") %>% 
+  # remove \n 
+  mutate(
+    Habitats = gsub("\n", "; ", Habitats), 
+    Conditions = gsub("\n", "; ", Conditions),
+    Specialities = gsub("\n", "; ", Specialities),
+    Likes = gsub("\n", "; ", Likes)
+  ) %>% 
+  # remove NAs 
+  drop_na()
+
+
+### favourites guide
+faves_pg <- read_html_live("https://pokopiaguide.com/guides/pokemon-favorites-guide")
+
+faves_nodes <- faves_pg %>%
+  html_elements("h2, h3, ul")
+
+current_category <- NA
+current_subcategory <- NA
+
+results <- list()
+
+for (node in faves_nodes) {
+  
+  tag <- html_name(node)
+  
+  if (tag == "h2") {
+    current_category <- html_text2(node)
+  }
+  
+  if (tag == "h3") {
+    current_subcategory <- html_text2(node)
+  }
+  
+  if (tag == "ul") {
+    items <- node %>%
+      html_elements("li") %>%
+      html_text2()
+    
+    df <- tibble(
+      category = current_category,
+      subcategory = current_subcategory,
+      item = items
+    )
+    
+    results[[length(results) + 1]] <- df
+  }
+}
+
+final_table <- bind_rows(results)
+
+## join pokedex and favourites list 
+eeveelutions <- c(
+  "Eevee", "Vaporeon", "Jolteon", "Flareon",
+  "Espeon", "Umbreon", "Leafeon", "Glaceon", "Sylveon"
+)
+# filter pokedex
+eevee_df <- pokedex %>%
+  filter(Pokemon %in% eeveelutions)
+# expand likes into rows
+eevee_likes <- eevee_df %>%
+  separate_rows(Likes, sep = ";\\s*") %>%
+  mutate(Likes = str_trim(Likes))
+# standardise names
+clean <- function(x) {
+  x %>%
+    str_to_lower() %>%
+    str_squish()
+}
+eevee_likes <- eevee_likes %>%
+  mutate(Likes_clean = clean(Likes))
+final_table <- final_table %>%
+  mutate(item_clean = clean(item), 
+         subcategory_clean = clean(subcategory))
+# join to fave table
+eeveelution_matches <- eevee_likes %>%
+  left_join(final_table, by = c("Likes_clean" = "subcategory_clean"))
+# get house items for each eeveelution
+eeveelution_items <- eeveelution_matches %>%
+  filter(!is.na(category)) %>%
+  distinct(Pokemon, item, category, subcategory)
+# summarise per pokemon
+eeveelution_summary <- eeveelution_items %>%
+  group_by(Pokemon, category) %>%
+  summarise(
+    items = paste(item, collapse = ", "),
+    .groups = "drop"
+  )
+write.csv(eeveelution_summary, "eeveelutions.csv")
+```
